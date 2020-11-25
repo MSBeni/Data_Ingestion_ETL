@@ -3,6 +3,7 @@ import bz2
 import logging
 import re
 from datetime import datetime
+"""Please Consider You Should have the Python version 3.7 or higher (if available)"""
 
 
 def parse_line(line):
