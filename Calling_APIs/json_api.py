@@ -11,11 +11,12 @@ data = b'''
 }
 '''
 
+
 def fix_time(pair):
     key, value = pair
     if key != 'time':
         return pair
-    return (key, datetime.fromisoformat(value))
+    return key, datetime.fromisoformat(value)
 
 
 def object_pairs_hooks(pairs):
