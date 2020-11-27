@@ -1,5 +1,6 @@
 import scrapy
 from urllib.parse import urlparse
+from scrapy.cmdline import execute
 
 
 class FXSpider(scrapy.Spider):
@@ -24,3 +25,4 @@ class FXSpider(scrapy.Spider):
             ratio = float(price_td.css('::text').get())
             data[symbol] = ratio
         yield data
+
