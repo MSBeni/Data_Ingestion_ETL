@@ -8,7 +8,7 @@ here = Path(__file__).absolute().parent
 
 
 class Handler(BaseHTTPRequestHandler):
-    def do_GET(self):
+    def do_get(self):
         url = urlparse(self.path)
         if url.path == '/':
             response = self.load_html('fx.html')
