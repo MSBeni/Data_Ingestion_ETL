@@ -1,5 +1,4 @@
 """Query GitHub API"""
-
 import requests
 
 
