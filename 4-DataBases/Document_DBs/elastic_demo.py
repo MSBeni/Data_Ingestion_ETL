@@ -1,4 +1,5 @@
 """Working with Elasticsearch"""
+# istallation: pip install elasticsearch
 from elasticsearch import Elasticsearch
 from elasticsearch.helpers import scan
 
