@@ -21,9 +21,11 @@ transaction_ids = [
     47718,
 ]
 
+# Create a key for any transaction
 for tid in transaction_ids:
     key = f'tid:{tid}'
     data = conn.get(key)
+    # Check if it is in database -- if not we will receive a None
     if data is None:
         print(f'{tid} not found')
         continue
