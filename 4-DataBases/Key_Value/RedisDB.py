@@ -5,7 +5,10 @@ from redis import Redis
 
 host, port = 'localhost', 6379
 
+# Connect to Redis Client
 conn = Redis(host=host, port=port)
+
+# Issuing a ping to test that we can connect to the database
 if not conn.ping():
     raise SystemExit(f'error: cannot connect to redis on {host}:{port}')
 
