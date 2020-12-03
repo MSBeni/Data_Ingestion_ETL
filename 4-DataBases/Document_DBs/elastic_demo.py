@@ -5,7 +5,9 @@ from elasticsearch import Elasticsearch
 from elasticsearch.helpers import scan
 
 host, port = 'localhost', 9200
+# connecting to the host
 es = Elasticsearch([{'host': host, 'port': port}])
+# check the connection
 if not es.ping():
     raise SystemExit('error: cannot connect to elastic on {host}:{port}')
 
