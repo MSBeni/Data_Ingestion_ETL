@@ -1,6 +1,7 @@
 """Working with Elasticsearch"""
 # istallation: pip install elasticsearch
 from elasticsearch import Elasticsearch
+# scan for scanning db
 from elasticsearch.helpers import scan
 
 host, port = 'localhost', 9200
