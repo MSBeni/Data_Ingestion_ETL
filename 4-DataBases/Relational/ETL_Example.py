@@ -39,3 +39,6 @@ for i in range(len(df['DATE'])):
 
 c.executemany('INSERT INTO weather VALUES (?,?,?,?)', weather_data)
 
+c.execute()
+
+
