@@ -1,5 +1,5 @@
 import pandas as pd
-import sqlite3 as sql
+import sqlite3
 
 df = pd.read_csv('weather.csv')
 """ df.head(2):
@@ -13,4 +13,19 @@ Index(['STATION', 'DATE', 'PRCP', 'SNWD', 'SNOW', 'TMAX', 'TMIN', 'AWND', 'WDF2'
 """
 
 # Connect to the DB
-Conn = sql.connect('wether.db')
+Conn = sqlite3.connect('weather.db', detect_types=sqlite3.PARSE_DECLTYPES)
+c = Conn.cursor()
+
+# Create table
+c.execute('''
+CREATE TABLE IF NOT EXISTS weather (
+    day DATE,	    -- day of measurements
+    min_temp FLOAT, -- min temperature in Fahrenheit
+    max_temp FLOAT, -- max temperature in Fahrenheit
+    snow INTEGETR   -- snow in inches
+);
+         ''')
+
+c.execute('''CREATE INDEX IF NOT EXISTS weather_day ON weather(day);''')
+
+
