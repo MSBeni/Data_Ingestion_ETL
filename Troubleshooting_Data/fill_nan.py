@@ -12,3 +12,5 @@ print(pd.isnull(val))  # True
 values = pd.Series([1.2, 2.3, float('nan'), 4.5])
 # pd.isnull is a ufunc
 print(pd.isnull(values))   # [False, False, True, False]
+
+
