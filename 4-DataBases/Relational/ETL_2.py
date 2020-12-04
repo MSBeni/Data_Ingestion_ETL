@@ -35,6 +35,7 @@ def row2db(row):
 def iter_records(csv_file):
     with open(csv_file) as fp:
         for lnum, row in enumerate(csv.DictReader(fp), 2):
+            print(row)
             obj = row2db(row)
             if not obj:
                 logging.warning('%s:%d skipping bad row', csv_file, lnum)
