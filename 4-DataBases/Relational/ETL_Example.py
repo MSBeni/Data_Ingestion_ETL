@@ -1,5 +1,6 @@
 import pandas as pd
 import sqlite3
+import datetime
 
 df = pd.read_csv('weather.csv')
 """ df.head(2):
@@ -28,4 +29,13 @@ CREATE TABLE IF NOT EXISTS weather (
 
 c.execute('''CREATE INDEX IF NOT EXISTS weather_day ON weather(day);''')
 
+# print(datetime.datetime.strptime(str(df['DATE'][1]), '%Y%m%d'))
+
+weather_data = []
+for i in range(len(df['DATE'])):
+    weather_data.append((datetime.datetime.strptime(str(df['DATE'][i]), '%Y%m%d'), df['TMIN'][i], df['TMAX'][i],
+                         df['SNOW'][i]))
+
+
+c.executemany('INSERT INTO weather VALUES (?,?,?,?)', weather_data)
 
