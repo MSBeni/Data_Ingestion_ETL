@@ -16,8 +16,8 @@ Index(['VendorID', 'tpep_pickup_datetime', 'tpep_dropoff_datetime',
 '''
 dfB['duration'] = 0
 for i in range(len(dfB['tpep_dropoff_datetime'])):
-    dfB['duration'][i] = (datetime.strptime(str(dfB['tpep_dropoff_datetime'][i]), '%Y-%m-%d %H:%M:%S') - \
-                      datetime.strptime(str(dfB['tpep_pickup_datetime'][i]), '%Y-%m-%d %H:%M:%S')).total_seconds()
+    dfB['duration'][i] = (datetime.strptime(str(dfB['tpep_dropoff_datetime'][i]), '%Y-%m-%d %H:%M:%S') -
+                          datetime.strptime(str(dfB['tpep_pickup_datetime'][i]), '%Y-%m-%d %H:%M:%S')).total_seconds()
 
 # print(dfB['duration'][2].total_seconds())
 BigDurations = dfB['duration'] > 18000
