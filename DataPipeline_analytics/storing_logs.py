@@ -35,7 +35,7 @@ def parse_line(line):
     Receiving a line of the logs and spiliting it to extract the data
     Sample log: 57.95.176.149 - - [24/Dec/2020:17:46:10 +0000] "PUT /search/app HTTP/1.1" 200 108 "http://mejia.info/" "Mozilla/5.0 (Windows; U; Windows 98) AppleWebKit/531.23.2 (KHTML, like Gecko) Version/5.0.1 Safari/531.23.2"
     :param line: line refers to a line of the logs which is read from the saved data
-    :return: the information embedded in the line of the data logs
+    :return: the timestamped information embedded in the line of the data logs
     """
     split_line = line.split(" ")
     if len(split_line) < 12:
