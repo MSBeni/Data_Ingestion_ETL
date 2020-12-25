@@ -5,20 +5,33 @@ from datetime import datetime
 
 DB_NAME = "db.sqlite"
 
+
 def get_lines(time_obj):
+    """
+    a function to return the remote_addr and time_local of the logs which are created after specific time
+    :param time_obj: specific time determined to be a metric to return the logs after that time
+    :return: the data logs, remote_addr and time_local, created after an specific time
+    """
     conn = sqlite3.connect(DB_NAME)
     cur = conn.cursor()
     cur.execute("SELECT remote_addr,time_local FROM logs WHERE created > ?", [time_obj])
     resp = cur.fetchall()
     return resp
 
+
 def get_time_and_ip(lines):
+    """
+
+    :param lines:
+    :return:
+    """
     ips = []
     times = []
     for line in lines:
         ips.append(line[0])
         times.append(parse_time(line[1]))
     return ips, times
+
 
 def parse_time(time_str):
     try:
