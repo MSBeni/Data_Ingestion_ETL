@@ -65,7 +65,7 @@ if __name__ == "__main__":
 
     while True:
         line = generate_log_line()
-        print(line)
+        # print(line)
         write_log_line(current_log_file, line)
         lines_written += 1
 
