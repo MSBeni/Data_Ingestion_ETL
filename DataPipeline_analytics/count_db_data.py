@@ -25,20 +25,26 @@ def get_time_and_ip(lines):
     :param lines: the logs saved in the lines
     :return: ip addresses and the related times
     """
-    ips = []
-    times = []
+    ips_ = []
+    times_ = []
     for line in lines:
-        ips.append(line[0])
-        times.append(parse_time(line[1]))
-    return ips, times
+        ips_.append(line[0])
+        times_.append(parse_time(line[1]))
+    return ips_, times_
 
 
 def parse_time(time_str):
+    """
+    a function to parse the time in datetime format
+    :param time_str: input time
+    :return: converted str to datetime data
+    """
     try:
-        time_obj = datetime.strptime(time_str, '[%d/%b/%Y:%H:%M:%S %z]')
+        time_obj_ = datetime.strptime(time_str, '[%d/%b/%Y:%H:%M:%S %z]')
     except Exception:
-        time_obj = ""
-    return time_obj
+        time_obj_ = ""
+    return time_obj_
+
 
 if __name__ == "__main__":
     unique_ips = {}
