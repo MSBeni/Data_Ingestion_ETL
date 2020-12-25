@@ -21,9 +21,9 @@ def get_lines(time_obj):
 
 def get_time_and_ip(lines):
     """
-
-    :param lines:
-    :return:
+    a function to return time and ip
+    :param lines: the logs saved in the lines
+    :return: ip addresses and the related times
     """
     ips = []
     times = []
