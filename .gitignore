@@ -8,7 +8,7 @@ checkpoint
 *checkpoint*
 *.pypirc
 .pypirc
-
+*.sqlite
 
 # Compiled python modules.
 *.pyc
