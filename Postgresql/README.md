@@ -64,6 +64,11 @@ Then 2.  Do the following in your web browser:
     
 You can always use the the .sql files in the sql_database folder to query to build some test tables.
 The most standard queries will be reviewed here:
-```SELECT
+- SELECT:
+```bash
 SELECT items.name AS "items name", items.price FROM items;
+``` 
+- Filtering with WHERE:
+```bash
+SELECT items.name AS "items name", items.price FROM items WHERE items.price > 10;
 ``` 
