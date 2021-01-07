@@ -91,3 +91,10 @@ DELETE FROM purchaces WHERE items.id=4;
 ```bash
 SELECT * FROM customers WHERE last_name LIKE '%t%'; 
 ``` 
+- JOIN:
+
+INNER JOIN, LEFT JOIN, RIGHT JOIN and FULL JOIN:
+```bash
+SELECT * FROM customers INNER JOIN purchases ON customers.id = purchases.customer_id; 
+``` 
+
