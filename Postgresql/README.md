@@ -102,3 +102,9 @@ SELECT * FROM customers INNER JOIN purchases ON customers.id = purchases.custome
 ```bash
 SELECT customers.first_name, customers.last_name, COUNT(purchases.id) FROM customers INNER JOIN purchases ON customers.id = purchases.customer_id GROUP BY customers.id;  
 ``` 
+```bash
+SELECT customers.last_name, customers.first_name, SUM(items.price) FROM items
+INNER JOIN purchases ON items.id = purchases.item_id
+INNER JOIN customers ON purchases.customer_id = customers.id
+GROUP BY customers.id;
+``` 
