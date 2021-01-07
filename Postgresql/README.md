@@ -75,4 +75,15 @@ SELECT items.name AS "items name", items.price FROM items WHERE items.price > 10
 ```bash
 SELECT customers.id FROM customers WHERE customers.first_name = 'Rolf' OR customers.last_name = 'Watson';
 ``` 
-
+- LIMIT for limiting the number of results:
+```bash
+SELECT customers.first_name, customers.id FROM customers WHERE customers.first_name = 'Rolf' OR customers.last_name = 'Watson' LIMIT 1;
+``` 
+- UPDATE data in a table:
+```bash
+UPDATE items SET price=10 WHERE items.price < 10;
+``` 
+- DELETE data from a table:
+```bash
+DELETE FROM purchaces WHERE items.id=4;
+``` 
