@@ -125,3 +125,11 @@ INNER JOIN customers ON purchases.customer_id = customers.id
 GROUP BY customers.id
 ORDER BY "total spent" DESC;    # Descending
 ``` 
+
+- CREATE TABLE:
+```bash
+CREATE TABLE public.users (
+	id integer PRIMARY KEY,
+	name character varying(100) NOT NULL
+)
+``` 
