@@ -72,3 +72,7 @@ SELECT items.name AS "items name", items.price FROM items;
 ```bash
 SELECT items.name AS "items name", items.price FROM items WHERE items.price > 10;
 ``` 
+```bash
+SELECT customers.id FROM customers WHERE customers.first_name = 'Rolf' OR customers.last_name = 'Watson';
+``` 
+
