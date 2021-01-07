@@ -61,3 +61,9 @@ Then 2.  Do the following in your web browser:
     - Hostname: postgres
     - Username: yourusername
     - Password: yourpassword
+    
+You can always use the the .sql files in the sql_database folder to query to build some test tables.
+The most standard queries will be reviewed here:
+```SELECT
+SELECT items.name AS "items name", items.price FROM items;
+``` 
