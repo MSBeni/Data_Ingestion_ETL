@@ -133,3 +133,20 @@ CREATE TABLE public.users (
 	name character varying(100) NOT NULL
 )
 ``` 
+```bash
+CREATE TABLE public.videos (
+	id integer PRIMARY KEY,
+	user_id integer REFERENCES public.users,  # should be a ussr which exist in users table
+	name character varying(225) NOT NULL
+)
+```
+
+- INSERT INTO for adding data to a table:
+```bash
+INSERT INTO public.users(id, name) VALUES (1, 'TOM');
+``` 
+```bash
+INSERT INTO public.videos VALUES (1, 1, 'IN THE MOOD FOR LOVE');
+``` 
+
+-  SEQUENCE for auto-incrementing fields:
