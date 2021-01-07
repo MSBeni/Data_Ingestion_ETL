@@ -87,3 +87,7 @@ UPDATE items SET price=10 WHERE items.price < 10;
 ```bash
 DELETE FROM purchaces WHERE items.id=4;
 ``` 
+- LIKE SQL Wildcards for filtering unknowns:
+```bash
+SELECT * FROM customers WHERE last_name LIKE '%t%'; 
+``` 
