@@ -108,3 +108,20 @@ INNER JOIN purchases ON items.id = purchases.item_id
 INNER JOIN customers ON purchases.customer_id = customers.id
 GROUP BY customers.id;
 ``` 
+
+- ORDER BY for sorting data:
+```bash
+SELECT customers.last_name, customers.first_name, SUM(items.price) AS "total spent" FROM items
+INNER JOIN purchases ON items.id = purchases.item_id
+INNER JOIN customers ON purchases.customer_id = customers.id
+GROUP BY customers.id
+ORDER BY "total spent";    # Ascending
+``` 
+
+```bash
+SELECT customers.last_name, customers.first_name, SUM(items.price) AS "total spent" FROM items
+INNER JOIN purchases ON items.id = purchases.item_id
+INNER JOIN customers ON purchases.customer_id = customers.id
+GROUP BY customers.id
+ORDER BY "total spent" DESC;    # Descending
+``` 
