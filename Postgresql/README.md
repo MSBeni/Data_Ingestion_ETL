@@ -98,3 +98,7 @@ INNER JOIN, LEFT JOIN, RIGHT JOIN and FULL JOIN:
 SELECT * FROM customers INNER JOIN purchases ON customers.id = purchases.customer_id; 
 ``` 
 
+- GROUP BY:
+```bash
+SELECT customers.first_name, customers.last_name, COUNT(purchases.id) FROM customers INNER JOIN purchases ON customers.id = purchases.customer_id GROUP BY customers.id;  
+``` 
