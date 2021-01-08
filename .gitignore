@@ -10,7 +10,7 @@ checkpoint
 .pypirc
 *.sqlite
 -r
-
+*.ipynb_checkpoints
 # Compiled python modules.
 *.pyc
 
