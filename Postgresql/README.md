@@ -224,3 +224,31 @@ INNER JOIN purchases ON customers.id = purchases.customer_id
 GROUP BY customers.id
 HAVING COUNT(purchases.id) > 2;  
 ```
+
+#### Dates in SQL: an old problem
+- Current Time:  --> 2021-01-08 02:28:42.037233+00
+```bash
+SELECT NOW();      
+```
+- Try other formats:
+```bash
+SELECT TO_CHAR(NOW(), 'DD-MM-YYYY');
+```
+```bash
+SELECT TO_CHAR(NOW(), 'DD-MM-YYYY HH:MI:SS');
+```
+```bash
+SELECT TO_CHAR(NOW(), 'FMDay, DD-MM-YYYY HH:MI:SS');
+```
+```bash
+SELECT TO_CHAR(NOW(), 'FMDay DDth FMMonth, DD-MM-YYYY HH:MI:SS');
+```
+```bash
+SELECT TO_TIMESTAMP('Friday 08th January, 08-01-2021 02:34:47', 'FMDay DDth FMMonth, DD-MM-YYYY HH:MI:SS');
+```
+
+#### Other data types in SQL (including JSON in PostgreSQL):
+It is possible to create and store other data types in sql.
+```bash
+CREATE TYPE mood AS ENUM('extremely unhappy', 'unhappy', 'ok', 'happy', 'extremely happy');
+```
