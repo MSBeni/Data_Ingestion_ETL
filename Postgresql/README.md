@@ -175,7 +175,7 @@ DROP TABLE public.users CASCADE;
 DROP TABLE IF EXISTS public.users;
 ``` 
 
--- VIEWs:
+#### VIEWs:
 ```bash
 CREATE VIEW total_revenew_per_customer AS
 SELECT customers.id, customers.last_name, customers.first_name, SUM(items.price) AS "total_spent" FROM items
@@ -205,3 +205,5 @@ CREATE VIEW expensive_items AS
 SELECT * FROM items WHERE price > 100
 WITH LOCAL CHECK OPTION;
 ```
+
+#### built-in functions and the HAVING construct
