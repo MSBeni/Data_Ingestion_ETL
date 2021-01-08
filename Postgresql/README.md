@@ -211,8 +211,16 @@ WITH LOCAL CHECK OPTION;
 ```bash
 SELECT AVG(items.price) FROM items;
 ```
-- AVG, COUNT and SUM:
+- MAX, MIN:
 ```bash
 SELECT MAX(items.price) FROM items
 INNER JOIN purchases ON items.id = purchases.item_id;
+```
+
+- HAVING: (We cannot use WHERE after GROUP BY, we should use HAVING)
+```bash
+SELECT customers.first_name, customers.last_name, COUNT(purchases.id) AS "count_id" FROM customers 
+INNER JOIN purchases ON customers.id = purchases.customer_id 
+GROUP BY customers.id
+HAVING COUNT(purchases.id) > 2;  
 ```
