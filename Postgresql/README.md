@@ -174,3 +174,5 @@ DROP TABLE public.users CASCADE;
 ```bash
 DROP TABLE IF EXISTS public.users;
 ``` 
+
+-- VIEWs:
