@@ -150,3 +150,16 @@ INSERT INTO public.videos VALUES (1, 1, 'IN THE MOOD FOR LOVE');
 ``` 
 
 -  SEQUENCE for auto-incrementing fields:
+```bash
+CREATE SEQUENCE user_id_seq START 4;
+``` 
+```bash
+ALTER TABLE public.users
+ALTER COLUMN id
+SET DEFAULT nextval('user_id_seq');
+``` 
+```bash
+INSERT INTO public.users(name) VALUEs ('Wayne');
+``` 
+
+- DROP TABLE for deleting tables and data:
