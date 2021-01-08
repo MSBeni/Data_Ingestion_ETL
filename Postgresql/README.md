@@ -166,3 +166,7 @@ INSERT INTO public.users(name) VALUEs ('Wayne');
 ```bash
 DROP TABLE public.users RESTRICT;
 ``` 
+
+```bash
+DROP TABLE public.users CASCADE;
+``` 
