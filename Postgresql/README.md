@@ -176,3 +176,11 @@ DROP TABLE IF EXISTS public.users;
 ``` 
 
 -- VIEWs:
+```bash
+CREATE VIEW total_revenew_per_customer AS
+SELECT customers.last_name, customers.first_name, SUM(items.price) AS "total spent" FROM items
+INNER JOIN purchases ON items.id = purchases.item_id
+INNER JOIN customers ON purchases.customer_id = customers.id
+GROUP BY customers.id
+ORDER BY "total spent" DESC;
+```
