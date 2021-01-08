@@ -252,3 +252,12 @@ It is possible to create and store other data types in sql.
 ```bash
 CREATE TYPE mood AS ENUM('extremely unhappy', 'unhappy', 'ok', 'happy', 'extremely happy');
 ```
+```bash
+CREATE TABLE students(
+	name character varying(255),
+	current_mood mood
+);
+```
+```bash
+INSERT INTO students VALUES ('Nia', 'extremely happy'), ('Marc', 'happy');
+```
