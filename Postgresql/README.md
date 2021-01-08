@@ -261,3 +261,5 @@ CREATE TABLE students(
 ```bash
 INSERT INTO students VALUES ('Nia', 'extremely happy'), ('Marc', 'happy');
 ```
+
+#### Nested SELECT statements for complex queries:
