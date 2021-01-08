@@ -194,3 +194,8 @@ DROP VIEW total_revenew_per_customer;
 ```
 
 The VIEW will be updated in the background by any change in the related TABLES.
+And other VIEWs can be made:
+```bash
+CREATE VIEW ausome_customers AS 
+SELECT * FROM total_revenew_per_customer WHERE total_spent > 100;
+```
