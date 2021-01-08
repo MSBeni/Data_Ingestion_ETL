@@ -263,3 +263,10 @@ INSERT INTO students VALUES ('Nia', 'extremely happy'), ('Marc', 'happy');
 ```
 
 #### Nested SELECT statements for complex queries:
+```bash
+SELECT * FROM items WHERE items.price > 
+(SELECT AVG(items.price) FROM items);
+```
+```bash
+SELECT items.name, items.price - (SELECT AVG(items.price) FROM items) FROM items;
+```
