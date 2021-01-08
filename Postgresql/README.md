@@ -184,3 +184,13 @@ INNER JOIN customers ON purchases.customer_id = customers.id
 GROUP BY customers.id
 ORDER BY "total spent" DESC;
 ```
+then you can call iy:
+```bash
+SELECT * FROM total_revenew_per_customer;
+```
+and also you can DROP it:
+```bash
+DROP VIEW total_revenew_per_customer;
+```
+
+The VIEW will be updated in the background by any change in the related TABLES.
