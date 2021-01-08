@@ -270,3 +270,19 @@ SELECT * FROM items WHERE items.price >
 ```bash
 SELECT items.name, items.price - (SELECT AVG(items.price) FROM items) FROM items;
 ```
+```bash
+SELECT *, items.price - 
+(SELECT AVG(items.price) FROM items WHERE price > 100) AS "Diff_with_Max"
+FROM items WHERE price > 100;
+```
+
+#### The PostgreSQL SERIAL type:
+```bash
+CREATE TABLE public.test(
+	id SERIAL PRIMARY KEY,
+	name text
+);
+```
+```bash
+INSERT INTO test(name) VALUES('john'), ('Bruno');
+```
