@@ -199,3 +199,9 @@ And other VIEWs can be made:
 CREATE VIEW ausome_customers AS 
 SELECT * FROM total_revenew_per_customer WHERE total_spent > 100;
 ```
+The WITH LOCAL CHECK OPTION can be added to check the condition of the VIEW, e.g., the item price bigger than 100.
+```bash
+CREATE VIEW expensive_items AS
+SELECT * FROM items WHERE price > 100
+WITH LOCAL CHECK OPTION;
+```
