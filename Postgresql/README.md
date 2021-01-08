@@ -163,3 +163,6 @@ INSERT INTO public.users(name) VALUEs ('Wayne');
 ``` 
 
 - DROP TABLE for deleting tables and data:
+```bash
+DROP TABLE public.users RESTRICT;
+``` 
