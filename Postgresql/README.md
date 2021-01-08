@@ -207,3 +207,12 @@ WITH LOCAL CHECK OPTION;
 ```
 
 #### built-in functions and the HAVING construct
+- AVG, COUNT and SUM:
+```bash
+SELECT AVG(items.price) FROM items;
+```
+- AVG, COUNT and SUM:
+```bash
+SELECT MAX(items.price) FROM items
+INNER JOIN purchases ON items.id = purchases.item_id;
+```
