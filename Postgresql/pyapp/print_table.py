@@ -10,7 +10,7 @@ except:
 cur = conn.cursor()
 
 try:
-    cur.execute("SELECT * FROM customers;")
+    cur.execute("SELECT * FROM items;")
 
     print(cur.fetchall())
 except:
