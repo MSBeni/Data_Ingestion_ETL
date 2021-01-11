@@ -1,5 +1,6 @@
 import psycopg2
 
+
 class User:
     def __init__(self, email, first_name, last_name, id_=None):
         self.email = email
@@ -32,16 +33,14 @@ class User:
             print("Unable to craete the table!!!")
 
     def save_to_db(self):
-        connection = psycopg2.connect("dbname='learning' user='i-sip_iot' password='Your_Password'")
-        with connection.cursor() as cursor:
-            try:
-                cursor.execute('INSERT INTO users (email, first_name, last_name) VALUES (%s, %s, %s);',
-                               (self.email, self.first_name, self.last_name))
+        with psycopg2.connect("dbname='learning' user='i-sip_iot' password='Your_Password'") as connection:
+            with connection.cursor() as cursor:
+                try:
+                    cursor.execute('INSERT INTO users (email, first_name, last_name) VALUES (%s, %s, %s);',
+                                   (self.email, self.first_name, self.last_name))
+                except:
+                    print("Unable to add data")
 
-                connection.commit()
-            except:
-                print("Unable to add data")
-        connection.close()
 
     def fetch_data(self):
         connection = psycopg2.connect("dbname='learning' user='i-sip_iot' password='Your_Password'")
