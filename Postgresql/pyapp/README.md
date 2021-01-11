@@ -119,3 +119,5 @@ This is where I will create all the Python script to access PostgreSQL database.
 
 - Connecting to the PostgreSQL Database:
 First, create a python program connect.py in your project directory. You can see the connect.py, create_table.py, insert_date.py and print_data.py as reference to start your code.
+
+while you are connected to the database you are good to go for the several tests.

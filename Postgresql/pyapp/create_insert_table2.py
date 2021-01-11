@@ -33,5 +33,6 @@ try:
 
     print("TABLE items created")
 
+
 except:
     print("Unable to craete the table!!!")
