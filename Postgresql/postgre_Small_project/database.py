@@ -1,10 +1,36 @@
 from psycopg2 import pool
 
-connection_pool = pool.SimpleConnectionPool(minconn=1, maxconn=1,
-                                            database='learning',
-                                            user='i-sip_iot',
-                                            password='Your_Password',
-                                            host='localhost')
+
+class Database:
+    connection_pool = None
+
+    # @staticmethod
+    # def initials():
+    #     Database.connection_pool = pool.SimpleConnectionPool(minconn=1, maxconn=1,
+    #                                                          database='learning',
+    #                                                          user='i-sip_iot',
+    #                                                          password='Your_Password',
+    #                                                          host='localhost')
+
+    @classmethod
+    def initials(cls):
+        cls.connection_pool = pool.SimpleConnectionPool(minconn=1, maxconn=1,
+                                                        database='learning',
+                                                        user='i-sip_iot',
+                                                        password='Your_Password',
+                                                        host='localhost')
+
+    @classmethod
+    def get_connection(cls):
+        return cls.connection_pool.get_conn()
+
+    @classmethod
+    def return_connection(cls, connection):
+        return cls.connection_pool.put_conn(connection)
+
+    @classmethod
+    def close_all_connection(cls, connection):
+        return Database.connection_pool.closeall()
 
 
 class CursorFromConnectionFromPool:
@@ -17,7 +43,7 @@ class CursorFromConnectionFromPool:
         get a new connection from the pool and then return it
         :return: a new connection from the pool
         """
-        self.connection = connection_pool.getconn()
+        self.connection = Database.get_connection()
         self.cursor = self.connection.cursor()
         return self.cursor
 
@@ -35,4 +61,4 @@ class CursorFromConnectionFromPool:
         else:
             self.cursor.close()
             self.connection.commit()
-        connection_pool.putconn(self.connection)
+        Database.return_connection(self.connection)
