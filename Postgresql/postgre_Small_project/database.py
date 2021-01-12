@@ -27,4 +27,5 @@ class ConnectionFromPool:
         :param exc_tb:
         :return: None
         """
+        self.connection.commit()
         connection_pool.putconn(self.connection)
