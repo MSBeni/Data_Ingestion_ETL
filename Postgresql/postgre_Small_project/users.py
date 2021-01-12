@@ -16,14 +16,13 @@ class User:
         Create database if it does not exist
         :return:
         """
-        with CursorFromConnectionFromPool() as connection:
+        with CursorFromConnectionFromPool() as cursor:
             """
             Open and close the connection --> calling connection_pool.getconn() and after committing and closing the
             connection calling the connection_pool.putconn(self.connection) to put the connection in the pool
             """
-            cur = connection.cursor()
             try:
-                cur.execute("""
+                cursor.execute("""
                 CREATE TABLE IF NOT EXISTS "public"."users"(
                     "id" SERIAL PRIMARY KEY,
                     "email" character varying(255),
@@ -43,34 +42,32 @@ class User:
         Save the inserted data into the database
         :return:
         """
-        with CursorFromConnectionFromPool() as connection:
+        with CursorFromConnectionFromPool() as cursor:
             """
             Open and close the connection --> calling connection_pool.getconn() and after closing the
             connection calling the connection_pool.putconn(self.connection) to put the connection in the pool
             --> Note: ConnectionFromPool() is no longer a direct connection so does not commit any more using 'with'
             so we should add the commit to the ConnectionFromPool class
             """
-            with connection.cursor() as cursor:
-                try:
-                    cursor.execute('INSERT INTO users (email, first_name, last_name) VALUES (%s, %s, %s);',
-                                   (self.email, self.first_name, self.last_name))
-                except:
-                    print("Unable to add data")
+            try:
+                cursor.execute('INSERT INTO users (email, first_name, last_name) VALUES (%s, %s, %s);',
+                               (self.email, self.first_name, self.last_name))
+            except:
+                print("Unable to add data")
 
     def fetch_data(self):
         """
         Executing the selection of inner data of the table
         :return:
         """
-        with CursorFromConnectionFromPool() as connection:
+        with CursorFromConnectionFromPool() as cursor:
             """
             Open and close the connection --> calling connection_pool.getconn() and after committing and closing the
             connection calling the connection_pool.putconn(self.connection) to put the connection in the pool
             """
-            cur = connection.cursor()
             try:
-                cur.execute("SELECT * FROM users;")
-                print(cur.fetchall())
+                cursor.execute("SELECT * FROM users;")
+                print(cursor.fetchall())
             except:
                 print("Failed to read the table contents ...")
 
@@ -81,15 +78,14 @@ class User:
         email :param str: the email address of the user seeking to return
         cls :return: cls a currently bound class od thw User
         """
-        with CursorFromConnectionFromPool() as connection:
+        with CursorFromConnectionFromPool() as cursor:
             """
             Open and close the connection --> calling connection_pool.getconn() and after committing and closing the
             connection calling the connection_pool.putconn(self.connection) to put the connection in the pool
             """
-            with connection.cursor() as cursor:
-                try:
-                    cursor.execute('SELECT * FROM users WHERE email=%s', (email,))
-                    user_data = cursor.fetchone()
-                    return cls(email=user_data[1], first_name=user_data[2], last_name=user_data[3], id_=user_data[0])
-                except:
-                    print("Problem in fetching data from db")
+            try:
+                cursor.execute('SELECT * FROM users WHERE email=%s', (email,))
+                user_data = cursor.fetchone()
+                return cls(email=user_data[1], first_name=user_data[2], last_name=user_data[3], id_=user_data[0])
+            except:
+                print("Problem in fetching data from db")

@@ -30,7 +30,7 @@ class CursorFromConnectionFromPool:
         :return: None
         """
         if exc_val is not None:
-            """if there is an error revert the changes"""
+            """if there is an error, e.g., TypeError, AttributeError, ValueError, revert the changes"""
             self.connection.rollback()
         else:
             self.cursor.close()
