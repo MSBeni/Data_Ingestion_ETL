@@ -1,4 +1,4 @@
-from Postgresql.postgre_Small_project.database import connection_pool
+from Postgresql.postgre_Small_project.database import ConnectionPool
 
 
 class User:
@@ -16,7 +16,7 @@ class User:
         Create database if it does not exist
         :return:
         """
-        with connection_pool.getconn() as connection:
+        with ConnectionPool() as connection:
             cur = connection.cursor()
             try:
                 cur.execute("""
@@ -39,7 +39,7 @@ class User:
         Save the inserted data into the database
         :return:
         """
-        with connection_pool.getconn() as connection:
+        with ConnectionPool() as connection:
             with connection.cursor() as cursor:
                 try:
                     cursor.execute('INSERT INTO users (email, first_name, last_name) VALUES (%s, %s, %s);',
@@ -53,7 +53,7 @@ class User:
         Executing the selection of inner data of the table
         :return:
         """
-        with connection_pool.getconn() as connection:
+        with ConnectionPool()  as connection:
             cur = connection.cursor()
             try:
                 cur.execute("SELECT * FROM users;")
@@ -68,7 +68,7 @@ class User:
         email :param str: the email address of the user seeking to return
         cls :return: cls a currently bound class od thw User
         """
-        with connection_pool.getconn() as connection:
+        with ConnectionPool()  as connection:
             with connection.cursor() as cursor:
                 try:
                     cursor.execute('SELECT * FROM users WHERE email=%s', (email,))
