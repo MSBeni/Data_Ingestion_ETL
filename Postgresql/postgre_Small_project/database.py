@@ -13,7 +13,7 @@ class Database:
     #                                                          host='localhost')
 
     @classmethod
-    def initials(cls):
+    def initialize(cls):
         cls.connection_pool = pool.SimpleConnectionPool(minconn=1, maxconn=1,
                                                         database='learning',
                                                         user='i-sip_iot',
@@ -22,11 +22,11 @@ class Database:
 
     @classmethod
     def get_connection(cls):
-        return cls.connection_pool.get_conn()
+        return cls.connection_pool.getconn()
 
     @classmethod
     def return_connection(cls, connection):
-        return cls.connection_pool.put_conn(connection)
+        return cls.connection_pool.putconn(connection)
 
     @classmethod
     def close_all_connection(cls, connection):

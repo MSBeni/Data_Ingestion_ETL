@@ -1,8 +1,10 @@
+from Postgresql.postgre_Small_project.database import Database
 from Postgresql.postgre_Small_project.users import User
 # from Postgresql.postgre_Small_project.database import Database
 
+Database.initialize()
 
-user = User('jouliette@Uniofcode.me', 'Jouliette', 'Binouche')
+user = User('frank@Uniofcode.me', 'Frank', 'Raykard')
 # user.create_table()
 user.save_to_db()
 user.fetch_data()
