@@ -1,18 +1,30 @@
 from psycopg2 import pool
 
+connection_pool = pool.SimpleConnectionPool(minconn=1, maxconn=1,
+                                            database='learning',
+                                            user='i-sip_iot',
+                                            password='Your_Password',
+                                            host='localhost')
 
-class ConnectionPool():
+
+class ConnectionFromPool:
     def __init__(self):
-        self.connection_pool = pool.SimpleConnectionPool(minconn=1, maxconn=10,
-                                                         database='learning',
-                                                         user='i-sip_iot',
-                                                         password='Your_Password',
-                                                         host='localhost')
+        self.connection = None
 
     def __enter__(self):
-        return self.connection_pool.getconn()
+        """
+        get a new connection from the pool and then return it
+        :return: a new connection from the pool
+        """
+        self.connection = connection_pool.getconn()
+        return self.connection
 
     def __exit__(self, exc_type, exc_val, exc_tb):
-        pass
-
-
+        """
+        backing the connection into connection pool
+        :param exc_type:
+        :param exc_val:
+        :param exc_tb:
+        :return: None
+        """
+        connection_pool.putconn(self.connection)

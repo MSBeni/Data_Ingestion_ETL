@@ -1,4 +1,4 @@
-from Postgresql.postgre_Small_project.database import ConnectionPool
+from Postgresql.postgre_Small_project.database import ConnectionFromPool
 
 
 class User:
@@ -16,7 +16,11 @@ class User:
         Create database if it does not exist
         :return:
         """
-        with ConnectionPool() as connection:
+        with ConnectionFromPool() as connection:
+            """
+            Open and close the connection --> calling connection_pool.getconn() and after committing and closing the
+            connection calling the connection_pool.putconn(self.connection) to put the connection in the pool
+            """
             cur = connection.cursor()
             try:
                 cur.execute("""
@@ -39,7 +43,13 @@ class User:
         Save the inserted data into the database
         :return:
         """
-        with ConnectionPool() as connection:
+        with ConnectionFromPool() as connection:
+            """
+            Open and close the connection --> calling connection_pool.getconn() and after closing the
+            connection calling the connection_pool.putconn(self.connection) to put the connection in the pool
+            --> Note: ConnectionFromPool() is no longer a direct connection so does not commit any more using 'with'
+            so we should add the commit to the ConnectionFromPool class
+            """
             with connection.cursor() as cursor:
                 try:
                     cursor.execute('INSERT INTO users (email, first_name, last_name) VALUES (%s, %s, %s);',
@@ -47,13 +57,16 @@ class User:
                 except:
                     print("Unable to add data")
 
-
     def fetch_data(self):
         """
         Executing the selection of inner data of the table
         :return:
         """
-        with ConnectionPool()  as connection:
+        with ConnectionFromPool() as connection:
+            """
+            Open and close the connection --> calling connection_pool.getconn() and after committing and closing the
+            connection calling the connection_pool.putconn(self.connection) to put the connection in the pool
+            """
             cur = connection.cursor()
             try:
                 cur.execute("SELECT * FROM users;")
@@ -68,7 +81,11 @@ class User:
         email :param str: the email address of the user seeking to return
         cls :return: cls a currently bound class od thw User
         """
-        with ConnectionPool()  as connection:
+        with ConnectionFromPool() as connection:
+            """
+            Open and close the connection --> calling connection_pool.getconn() and after committing and closing the
+            connection calling the connection_pool.putconn(self.connection) to put the connection in the pool
+            """
             with connection.cursor() as cursor:
                 try:
                     cursor.execute('SELECT * FROM users WHERE email=%s', (email,))
