@@ -1,4 +1,4 @@
-from Postgresql.postgre_Small_project.database import ConnectionFromPool
+from Postgresql.postgre_Small_project.database import CursorFromConnectionFromPool
 
 
 class User:
@@ -16,7 +16,7 @@ class User:
         Create database if it does not exist
         :return:
         """
-        with ConnectionFromPool() as connection:
+        with CursorFromConnectionFromPool() as connection:
             """
             Open and close the connection --> calling connection_pool.getconn() and after committing and closing the
             connection calling the connection_pool.putconn(self.connection) to put the connection in the pool
@@ -43,7 +43,7 @@ class User:
         Save the inserted data into the database
         :return:
         """
-        with ConnectionFromPool() as connection:
+        with CursorFromConnectionFromPool() as connection:
             """
             Open and close the connection --> calling connection_pool.getconn() and after closing the
             connection calling the connection_pool.putconn(self.connection) to put the connection in the pool
@@ -62,7 +62,7 @@ class User:
         Executing the selection of inner data of the table
         :return:
         """
-        with ConnectionFromPool() as connection:
+        with CursorFromConnectionFromPool() as connection:
             """
             Open and close the connection --> calling connection_pool.getconn() and after committing and closing the
             connection calling the connection_pool.putconn(self.connection) to put the connection in the pool
@@ -81,7 +81,7 @@ class User:
         email :param str: the email address of the user seeking to return
         cls :return: cls a currently bound class od thw User
         """
-        with ConnectionFromPool() as connection:
+        with CursorFromConnectionFromPool() as connection:
             """
             Open and close the connection --> calling connection_pool.getconn() and after committing and closing the
             connection calling the connection_pool.putconn(self.connection) to put the connection in the pool
