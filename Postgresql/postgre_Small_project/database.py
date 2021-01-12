@@ -1,9 +1,10 @@
-import psycopg2
+from psycopg2 import pool
 
-class Database:
-    def __init__(self):
-        pass
+connection_pool = pool.SimpleConnectionPool(minconn=1, maxconn=10,
+                                            database='learning',
+                                            user='i-sip_iot',
+                                            password='Your_Password',
+                                            host='localhost')
 
-
-def connect():
-    return psycopg2.connect("dbname='learning' user='i-sip_iot' password='Your_Password'")
+# def connect():
+#     return psycopg2.connect("dbname='learning' user='i-sip_iot' password='Your_Password'")

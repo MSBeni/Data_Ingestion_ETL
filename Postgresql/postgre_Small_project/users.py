@@ -1,5 +1,4 @@
-import psycopg2
-from Postgresql.postgre_Small_project.database import connect
+from Postgresql.postgre_Small_project.database import connection_pool
 
 
 class User:
@@ -13,28 +12,26 @@ class User:
         return "< User {} >".format(self.email)
 
     def create_table(self):
-        connection = connect()
-        cur = connection.cursor()
-        try:
-            cur.execute("""
-            CREATE TABLE IF NOT EXISTS "public"."users"(
-                "id" SERIAL PRIMARY KEY,
-                "email" character varying(255),
-                "first_name" character varying(255),
-                "last_name" character varying(255)
-            )
-            WITH (OIDS=FALSE);
-            """)
+        with connection_pool.getconn() as connection:
+            cur = connection.cursor()
+            try:
+                cur.execute("""
+                CREATE TABLE IF NOT EXISTS "public"."users"(
+                    "id" SERIAL PRIMARY KEY,
+                    "email" character varying(255),
+                    "first_name" character varying(255),
+                    "last_name" character varying(255)
+                )
+                WITH (OIDS=FALSE);
+                """)
 
-            connection.commit()
+                print("TABLE {} created".format('users'))
 
-            print("TABLE {} created".format('users'))
-
-        except:
-            print("Unable to craete the table!!!")
+            except:
+                print("Unable to craete the table!!!")
 
     def save_to_db(self):
-        with connect() as connection:
+        with connection_pool.getconn() as connection:
             with connection.cursor() as cursor:
                 try:
                     cursor.execute('INSERT INTO users (email, first_name, last_name) VALUES (%s, %s, %s);',
@@ -44,17 +41,17 @@ class User:
 
 
     def fetch_data(self):
-        connection = connect()
-        cur = connection.cursor()
-        try:
-            cur.execute("SELECT * FROM users;")
-            print(cur.fetchall())
-        except:
-            print("Failed to read the table contents ...")
+        with connection_pool.getconn() as connection:
+            cur = connection.cursor()
+            try:
+                cur.execute("SELECT * FROM users;")
+                print(cur.fetchall())
+            except:
+                print("Failed to read the table contents ...")
 
     @classmethod
     def load_from_db_by_email(cls, email):
-        with connect() as connection:
+        with connection_pool.getconn() as connection:
             with connection.cursor() as cursor:
                 try:
                     cursor.execute('SELECT * FROM users WHERE email=%s', (email,))
