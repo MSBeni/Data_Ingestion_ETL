@@ -12,6 +12,10 @@ class User:
         return "< User {} >".format(self.email)
 
     def create_table(self):
+        """
+        Create database if it does not exist
+        :return:
+        """
         with connection_pool.getconn() as connection:
             cur = connection.cursor()
             try:
@@ -31,6 +35,10 @@ class User:
                 print("Unable to craete the table!!!")
 
     def save_to_db(self):
+        """
+        Save the inserted data into the database
+        :return:
+        """
         with connection_pool.getconn() as connection:
             with connection.cursor() as cursor:
                 try:
@@ -41,6 +49,10 @@ class User:
 
 
     def fetch_data(self):
+        """
+        Executing the selection of inner data of the table
+        :return:
+        """
         with connection_pool.getconn() as connection:
             cur = connection.cursor()
             try:
@@ -51,6 +63,11 @@ class User:
 
     @classmethod
     def load_from_db_by_email(cls, email):
+        """
+        Return a user form the database based on specific email address
+        email :param str: the email address of the user seeking to return
+        cls :return: cls a currently bound class od thw User
+        """
         with connection_pool.getconn() as connection:
             with connection.cursor() as cursor:
                 try:
