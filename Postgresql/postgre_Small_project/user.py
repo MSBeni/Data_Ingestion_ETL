@@ -1,4 +1,5 @@
 import psycopg2
+from Postgresql.postgre_Small_project.database import connect
 
 
 class User:
@@ -12,7 +13,7 @@ class User:
         return "< User {} >".format(self.email)
 
     def create_table(self):
-        connection = psycopg2.connect("dbname='learning' user='i-sip_iot' password='Your_Password'")
+        connection = connect()
         cur = connection.cursor()
         try:
             cur.execute("""
@@ -33,7 +34,7 @@ class User:
             print("Unable to craete the table!!!")
 
     def save_to_db(self):
-        with psycopg2.connect("dbname='learning' user='i-sip_iot' password='Your_Password'") as connection:
+        with connect() as connection:
             with connection.cursor() as cursor:
                 try:
                     cursor.execute('INSERT INTO users (email, first_name, last_name) VALUES (%s, %s, %s);',
@@ -43,10 +44,21 @@ class User:
 
 
     def fetch_data(self):
-        connection = psycopg2.connect("dbname='learning' user='i-sip_iot' password='Your_Password'")
+        connection = connect()
         cur = connection.cursor()
         try:
             cur.execute("SELECT * FROM users;")
             print(cur.fetchall())
         except:
             print("Failed to read the table contents ...")
+
+    @classmethod
+    def load_from_db_by_email(cls, email):
+        with connect() as connection:
+            with connection.cursor() as cursor:
+                try:
+                    cursor.execute('SELECT * FROM users WHERE email=%s', (email,))
+                    user_data = cursor.fetchone()
+                    return cls(email=user_data[1], first_name=user_data[2], last_name=user_data[3], id_=user_data[0])
+                except:
+                    print("Problem in fetching data from db")
