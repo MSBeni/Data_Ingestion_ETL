@@ -1,36 +1,31 @@
 from psycopg2 import pool
 
 
+
+
+
 class Database:
-    connection_pool = None
+    __connection_pool = None
 
     # @staticmethod
-    # def initials():
-    #     Database.connection_pool = pool.SimpleConnectionPool(minconn=1, maxconn=1,
-    #                                                          database='learning',
-    #                                                          user='i-sip_iot',
-    #                                                          password='Your_Password',
-    #                                                          host='localhost')
+    # def initialize(**kwargs):
+    #     Database.connection_pool = pool.SimpleConnectionPool(minconn=1, maxconn=1, **kwargs)
 
     @classmethod
-    def initialize(cls):
-        cls.connection_pool = pool.SimpleConnectionPool(minconn=1, maxconn=1,
-                                                        database='learning',
-                                                        user='i-sip_iot',
-                                                        password='Your_Password',
-                                                        host='localhost')
+    def initialize(cls, **kwargs):
+        cls.__connection_pool = pool.SimpleConnectionPool(minconn=1, maxconn=1, **kwargs)
 
     @classmethod
     def get_connection(cls):
-        return cls.connection_pool.getconn()
+        return cls.__connection_pool.getconn()
 
     @classmethod
     def return_connection(cls, connection):
-        return cls.connection_pool.putconn(connection)
+        return cls.__connection_pool.putconn(connection)
 
     @classmethod
     def close_all_connection(cls, connection):
-        return Database.connection_pool.closeall()
+        return Database.__connection_pool.closeall()
 
 
 class CursorFromConnectionFromPool:
