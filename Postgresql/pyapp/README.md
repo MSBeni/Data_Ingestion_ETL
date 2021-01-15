@@ -121,3 +121,15 @@ This is where I will create all the Python script to access PostgreSQL database.
 First, create a python program connect.py in your project directory. You can see the connect.py, create_table.py, insert_date.py and print_data.py as reference to start your code.
 
 while you are connected to the database you are good to go for the several tests.
+
+
+### Exporting your tables into a csv file:
+
+simply use this command to connect to your database:
+```bash
+$ psql --dbname=pyapp --password
+```
+then you can simply run this command to save the table in your preferable address:
+```bash
+\copy locations TO 'YOUR_ADDRESS/locations.csv' DELIMITER ',' CSV HEADER;
+```
