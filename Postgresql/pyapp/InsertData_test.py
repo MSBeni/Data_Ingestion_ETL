@@ -37,13 +37,8 @@ try:
 
     print(cur.fetchall())
 
-    # "COPY locations TO 'locations.csv' DELIMITER ',' CSV HEADER;"
-    # cur.execute("COPY locations TO '../locations.csv' DELIMITER (FORMAT CSV, HEADER);")
 
-    outputquery = "COPY locations TO STDOUT WITH ',' CSV HEADER;"
-
-    with open('resultsfile', 'w') as f:
-        cur.copy_expert(outputquery, f)
+    # cur.execute("\copy locations TO '../locations.csv' DELIMITER ',' CSV HEADER;")
 
 
 except:
