@@ -1,7 +1,6 @@
 import json
 
 secrets = json.loads(open('../../../tweeter_app_credential.json', 'r').read())
-print(secrets['auth'])
 
 CONSUMER_KEY = secrets['auth']['api_key']
 CONSUMER_SECRET = secrets['auth']['api_secret']
