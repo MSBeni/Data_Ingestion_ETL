@@ -34,3 +34,8 @@ access_token = dict(urlparse.parse_qsl(content.decode('utf-8')))
 print(access_token)
 
 # Create an 'authorized_token' Token object and use that to perfoem Twitter API calls on behalf of the user
+authorized_token = oauth2.Token(access_token['oauth_token'], access_token['oauth_token_secret'])
+authorized_client = oauth2.Client(consumer, authorized_token)
+
+# Make Twitter API calls!
+response, content = authorized_client.request()
