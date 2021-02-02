@@ -11,3 +11,6 @@ if response.status != 200:
     print('There is a Problem with the Response Body ...')
 
 requested_token = dict(urlparse.parse_qsl(content.decode('utf-8')))
+
+print("Go to thw following site in your browser...")
+print("{}?oauth_token={}".format(constants.AUTHORIZATION_URL, requested_token['oauth_token']))
