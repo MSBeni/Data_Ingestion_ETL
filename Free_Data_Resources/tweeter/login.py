@@ -29,6 +29,8 @@ client = oauth2.Client(consumer, token)
 
 # Ask Twitter for an access token, and Twitter knows it should give us it since we've verified the request token
 response, content = client.request(constants.ACCESS_TOKEN_URL, 'POST')
+if response.status != 200:
+    print('A problem faced during the access token process ...')
 access_token = dict(urlparse.parse_qsl(content.decode('utf-8')))
 
 print(access_token)
@@ -38,7 +40,7 @@ authorized_token = oauth2.Token(access_token['oauth_token'], access_token['oauth
 authorized_client = oauth2.Client(consumer, authorized_token)
 
 # Make Twitter API calls!
-response, content = authorized_client.request('https://api.ywitter.com/1.1/search/tweets.json?q=computers+filter:images'
+response, content = authorized_client.request('https://api.twitter.com/1.1/search/tweets.json?q=computers+filter:images'
                                               , 'GET')
 if response.status != 200:
     print('An error occurred while searching in twitter ...')
