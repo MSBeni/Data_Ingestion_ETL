@@ -38,4 +38,9 @@ authorized_token = oauth2.Token(access_token['oauth_token'], access_token['oauth
 authorized_client = oauth2.Client(consumer, authorized_token)
 
 # Make Twitter API calls!
-response, content = authorized_client.request()
+response, content = authorized_client.request('https://api.ywitter.com/1.1/search/tweets.json?q=computers+filter:images'
+                                              , 'GET')
+if response.status != 200:
+    print('An error occurred while searching in twitter ...')
+
+print(content.decode('utf-8'))
