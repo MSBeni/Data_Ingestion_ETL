@@ -1,6 +1,7 @@
 import constants
 import oauth2
 import urllib.parse as urlparse
+import json
 
 # pip install oauth2
 consumer = oauth2.Consumer(constants.CONSUMER_KEY, constants.CONSUMER_SECRET)
@@ -45,4 +46,7 @@ response, content = authorized_client.request('https://api.twitter.com/1.1/searc
 if response.status != 200:
     print('An error occurred while searching in twitter ...')
 
-print(content.decode('utf-8'))
+tweets = json.loads(content.decode('utf-8'))
+
+for tweet in tweets['statuses']:
+    print(tweet['text'])
