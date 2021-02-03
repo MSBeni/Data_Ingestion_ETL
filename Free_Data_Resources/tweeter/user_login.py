@@ -3,10 +3,23 @@ import oauth2
 import urllib.parse as urlparse
 import json
 from user import User
+from database import Database
+
+# Initializing the DB
+MY_PASS = json.loads(open('../../../secretfiles.json', 'r').read())['web']['user_pw']
+
+Database.initialize(database='learning', user='i-sip_iot', password=MY_PASS, host='localhost')
+
+# check if the user is subscribed in the DB or not
+email = input("Please enter your valid email address: ")
+user_check = User.load_from_db_by_email(email)
 
 # pip install oauth2
 consumer = oauth2.Consumer(constants.CONSUMER_KEY, constants.CONSUMER_SECRET)
 client = oauth2.Client(consumer)
+
+if user_check:
+    print(user_check)
 
 # Use the client to perform a request for the request token
 response, content = client.request(constants.REQUEST_TOKEN_URL, 'POST')
@@ -37,13 +50,23 @@ access_token = dict(urlparse.parse_qsl(content.decode('utf-8')))
 
 print(access_token)
 
-# create the user table and save the user information here
 
+
+# create user
+
+name = input("Please enter your name: ")
+family_name = input("Please enter last name: ")
+user_ = User(email, name, family_name, access_token['oauth_token'], access_token['oauth_token_secret'])
+# 'muli@Uniofcode.me'
+
+# create the user table and save the user information here
 User.create_table()
 
+# Adding the user information to the table
+User.save_to_db(user_)
 
-
-
+# fetch usersauth table data
+User.fetch_data()
 
 # Create an 'authorized_token' Token object and use that to perfoem Twitter API calls on behalf of the user
 authorized_token = oauth2.Token(access_token['oauth_token'], access_token['oauth_token_secret'])

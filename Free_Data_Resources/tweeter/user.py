@@ -61,7 +61,8 @@ class User:
             except:
                 print("Unable to add data")
 
-    def fetch_data(self):
+    @staticmethod
+    def fetch_data():
         """
         Executing the selection of inner data of the table
         :return:
