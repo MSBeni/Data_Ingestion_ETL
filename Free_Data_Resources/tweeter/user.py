@@ -13,7 +13,8 @@ class User:
     def __repr__(self):
         return "< User {} >".format(self.email)
 
-    def create_table(self):
+    @staticmethod
+    def create_table():
         """
         Create database if it does not exist
         :return:
