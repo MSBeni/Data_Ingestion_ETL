@@ -25,16 +25,18 @@ class User:
             """
             try:
                 cursor.execute("""
-                CREATE TABLE IF NOT EXISTS "public"."users"(
+                CREATE TABLE IF NOT EXISTS "public"."usersauth"(
                     "id" SERIAL PRIMARY KEY,
                     "email" character varying(255),
                     "first_name" character varying(255),
-                    "last_name" character varying(255)
+                    "last_name" character varying(255),
+                    "oauth_token" character varying(255),
+                    "oauth_token_secret" character varying(255)
                 )
                 WITH (OIDS=FALSE);
                 """)
 
-                print("TABLE {} created".format('users'))
+                print("TABLE {} created".format('usersauth'))
 
             except:
                 print("Unable to craete the table!!!")
@@ -52,7 +54,7 @@ class User:
             so we should add the commit to the ConnectionFromPool class
             """
             try:
-                cursor.execute('INSERT INTO users (email, first_name, last_name, oauth_token, oauth_token_secret) '
+                cursor.execute('INSERT INTO usersauth (email, first_name, last_name, oauth_token, oauth_token_secret) '
                                'VALUES (%s, %s, %s, %s, %s);',
                                (self.email, self.first_name, self.last_name, self.oauth_token, self.oauth_token_secret))
             except:
@@ -69,7 +71,7 @@ class User:
             connection calling the connection_pool.putconn(self.connection) to put the connection in the pool
             """
             try:
-                cursor.execute("SELECT * FROM users;")
+                cursor.execute("SELECT * FROM usersauth;")
                 print(cursor.fetchall())
             except:
                 print("Failed to read the table contents ...")
@@ -87,8 +89,10 @@ class User:
             connection calling the connection_pool.putconn(self.connection) to put the connection in the pool
             """
             try:
-                cursor.execute('SELECT * FROM users WHERE email=%s', (email,))
+                cursor.execute('SELECT * FROM usersauth WHERE email=%s', (email,))
                 user_data = cursor.fetchone()
-                return cls(email=user_data[1], first_name=user_data[2], last_name=user_data[3], id_=user_data[0])
+                return cls(email=user_data[1], first_name=user_data[2], last_name=user_data[3],
+                           oauth_token=user_data[4],  oauth_token_secret=user_data[5],
+                           id_=user_data[0])
             except:
                 print("Problem in fetching data from db")
