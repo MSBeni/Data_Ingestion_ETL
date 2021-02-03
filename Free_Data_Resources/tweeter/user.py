@@ -2,10 +2,12 @@ from database import CursorFromConnectionFromPool
 
 
 class User:
-    def __init__(self, email, first_name, last_name, id_=None):
+    def __init__(self, email, first_name, last_name, oauth_token, oauth_token_secret, id_=None):
         self.email = email
         self.first_name = first_name
         self.last_name = last_name
+        self.oauth_token = oauth_token
+        self.oauth_token_secret = oauth_token_secret
         self.id = id_
 
     def __repr__(self):
@@ -50,8 +52,9 @@ class User:
             so we should add the commit to the ConnectionFromPool class
             """
             try:
-                cursor.execute('INSERT INTO users (email, first_name, last_name) VALUES (%s, %s, %s);',
-                               (self.email, self.first_name, self.last_name))
+                cursor.execute('INSERT INTO users (email, first_name, last_name, oauth_token, oauth_token_secret) '
+                               'VALUES (%s, %s, %s, %s, %s);',
+                               (self.email, self.first_name, self.last_name, self.oauth_token, self.oauth_token_secret))
             except:
                 print("Unable to add data")
 
