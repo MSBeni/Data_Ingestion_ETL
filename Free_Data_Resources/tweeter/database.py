@@ -4,10 +4,6 @@ from psycopg2 import pool
 class Database:
     __connection_pool = None
 
-    # @staticmethod
-    # def initialize(**kwargs):
-    #     Database.connection_pool = pool.SimpleConnectionPool(minconn=1, maxconn=1, **kwargs)
-
     @classmethod
     def initialize(cls, **kwargs):
         cls.__connection_pool = pool.SimpleConnectionPool(minconn=1, maxconn=1, **kwargs)
