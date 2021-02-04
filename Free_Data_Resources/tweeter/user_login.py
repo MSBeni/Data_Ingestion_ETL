@@ -17,16 +17,8 @@ email = input("Please enter your valid email address: ")
 # user_check = User.load_from_db_by_email(email)
 user_ = User.load_from_db_by_email(email)
 
-client = oauth2.Client(consumer)
-
 if not user_:
-    # Use the client to perform a request for the request token
-    response, content = client.request(constants.REQUEST_TOKEN_URL, 'POST')
-    if response.status != 200:
-        print('There is a Problem with the Response Body ...')
 
-    # Get the request token parsing the query string returned
-    requested_token = dict(urlparse.parse_qsl(content.decode('utf-8')))
 
     # Ask the user to authorize our app and
     print("Go to thw following site in your browser...")
