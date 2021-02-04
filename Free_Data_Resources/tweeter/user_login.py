@@ -19,11 +19,7 @@ user_ = User.load_from_db_by_email(email)
 consumer = oauth2.Consumer(constants.CONSUMER_KEY, constants.CONSUMER_SECRET)
 client = oauth2.Client(consumer)
 
-if user_:
-    pass
-
-
-else:
+if not user_:
     # Use the client to perform a request for the request token
     response, content = client.request(constants.REQUEST_TOKEN_URL, 'POST')
     if response.status != 200:
