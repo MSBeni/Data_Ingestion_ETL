@@ -64,8 +64,7 @@ if not user_:
     User.fetch_data()
 
 
-tweets = json.loads(user_.get_user_twitter_api_calls(
-    'https://api.twitter.com/1.1/search/tweets.json?q=computers+filter:images'))
+tweets = user_.get_user_twitter_api_calls('https://api.twitter.com/1.1/search/tweets.json?q=computers+filter:images')
 
 for tweet in tweets['statuses']:
     print(tweet['text'])

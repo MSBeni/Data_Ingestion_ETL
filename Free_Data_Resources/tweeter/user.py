@@ -1,6 +1,7 @@
 from database import CursorFromConnectionFromPool
 from Free_Data_Resources.tweeter.tweeter_utils import consumer
 import oauth2
+import json
 
 
 class User:
@@ -111,4 +112,4 @@ class User:
         if response.status != 200:
             return 'An error occurred while searching in twitter ...'
 
-        return content.decode('utf-8')
+        return json.loads(content.decode('utf-8'))
