@@ -10,8 +10,8 @@ class User:
         self.oauth_token_secret = oauth_token_secret
         self.id = id_
 
-    def __repr__(self):
-        return "< User {} >".format(self.email)
+    # def __repr__(self):
+    #     return self.oauth_token, self.oauth_token_secret
 
     @staticmethod
     def create_table():
@@ -93,8 +93,8 @@ class User:
             try:
                 cursor.execute('SELECT * FROM usersauth WHERE email=%s', (email,))
                 user_data = cursor.fetchone()
-                return cls(email=user_data[1], first_name=user_data[2], last_name=user_data[3],
-                           oauth_token=user_data[4],  oauth_token_secret=user_data[5],
-                           id_=user_data[0])
+                return user_data
+                # return cls(email=user_data[1], first_name=user_data[2], last_name=user_data[3],
+                #            oauth_token=user_data[4],  oauth_token_secret=user_data[5], id_=user_data[0])
             except:
                 print("Problem in fetching data from db")
