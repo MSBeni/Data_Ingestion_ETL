@@ -1,9 +1,10 @@
-import constants
 import oauth2
+import constants
 import urllib.parse as urlparse
 import json
 from user import User
 from database import Database
+from Free_Data_Resources.tweeter.tweeter_utils import consumer
 
 # Initializing the DB
 MY_PASS = json.loads(open('../../../secretfiles.json', 'r').read())['web']['user_pw']
@@ -16,7 +17,7 @@ email = input("Please enter your valid email address: ")
 user_ = User.load_from_db_by_email(email)
 
 # pip install oauth2
-consumer = oauth2.Consumer(constants.CONSUMER_KEY, constants.CONSUMER_SECRET)
+
 client = oauth2.Client(consumer)
 
 if not user_:
@@ -63,15 +64,6 @@ if not user_:
     # fetch usersauth table data
     User.fetch_data()
 
-# Create an 'authorized_token' Token object and use that to perfoem Twitter API calls on behalf of the user
-authorized_token = oauth2.Token(user_.oauth_token, user_.oauth_token_secret)
-authorized_client = oauth2.Client(consumer, authorized_token)
-
-# Make Twitter API calls!
-response, content = authorized_client.request('https://api.twitter.com/1.1/search/tweets.json?q=computers+filter:images'
-                                              , 'GET')
-if response.status != 200:
-    print('An error occurred while searching in twitter ...')
 
 tweets = json.loads(content.decode('utf-8'))
 

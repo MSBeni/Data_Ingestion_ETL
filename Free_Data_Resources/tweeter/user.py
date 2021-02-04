@@ -1,4 +1,6 @@
 from database import CursorFromConnectionFromPool
+from Free_Data_Resources.tweeter.tweeter_utils import consumer
+import oauth2
 
 
 class User:
@@ -98,3 +100,16 @@ class User:
                            oauth_token=user_data[4],  oauth_token_secret=user_data[5], id_=user_data[0])
             except:
                 print("Problem in fetching data from db")
+
+
+    def get_user_credentials(self, uri, verb):
+        # Create an 'authorized_token' Token object and use that to perfoem Twitter API calls on behalf of the user
+        authorized_token = oauth2.Token(self.oauth_token, self.oauth_token_secret)
+        authorized_client = oauth2.Client(consumer, authorized_token)
+
+        # Make Twitter API calls!
+        response, content = authorized_client.request(
+            'https://api.twitter.com/1.1/search/tweets.json?q=computers+filter:images'
+            , 'GET')
+        if response.status != 200:
+            print('An error occurred while searching in twitter ...')
