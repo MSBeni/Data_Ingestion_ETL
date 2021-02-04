@@ -1,7 +1,3 @@
-# pip install oauth2
-import oauth2
-import constants
-import urllib.parse as urlparse
 import json
 from user import User
 from database import Database

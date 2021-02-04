@@ -100,7 +100,7 @@ class User:
                 return cls(email=user_data[1], first_name=user_data[2], last_name=user_data[3],
                            oauth_token=user_data[4],  oauth_token_secret=user_data[5], id_=user_data[0])
             except:
-                print("Problem in fetching data from db")
+                print("Problem in fetching data from db ... Probably the user is not defined !!!")
 
     def get_user_twitter_api_calls(self, uri, verb='GET'):
         # Create an 'authorized_token' Token object and use that to perform Twitter API calls on behalf of the user
