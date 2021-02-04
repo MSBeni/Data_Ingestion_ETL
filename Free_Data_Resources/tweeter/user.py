@@ -101,15 +101,14 @@ class User:
             except:
                 print("Problem in fetching data from db")
 
-
-    def get_user_credentials(self, uri, verb):
-        # Create an 'authorized_token' Token object and use that to perfoem Twitter API calls on behalf of the user
+    def get_user_twitter_api_calls(self, uri, verb):
+        # Create an 'authorized_token' Token object and use that to perform Twitter API calls on behalf of the user
         authorized_token = oauth2.Token(self.oauth_token, self.oauth_token_secret)
         authorized_client = oauth2.Client(consumer, authorized_token)
 
         # Make Twitter API calls!
-        response, content = authorized_client.request(
-            'https://api.twitter.com/1.1/search/tweets.json?q=computers+filter:images'
-            , 'GET')
+        response, content = authorized_client.request(uri, verb)
         if response.status != 200:
-            print('An error occurred while searching in twitter ...')
+            return 'An error occurred while searching in twitter ...'
+
+        return content.decode('utf-8')
