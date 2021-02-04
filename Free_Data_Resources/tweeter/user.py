@@ -101,7 +101,7 @@ class User:
             except:
                 print("Problem in fetching data from db")
 
-    def get_user_twitter_api_calls(self, uri, verb):
+    def get_user_twitter_api_calls(self, uri, verb='GET'):
         # Create an 'authorized_token' Token object and use that to perform Twitter API calls on behalf of the user
         authorized_token = oauth2.Token(self.oauth_token, self.oauth_token_secret)
         authorized_client = oauth2.Client(consumer, authorized_token)

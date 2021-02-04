@@ -1,3 +1,4 @@
+# pip install oauth2
 import oauth2
 import constants
 import urllib.parse as urlparse
@@ -15,8 +16,6 @@ Database.initialize(database='learning', user='i-sip_iot', password=MY_PASS, hos
 email = input("Please enter your valid email address: ")
 # user_check = User.load_from_db_by_email(email)
 user_ = User.load_from_db_by_email(email)
-
-# pip install oauth2
 
 client = oauth2.Client(consumer)
 
@@ -65,7 +64,8 @@ if not user_:
     User.fetch_data()
 
 
-tweets = json.loads(user_.get_user_twitter_api_calls('https://api.twitter.com/1.1/search/tweets.json?q=computers+filter:images', 'GET'))
+tweets = json.loads(user_.get_user_twitter_api_calls(
+    'https://api.twitter.com/1.1/search/tweets.json?q=computers+filter:images'))
 
 for tweet in tweets['statuses']:
     print(tweet['text'])
