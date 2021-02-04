@@ -1,13 +1,13 @@
 Company,Person,Sales
 GOOG,Sam,200
 GOOG,Charlie,120
-GOOG,Frank,340
+GOOG,Frank,
 MSFT,Tina,600
 MSFT,Amy,124
-MSFT,Vanessa,243
+MSFT,,243
 FB,Carl,870
 FB,Sarah,350
-APPL,John,250
+APPL,John,
 APPL,Linda, 130
-APPL,Mike, 750
+APPL,, 750
 APPL, Chris, 350
