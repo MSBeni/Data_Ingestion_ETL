@@ -12,30 +12,15 @@ Database.initialize(database='learning', user='i-sip_iot', password=MY_PASS, hos
 
 # check if the user is subscribed in the DB or not
 email = input("Please enter your valid email address: ")
-user_check = User.load_from_db_by_email(email)
+# user_check = User.load_from_db_by_email(email)
+user_ = User.load_from_db_by_email(email)
 
 # pip install oauth2
 consumer = oauth2.Consumer(constants.CONSUMER_KEY, constants.CONSUMER_SECRET)
 client = oauth2.Client(consumer)
 
-if user_check:
-    # 'muli@Uniofcode.me'
-    print(user_check)
-    # Create an 'authorized_token' Token object and use that to perfoem Twitter API calls on behalf of the user
-    authorized_token = oauth2.Token(user_check[4], user_check[5])
-    authorized_client = oauth2.Client(consumer, authorized_token)
-
-    # Make Twitter API calls!
-    response, content = authorized_client.request(
-        'https://api.twitter.com/1.1/search/tweets.json?q=computers+filter:images'
-        , 'GET')
-    if response.status != 200:
-        print('An error occurred while searching in twitter ...')
-
-    tweets = json.loads(content.decode('utf-8'))
-
-    for tweet in tweets['statuses']:
-        print(tweet['text'])
+if user_:
+    pass
 
 
 else:
@@ -82,19 +67,19 @@ else:
     # fetch usersauth table data
     User.fetch_data()
 
-    # Create an 'authorized_token' Token object and use that to perfoem Twitter API calls on behalf of the user
-    authorized_token = oauth2.Token(access_token['oauth_token'], access_token['oauth_token_secret'])
-    authorized_client = oauth2.Client(consumer, authorized_token)
+# Create an 'authorized_token' Token object and use that to perfoem Twitter API calls on behalf of the user
+authorized_token = oauth2.Token(user_.oauth_token, user_.oauth_token_secret)
+authorized_client = oauth2.Client(consumer, authorized_token)
 
-    # Make Twitter API calls!
-    response, content = authorized_client.request('https://api.twitter.com/1.1/search/tweets.json?q=computers+filter:images'
-                                                  , 'GET')
-    if response.status != 200:
-        print('An error occurred while searching in twitter ...')
+# Make Twitter API calls!
+response, content = authorized_client.request('https://api.twitter.com/1.1/search/tweets.json?q=computers+filter:images'
+                                              , 'GET')
+if response.status != 200:
+    print('An error occurred while searching in twitter ...')
 
-    tweets = json.loads(content.decode('utf-8'))
+tweets = json.loads(content.decode('utf-8'))
 
-    for tweet in tweets['statuses']:
-        print(tweet['text'])
+for tweet in tweets['statuses']:
+    print(tweet['text'])
 
 
