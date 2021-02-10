@@ -20,10 +20,14 @@ def get_request_token():
 def get_oauth_verifier(requested_token):
     # Ask the user to authorize our app and
     print("Go to thw following site in your browser...")
-    print("{}?oauth_token={}".format(constants.AUTHORIZATION_URL, requested_token['oauth_token']))
+    print(auth_twitter_url(requested_token))
 
     # oauth_verifier
     return input("What is the TOKEN? Please enter it here --> ")
+
+
+def auth_twitter_url(requested_token):
+    return "{}?oauth_token={}".format(constants.AUTHORIZATION_URL, requested_token['oauth_token'])
 
 
 def get_access_token(requested_token, oauth_verifier):
