@@ -4,7 +4,7 @@ import oauth2
 import json
 
 
-class User:
+class UserApp:
     def __init__(self, screen_name, oauth_token, oauth_token_secret, id_=None):
         self.screen_name = screen_name
         self.oauth_token = oauth_token

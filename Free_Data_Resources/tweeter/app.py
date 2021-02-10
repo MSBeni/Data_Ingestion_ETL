@@ -1,6 +1,6 @@
 from flask import Flask, render_template, session, redirect, request
 from Free_Data_Resources.tweeter.tweeter_utils import get_request_token, auth_twitter_url, get_access_token
-
+from Free_Data_Resources.tweeter.user_app import UserApp
 
 app = Flask(__name__)
 app.secret_key = '1234'
