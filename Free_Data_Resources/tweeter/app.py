@@ -13,6 +13,7 @@ def home_page():
 @app.route('/login/twitter')
 def twitter_login():
     request_token = get_request_token()
+    # add the request_token to the cookie to keep it from being remove after terminating the request
     session['request_token'] = request_token
 
     return redirect(auth_twitter_url(session['request_token']))
