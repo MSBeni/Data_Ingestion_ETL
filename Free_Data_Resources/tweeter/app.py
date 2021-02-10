@@ -25,6 +25,18 @@ def auth_twitter():
     oauth_verifier = request.args.get('oauth_verifier')
     access_token = get_access_token(session['request_token'], oauth_verifier)
 
+    user = UserApp.load_from_db_by_screen_name(access_token['screen_name'])
+
+    if not user:
+        user = UserApp(access_token['screen_name'], access_token['oauth_token'], access_token['oauth_token_secret'],
+                       None)
+        user.save_to_db()
+
+    session['screen_name'] = user.screen_name
+
+    return user.screen_name
+
+
 
 
 
