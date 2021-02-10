@@ -19,6 +19,11 @@ def twitter_login():
     return redirect(auth_twitter_url(session['request_token']))
 
 
+@app.route('/auth/twitter')
+def auth_twitter():
+    return "We are Here"
+
+
 if "__main__" == __name__:
     app.run(port=4495)
 
