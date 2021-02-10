@@ -4,8 +4,9 @@ from Free_Data_Resources.tweeter.tweeter_utils import get_request_token, auth_tw
 app = Flask(__name__)
 app.secret_key = '1234'
 
+
 @app.route('/')
-def hello():
+def home_page():
     return render_template('home.html')
 
 
