@@ -1,5 +1,6 @@
-from flask import Flask, render_template, session, redirect
-from Free_Data_Resources.tweeter.tweeter_utils import get_request_token, auth_twitter_url
+from flask import Flask, render_template, session, redirect, request
+from Free_Data_Resources.tweeter.tweeter_utils import get_request_token, auth_twitter_url, get_access_token
+
 
 app = Flask(__name__)
 app.secret_key = '1234'
@@ -21,7 +22,11 @@ def twitter_login():
 
 @app.route('/auth/twitter')
 def auth_twitter():
-    return "We are Here"
+    oauth_verifier = request.args.get('oauth_verifier')
+    access_token = get_access_token(session['request_token'], oauth_verifier)
+
+
+
 
 
 if "__main__" == __name__:
