@@ -12,6 +12,7 @@ app.secret_key = '1234'
 MY_PASS = json.loads(open('../../../secretfiles.json', 'r').read())['web']['user_pw']
 Database.initialize(database='learning', user='i-sip_iot', password=MY_PASS, host='localhost')
 
+
 @app.route('/')
 def home_page():
     return render_template('home.html')
