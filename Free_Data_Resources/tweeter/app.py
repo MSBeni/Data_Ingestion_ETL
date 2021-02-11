@@ -41,10 +41,10 @@ def auth_twitter():
 
     session['screen_name'] = user.screen_name
 
-    return user.screen_name
+    return redirect('http://127.0.0.1:4495/profile')
 
 
-@app.route('profile')
+@app.route('/profile')
 def profile():
     return render_template('profile.html', screen_name=session['screen_name'])
 
