@@ -1,4 +1,4 @@
-from flask import Flask, render_template, session, redirect, request
+from flask import Flask, render_template, session, redirect, request, url_for
 from Free_Data_Resources.tweeter.tweeter_utils import get_request_token, auth_twitter_url, get_access_token
 from Free_Data_Resources.tweeter.user_app import UserApp
 import json
@@ -41,7 +41,8 @@ def auth_twitter():
 
     session['screen_name'] = user.screen_name
 
-    return redirect('http://127.0.0.1:4495/profile')
+    return redirect(url_for('profile'))
+    # return redirect('http://127.0.0.1:4495/profile')
 
 
 @app.route('/profile')
