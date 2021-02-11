@@ -1,10 +1,16 @@
 from flask import Flask, render_template, session, redirect, request
 from Free_Data_Resources.tweeter.tweeter_utils import get_request_token, auth_twitter_url, get_access_token
 from Free_Data_Resources.tweeter.user_app import UserApp
+import json
+from database import Database
 
 app = Flask(__name__)
 app.secret_key = '1234'
 
+
+# Initializing the DB
+MY_PASS = json.loads(open('../../../secretfiles.json', 'r').read())['web']['user_pw']
+Database.initialize(database='learning', user='i-sip_iot', password=MY_PASS, host='localhost')
 
 @app.route('/')
 def home_page():
@@ -24,7 +30,7 @@ def twitter_login():
 def auth_twitter():
     oauth_verifier = request.args.get('oauth_verifier')
     access_token = get_access_token(session['request_token'], oauth_verifier)
-
+    UserApp.create_table()
     user = UserApp.load_from_db_by_screen_name(access_token['screen_name'])
 
     if not user:
@@ -35,10 +41,6 @@ def auth_twitter():
     session['screen_name'] = user.screen_name
 
     return user.screen_name
-
-
-
-
 
 
 if "__main__" == __name__:
