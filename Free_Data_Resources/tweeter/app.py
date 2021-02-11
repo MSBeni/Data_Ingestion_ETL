@@ -46,7 +46,7 @@ def auth_twitter():
 
 @app.route('profile')
 def profile():
-    return render_template('profile.html')
+    return render_template('profile.html', screen_name=session['screen_name'])
 
 
 if "__main__" == __name__:
