@@ -44,6 +44,11 @@ def auth_twitter():
     return user.screen_name
 
 
+@app.route('profile')
+def profile():
+    return render_template('profile.html')
+
+
 if "__main__" == __name__:
     app.run(port=4495)
 
