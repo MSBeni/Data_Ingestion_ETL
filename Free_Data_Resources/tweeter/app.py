@@ -64,6 +64,11 @@ def profile():
     return render_template('profile.html', screen_name=g.user)
 
 
+@app.route('/search')
+def search():
+    return g.user.get_user_twitter_api_calls('https://api.twitter.com/1.1/search/tweets.json?q=computers+filter:images')
+
+
 if "__main__" == __name__:
     app.run(port=4495)
 
