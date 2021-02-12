@@ -22,3 +22,43 @@ Now to create a user to login to the admin page, you can use this command:
 ```bash
 airflow users create -u admin -p admin -f MS -l Beni -r Admin -e admin@airflow.com
 ```
+Now you have a user with username and password admin which has an Admin ROLE.
+Note: By typing the help method you can find a good guidance how to do it:
+```bash
+airflow users create -h
+```
+you will this such result:
+```
+usage: airflow users create [-h] -e EMAIL -f FIRSTNAME -l LASTNAME
+                            [-p PASSWORD] -r ROLE [--use-random-password] -u
+                            USERNAME
+
+Create a user
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -e EMAIL, --email EMAIL
+                        Email of the user
+  -f FIRSTNAME, --firstname FIRSTNAME
+                        First name of the user
+  -l LASTNAME, --lastname LASTNAME
+                        Last name of the user
+  -p PASSWORD, --password PASSWORD
+                        Password of the user, required to create a user without --use-random-password
+  -r ROLE, --role ROLE  Role of the user. Existing roles include Admin, User, Op, Viewer, and Public
+  --use-random-password
+                        Do not prompt for password. Use random string instead. Required to create a user without --password 
+  -u USERNAME, --username USERNAME
+                        Username of the user
+
+examples:
+To create an user with "Admin" role and username equals to "admin", run:
+
+    $ airflow users create \
+          --username admin \
+          --firstname FIRST_NAME \
+          --lastname LAST_NAME \
+          --role Admin \
+          --email admin@example.org
+
+```
