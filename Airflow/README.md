@@ -72,3 +72,9 @@ airflow scheduler
 ```bash
 airflow worker
 ```
+
+- Print the List of Active DAGs
+```bash
+airflow list_dags
+```
+
