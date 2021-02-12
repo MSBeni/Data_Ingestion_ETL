@@ -62,6 +62,10 @@ To create an user with "Admin" role and username equals to "admin", run:
           --email admin@example.org
 
 ```
+Then please run the command below to run the scheduler:
+```bash
+airflow scheduler
+```
 
 ## Other useful commands:
 - Start the Scheduler
@@ -83,24 +87,24 @@ airflow list_dags
 airflow list_tasks dag_id
 ```
 Exemple:
-```
+```bash
 airflow list_tasks hello_world
 ```
 
 - Print the Hierarchy of Tasks in the dag_id
-```
+```bash
 airflow list_tasks dag_id --tree
 ```
 Exemple:
-```
+```bash
 airflow list_tasks hello_world --tree
 ```
 
 - Test your Tasks in your DAG
-```
+```bash
 airflow test dag_id task_id execution_date
 ```
 Exemple:
-```
+```bash
 airflow test hello_world hello_task 2018-10-05
 ```
