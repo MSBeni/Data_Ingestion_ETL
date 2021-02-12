@@ -81,6 +81,7 @@ airflow worker
 ```bash
 airflow list_dags
 ```
+You can use ```airflow tasks list name_of_dag``` to check that every thing is good with your data pipeline. it should show all the necessary tasks.
 
 - Print the List of Tasks of the dag_id
 ```bash
