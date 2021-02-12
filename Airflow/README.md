@@ -6,7 +6,7 @@ Then activate the environment and run this command on your terminal to install a
 ```bash
 pip3 install apache-airflow==2.0.0 --constraint https://gist.githubusercontent.com/marclamberti/742efaef5b2d94f44666b0aec020be7c/raw/5da51f9fe99266562723fdfb3e11d3b6ac727711/constraint.txt
 ```
-run this command for your database initialization.
+run this command for airflow matastore initialization and also creating files and folders needed by airflow. We just use this comamnd once.
 ```bash
 airflow db init
 ```
@@ -61,4 +61,14 @@ To create an user with "Admin" role and username equals to "admin", run:
           --role Admin \
           --email admin@example.org
 
+```
+
+## Other useful commands:
+- Start the Scheduler
+```bash
+airflow scheduler
+```
+- Start a Worker Node If you are in distributed mode (Celery)
+```bash
+airflow worker
 ```
