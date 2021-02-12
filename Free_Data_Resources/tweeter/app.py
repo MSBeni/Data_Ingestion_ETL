@@ -1,4 +1,4 @@
-from flask import Flask, render_template, session, redirect, request, url_for
+from flask import Flask, render_template, session, redirect, request, url_for, g
 from Free_Data_Resources.tweeter.tweeter_utils import get_request_token, auth_twitter_url, get_access_token
 from Free_Data_Resources.tweeter.user_app import UserApp
 import json
@@ -11,6 +11,12 @@ app.secret_key = '1234'
 # Initializing the DB
 MY_PASS = json.loads(open('../../../secretfiles.json', 'r').read())['web']['user_pw']
 Database.initialize(database='learning', user='i-sip_iot', password=MY_PASS, host='localhost')
+
+
+@app.before_request
+def user_from_screen_name():
+    if 'screen_name' in session:
+        g.user = UserApp.load_from_db_by_screen_name(session['screen_name'])
 
 
 @app.route('/')
@@ -47,7 +53,7 @@ def auth_twitter():
 
 @app.route('/profile')
 def profile():
-    return render_template('profile.html', screen_name=session['screen_name'])
+    return render_template('profile.html', screen_name=g.user)
 
 
 if "__main__" == __name__:
