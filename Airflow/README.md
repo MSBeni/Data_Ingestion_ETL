@@ -95,3 +95,12 @@ Exemple:
 ```
 airflow list_tasks hello_world --tree
 ```
+
+- Test your Tasks in your DAG
+```
+airflow test dag_id task_id execution_date
+```
+Exemple:
+```
+airflow test hello_world hello_task 2018-10-05
+```
