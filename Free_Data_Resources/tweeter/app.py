@@ -33,6 +33,12 @@ def twitter_login():
     return redirect(auth_twitter_url(session['request_token']))
 
 
+@app.route('/logout')
+def log_out():
+    session.clear()
+    return redirect(url_for('home_page'))
+
+
 @app.route('/auth/twitter')
 def auth_twitter():
     oauth_verifier = request.args.get('oauth_verifier')
