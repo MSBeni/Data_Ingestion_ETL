@@ -78,3 +78,20 @@ airflow worker
 airflow list_dags
 ```
 
+- Print the List of Tasks of the dag_id
+```bash
+airflow list_tasks dag_id
+```
+Exemple:
+```
+airflow list_tasks hello_world
+```
+
+- Print the Hierarchy of Tasks in the dag_id
+```
+airflow list_tasks dag_id --tree
+```
+Exemple:
+```
+airflow list_tasks hello_world --tree
+```
