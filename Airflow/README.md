@@ -15,7 +15,7 @@ it simply by typing ```cd airflow/```.
 
 To run the airflow webserver just type this command on your terminal:
 ```bash
-airflow webserver
+airflow wMebserver
 ```
 If now you check your localhost at port 8080, you will be in the interface admin page.
 Now to create a user to login to the admin page, you can use this command:
