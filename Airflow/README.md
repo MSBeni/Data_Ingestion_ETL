@@ -109,3 +109,8 @@ Exemple:
 ```bash
 airflow test hello_world hello_task 2018-10-05
 ```
+
+
+## Change DB to Postgressql to run the tasks in parallel:
+sqlite does not allow multiple writes at the same time. So we use the postgres, as it scales very well and allows
+multiple reads as well as multiple writes.
