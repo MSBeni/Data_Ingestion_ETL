@@ -6,5 +6,11 @@
 </head>
     <body>
         {{g.user.screen_name}}
+<!--        <a href="{{url_for('search')}}"> search tweets</a>-->
+        <form action="{{url_for('search')}}">
+            <label for="q">Twitter Search</label>
+            <input type="text" name="q" id="q" placeholder="Your Twitter Search">
+            <button type="submit">Search</button>
+        </form>
     </body>
 </html>
