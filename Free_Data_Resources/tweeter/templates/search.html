@@ -5,11 +5,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <title>Search Tweets</title>
 </head>
-<body>
-<ul class="list-group">
-    {% for el in content %}
-        <li class="list-group-item">{{el}}</li>
-    {% endfor %}
-</ul>
-</body>
+    <body>
+        <div class="container">
+            <ul class="list-group">
+                {% for el in content %}
+                    <li class="list-group-item">{{el}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </body>
 </html>
