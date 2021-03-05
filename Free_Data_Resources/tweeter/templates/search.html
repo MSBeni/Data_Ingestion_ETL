@@ -13,7 +13,10 @@
                 {% for el in content %}
                     {% if el['label'] == 'neg' %}
                         {% set css_class = 'list-group-item-danger' %}
-                    <li class="list-group-item">{{el}}</li>
+                    {% elif el['label'] == 'pos' %}
+                        {% set css_class = 'list-group-item-success' %}
+                    {% endif %}
+                    <li class="list-group-item {{ css_class }}">{{el['tweet']}}</li>
                 {% endfor %}
             </ul>
         </div>
