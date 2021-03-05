@@ -9,7 +9,10 @@
     <body>
         <div class="container">
             <ul class="list-group"  id="tweetsid">
+                {% set css_class = 'list-group-item-info' %}
                 {% for el in content %}
+                    {% if el['label'] == 'neg' %}
+                        {% set css_class = 'list-group-item-danger' %}
                     <li class="list-group-item">{{el}}</li>
                 {% endfor %}
             </ul>

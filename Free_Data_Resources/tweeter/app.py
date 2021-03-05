@@ -3,6 +3,7 @@ from Free_Data_Resources.tweeter.tweeter_utils import get_request_token, auth_tw
 from Free_Data_Resources.tweeter.user_app import UserApp
 import json
 from database import Database
+import requests
 
 app = Flask(__name__)
 app.secret_key = '1234'
@@ -68,7 +69,12 @@ def profile():
 def search():
     query = request.args.get('q')
     tweets = g.user.get_user_twitter_api_calls('https://api.twitter.com/1.1/search/tweets.json?q={}'.format(query))
-    tweets_txt_lst = [tweet['text'] for tweet in tweets['statuses']]
+    tweets_txt_lst = [{'tweet': tweet['text'], 'label': 'neutral'} for tweet in tweets['statuses']]
+    for tweet in tweets_txt_lst:
+        r = requests.post('http://text-processing.com/api/sentiment/', data={'text': tweet['tweet']})
+        json_response = r.json()
+        label = json_response['label']
+        tweet['label'] = label
 
     return render_template('search.html', content=tweets_txt_lst)
 
