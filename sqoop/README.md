@@ -34,10 +34,30 @@ systemctl unset-environment MYSQLD_OPTS
 systemctl restart mysqld
 
 exit
-
 ```
 Now you can simply connect ot the database as the ```maria_dev``` user:
+```bash
 
+mysql -uroot -phadoop
+```
+in the database define the privilege for the maria_dev user to import expected data from mysql.
+The total solution is as follows:
+
+```bash
+sqoop import --connect jdbc:mysql://<mysql-host>/test 
+    --table test 
+    --username <username> 
+    --password <password> 
+    --target-dir sqoop_test 
+    -m 1 
+    --driver com.mysql.jdbc.Driver
+</password></username></mysql-host>
+```
+In my example this was like this:
+```bash
+
+
+```
 GRANT ALL PRIVILEGES ON movielens.* TO 'maria_dev'@'localhost' identified by 'maria_dev';
 
 sqoop import --connect jdbc:mysql://localhost/movielens --username maria_dev -password maria_dev --driver com.mysql.jdbc.Driver --table movies -m 1
