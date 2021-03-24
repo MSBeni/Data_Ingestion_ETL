@@ -89,3 +89,4 @@ and then in the terminal type this:
 ```bash
 sqoop export --connect jdbc:mysql://localhost/movielens --username maria_dev -password maria_dev --driver com.mysql.jdbc.Driver --table exported_movies -m 1 --export-dir /apps/hive/warehouse/movies --input-fields-terminated-bye '\0001'
 ```
+If you had a problem in connection, please try the root.
