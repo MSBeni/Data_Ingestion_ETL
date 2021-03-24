@@ -18,7 +18,7 @@ systemctl start mysqld
 mysql -uroot
 ```
 In the mysql database follow these steps:
-
+```sql
 FLUSH PRIVILEGES;
 
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'hadoop';
@@ -26,6 +26,8 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'hadoop';
 FLUSH PRIVILEGES;
 
 QUIT;
+```
+Then in the 
 
 systemctl unset-environment MYSQLD_OPTS
 
