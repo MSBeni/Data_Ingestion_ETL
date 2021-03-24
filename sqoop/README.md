@@ -42,7 +42,15 @@ mysql -uroot -phadoop
 ```
 in the database define the privilege for the maria_dev user to import expected data from mysql.
 The total solution is as follows:
+```sql
+grant all privileges on mydb.* to myuser@'xxx.xxx.xxx.xxx' identified by 'mypassword';
+```
+In my example this was like this:
+```sql
+GRANT ALL PRIVILEGES ON movielens.* TO 'maria_dev'@'localhost' identified by 'maria_dev';
+```
 
+Then after quiting mysql, you can simply run this structure to import your data from MySQL to HFDS.
 ```bash
 sqoop import --connect jdbc:mysql://<mysql-host>/test 
     --table test 
@@ -53,11 +61,6 @@ sqoop import --connect jdbc:mysql://<mysql-host>/test
     --driver com.mysql.jdbc.Driver
 </password></username></mysql-host>
 ```
-In my example this was like this:
-```bash
 
-
-```
-GRANT ALL PRIVILEGES ON movielens.* TO 'maria_dev'@'localhost' identified by 'maria_dev';
 
 sqoop import --connect jdbc:mysql://localhost/movielens --username maria_dev -password maria_dev --driver com.mysql.jdbc.Driver --table movies -m 1
