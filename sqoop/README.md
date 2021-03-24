@@ -27,11 +27,16 @@ FLUSH PRIVILEGES;
 
 QUIT;
 ```
-Then in the 
-
+Then in the terminal follow these steps:
+```bash
 systemctl unset-environment MYSQLD_OPTS
 
 systemctl restart mysqld
+
+exit
+
+```
+Now you can simply connect ot the database as the ```maria_dev``` user:
 
 GRANT ALL PRIVILEGES ON movielens.* TO 'maria_dev'@'localhost' identified by 'maria_dev';
 
