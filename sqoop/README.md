@@ -62,5 +62,7 @@ sqoop import --connect jdbc:mysql://<mysql-host>/test
 </password></username></mysql-host>
 ```
 
-
+In my example this was like this:
+```bash
 sqoop import --connect jdbc:mysql://localhost/movielens --username maria_dev -password maria_dev --driver com.mysql.jdbc.Driver --table movies -m 1
+```
