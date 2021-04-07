@@ -1,6 +1,8 @@
 # pip install SpeechRecognition
-import speech_recognition as sr
+# sudo apt-get install portaudio19-
 # follow this link: https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error
+import speech_recognition as sr
+
 
 
 def main():
