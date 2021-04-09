@@ -1,14 +1,16 @@
 import json
 
-secrets = json.loads(open('../../../snapchat_final_test_app.json', 'r').read())
+secrets = json.loads(open('../../../snapchat_snap_ads.json', 'r').read())
 
 # print(secrets['auth']['Confidential_Client_Secret'])
 
 
-client_id = secrets['auth']['Confidential_Client_ID_auth']
-# client_id = ''
-client_secret = secrets['auth']['Confidential_Client_Secret_auth']
-redirect_uri = 'https://bituniex.com/'
+# client_id = secrets['auth']['Confidential_Client_ID_auth']
+client_id = secrets['auth']['Confidential_Client_ID']
+# client_id = '135459c5-275f-4567-b16f-ef2b79a4bd1e'
+# client_secret = secrets['auth']['Confidential_Client_Secret_auth']
+client_secret = secrets['auth']['Confidential_Client_Secret']
+redirect_uri = 'http://localhost:3000/auth/snapchat/callback'
 
 from oauthlib.oauth2 import BackendApplicationClient
 from requests.auth import HTTPBasicAuth

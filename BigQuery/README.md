@@ -23,3 +23,10 @@ bq shell   # go to bigquery shell
 ```
 and run all the above command without the ```bq``` command.
 simply type ```exit``` to jump out of the shell.
+
+
+### Having query in terminal using SDK:
+
+```shell
+bq query --use_legacy_sql=false 'SELECT * FROM project_id.dataset_name.table limit 10'
+```
