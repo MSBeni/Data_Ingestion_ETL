@@ -1,1 +1,0 @@
-from google.cloud import bigquer
