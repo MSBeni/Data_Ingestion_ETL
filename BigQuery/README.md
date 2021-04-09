@@ -80,3 +80,7 @@ sample command:
 bq mk --default_table_expiration 4000 -default_partition_expiration 5000 --description "new dataset" 'bigquery-demo-308819:dataset_bq'
 ```
 
+### Table Creation Command:
+```shell
+bq mk --table --expiration 3000 --description "table from cli" --label dummy_key1:value1 --label dummy_key2:value2 --require_partition_filter --time_partitioning_type DAY --time_partitioning_expiration 4000 --clustering_fields name  --schema C:\Users\MyUser\Desktop\BQ_json_schema.txt dataset1.demo2
+```
