@@ -29,4 +29,6 @@ simply type ```exit``` to jump out of the shell.
 
 ```shell
 bq query --use_legacy_sql=false 'SELECT * FROM project_id.dataset_name.table limit 10'
+
+bq query --use_legacy_sql=false --label dummy_key1:value1 --label dummy_key2:value2 --batch=false --maximum_bytes_billed=30000000 --require_cache=false --destination_table=project_id.dataset_name.ney_dest_table --destination_schema name:string,gender:string,count:integer --time_partitioning_type=DAY --time_partitioning_expiration=90000 --clustering_fields=gender 'SELECT * FROM project_id.dataset_name.table limit 10'
 ```
