@@ -90,5 +90,31 @@ bq show --schema dataset1.name_from_bq
 ```
  or you can load a json file describing the table schema with this command:
  ```shell
-bq load bigquery-demo-285417:dataset1.names_from_cli C:\Users\MyUser\Desktop\yob1880.txt name:string,gender:string,count:integer
+bq load bigquery-demo-285417:dataset1.names_from_cli /home/..../Downloads/yob1880.txt name:string,gender:string,count:integer
+```
+
+### Load from local to BQ:
+
+```shell
+bq load dataset1.names_from_bq /home/..../Downloads/yob1880.txt name:string,gender:string,count:integer
+```
+
+
+### Exclusive Operations:
+
+```shell
+bq load --schema_update_option ALLOW_FIELD_RELAXATION bigquery-demo-285417:dataset1.tab_req C:\Users\MyUser\Desktop\yob1890.txt name:string,gender:string,count:integer
+
+bq cp -a dataset1.demo_part_date$20200117 dataset1.dest_table
+
+bq cp -a dataset1.demo_part_date$20200119 dataset1.dest_table
+bq cp -a dataset1.demo_part_date$20200119,dataset1.demo_part_date$20200118 dataset1.dest_table
+
+select * from [dataset1.dest_table$__PARTITIONS_SUMMARY__]
+bq rm dataset1.part_ing_2$2020112005
+
+
+bq cp -f dataset1.part_ing_1$2020112005 dataset1.part_ing_2$2020112010
+
+select count(*) from `bigquery-demo-285417.dataset1.part_ing_2` where _PARTITIONTIME = TIMESTAMP("2020-11-20 10:00:00")
 ```
