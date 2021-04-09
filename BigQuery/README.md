@@ -101,7 +101,7 @@ bq load dataset1.names_from_bq /home/..../Downloads/yob1880.txt name:string,gend
 
 
 ### Exclusive Operations:
-
+```-a``` is the ```append``` flag and cp represents copy. Check this commands:
 ```shell
 bq load --schema_update_option ALLOW_FIELD_RELAXATION bigquery-demo-285417:dataset1.tab_req C:\Users\MyUser\Desktop\yob1890.txt name:string,gender:string,count:integer
 
