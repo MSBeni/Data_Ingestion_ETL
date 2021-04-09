@@ -84,3 +84,11 @@ bq mk --default_table_expiration 4000 -default_partition_expiration 5000 --descr
 ```shell
 bq mk --table --expiration 3000 --description "table from cli" --label dummy_key1:value1 --label dummy_key2:value2 --require_partition_filter --time_partitioning_type DAY --time_partitioning_expiration 4000 --clustering_fields name  --schema C:\Users\MyUser\Desktop\BQ_json_schema.txt dataset1.demo2
 ```
+simply test the availability of the table with this command:
+```shell
+bq show --schema dataset1.name_from_bq
+```
+ or you can load a json file describing the table schema with this command:
+ ```shell
+bq load bigquery-demo-285417:dataset1.names_from_cli C:\Users\MyUser\Desktop\yob1880.txt name:string,gender:string,count:integer
+```
