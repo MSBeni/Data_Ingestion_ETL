@@ -6,7 +6,7 @@ service_account_json = r'/home/i-sip_iot/PycharmProjects/bigquery-demo-308819-96
 client = bigquery.Client.from_service_account_json(service_account_json)
 
 # Set table id to the ID of the table to create
-table_id = "bigquery-demo-308819.dataset_py"
+table_id = "bigquery-demo-308819.dataset_py.table_py"
 
 job_config = bigquery.LoadJobConfig(
     schema=[
