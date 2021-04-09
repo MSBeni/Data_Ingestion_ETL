@@ -74,3 +74,9 @@ bq mk --table --expiration 3000 --description "table from cli" --label dummy_key
 bq load bigquery-demo-285417:dataset1.names_from_cli C:\Users\MyUser\Desktop\yob1880.txt name:string,gender:string,count:integer
 ```
 
+### Dataset Creation Command:
+sample command:
+```shell
+bq mk --default_table_expiration 4000 -default_partition_expiration 5000 --description "new dataset" 'bigquery-demo-308819:dataset_bq'
+```
+
