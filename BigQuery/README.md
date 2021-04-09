@@ -118,3 +118,10 @@ bq cp -f dataset1.part_ing_1$2020112005 dataset1.part_ing_2$2020112010
 
 select count(*) from `bigquery-demo-285417.dataset1.part_ing_2` where _PARTITIONTIME = TIMESTAMP("2020-11-20 10:00:00")
 ```
+
+
+## Install BigQuery Library for python
+
+```shell
+pip install google-cloud-bigquery
+```
