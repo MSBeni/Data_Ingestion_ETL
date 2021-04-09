@@ -17,10 +17,12 @@ app = Flask(__name__)
 
 oauth = OAuth(app)
 
+secrets = json.loads(open('../../../snapchat_mine.json', 'r').read())
+
 auth0 = oauth.register(
     'auth0',
-    client_id='',
-    client_secret='',
+    client_id=secrets['auth']['Confidential_Client_ID'],
+    client_secret=secrets['auth']['Confidential_Client_Secret'],
     api_base_url='https://accounts.snapchat.com/accounts/oauth2/auth',
     # access_token_url='https://YOUR_DOMAIN/oauth/token',
     # authorize_url='https://YOUR_DOMAIN/authorize',
@@ -47,9 +49,10 @@ def callback_handling():
     }
     return redirect('/dashboard')
 
+
 @app.route('/login')
 def login():
-    return auth0.authorize_redirect(redirect_uri='http://localhost:8000')
+    return auth0.authorize_redirect(redirect_uri='http://localhost:50000/snapchat_auth')
 
 
 def requires_auth(f):
