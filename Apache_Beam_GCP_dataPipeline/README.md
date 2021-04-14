@@ -6,3 +6,10 @@ and portable Big data processing pipeline.
 - Beam is PORTABLE as whenever beam pipeline is created in any language, it can be run on any of the execution 
   frameworks like Spark, Flink, Apex, Cloud dataflow etc. The Beam pipelines can be written in any language like Java,
   Python, Go etc.
+  
+
+### Requirements:
+First install Beam python library. Simply run the following command:
+```shell
+pip install apache-beam
+```
