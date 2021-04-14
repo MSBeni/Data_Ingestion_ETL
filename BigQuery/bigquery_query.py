@@ -1,6 +1,6 @@
 from google.cloud import bigquery
 
-SERVICE_ACCESS_JSON = '/home/i-sip_iot/PycharmProjects/bigquery-demo-308819-96977b1b6c1e.json'
+SERVICE_ACCESS_JSON = '/home/...../bigquery-demo-308819-96977b1b6c1e.json'
 
 client = bigquery.Client.from_service_account_json(SERVICE_ACCESS_JSON)
 
