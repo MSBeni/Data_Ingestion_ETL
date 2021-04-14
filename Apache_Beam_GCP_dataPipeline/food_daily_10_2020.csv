@@ -1,0 +1,892 @@
+﻿Customer_id,date,time,order_id,items,amount,mode,restaurnt,Status,ratings,feedback
+JXJY167254JK,11-10-2020,8.31.21,654S654,PiZza:Manch?uriaN:CHOW Mein:Crispy Onion Rings,21,Wallet,Emperial,Delivered,2,Late delivery
+JXJY167254JK,11-10-2020,9.31.21,2444454,Noodles:Pizza:ROTI,97,Card,Sadabahar,Delivered,3,Stale food
+XVTR474839TP,11-10-2020,4.31.31,397T397,Fried Rice:salaD,46,Card,Emperial,Delivered,3,Complicated procedure
+UFDF355524DM,11-10-2020,5.31.21,428K428,noo%dles:,71,Card,Delhi pot,Delivered,1,Food not good
+FRBT691245BA,11-10-2020,6.31.21,437M437,Laccha Prantha:,29,Online,Eat out,Delivered,1,Stale food
+QTSI285174SG,11-10-2020,8.31.21,106S106,Fried Rice:,59,Cash,Toit,Delivered,2,Complicated procedure
+OXJY167254JK,11-10-2020,8.11.21,854A854,Chow Mein:,65,Cash,Sadabahar,Not delivered,5,Awesome experience
+SAMV824387MW,11-10-2020,8.31.21,751C751,Quiche:,28,Wallet,Khana Khazana,Delivered,2,Difficult to order
+LRKI603654KL,11-10-2020,8.31.21,742G742,Roti:,86,Card,Little Cafe,Delivered,1,Difficult to order
+FRBT691245BA,11-10-2020,8.31.21,103Y103,Manchurian:,94,Online,Plan B,Delivered,2,Late delivery
+FSAM929386AQ,11-10-2020,8.31.21,208U208,Paneer tikka:,33,Wallet,Emperial,Delivered,2,Difficult to order
+FRBT691245BA,11-10-2020,8.31.21,819Q819,Regular:,86,Cash,Khana Khazana,Delivered,4,Cheap and best
+UFDF355524DM,11-10-2020,8.31.21,107K107,Biryani:,50,Card,Eat out,Delivered,4,Delicious food
+FSAM929386AQ,11-10-2020,8.31.21,671T671,Idli:,82,Card,Delhi pot,On Hold,5,Good service
+QTSI285174SG,11-10-2020,8.31.21,195K195,Crispy Onion Rings:,40,Cash,Delhi pot,Delivered,1,High price
+QTSI285174SG,11-10-2020,8.31.21,952U952,pickle:,29,Online,Toit,Delivered,3,Complicated procedure
+LRKI603654KL,11-10-2020,8.31.21,833E833,Chikko shake:,33,Cash,Emperial,Delivered,3,Coupon applied
+UFDF355524DM,11-10-2020,8.31.21,139A139,Chow Mein:,69,Cash,Plan B,Delivered,1,High price
+SBXX592702XP,11-10-2020,8.31.21,256A256,Mushroom Masala:,92,Wallet,Little Cafe,Delivered,4,Delicious food
+FRBT691245BA,11-10-2020,8.31.21,186Q186,salad:,61,Online,Little Cafe,Cancelled,2,Stale food
+LJBO9511000BL,11-10-2020,8.31.21,956U956,Banana shake:,87,Cash,Onesta,Cancelled,4,Cheap and best
+SAMV824387MW,11-10-2020,8.31.21,506K506,salad:,37,Online,Delhi pot,Cancelled,4,Good service
+LRKI603654KL,11-10-2020,8.31.21,739A739,Quiche:,51,Card,Plan B,Cancelled,2,High price
+OXJY167254JK,11-10-2020,8.31.21,428U428,Shahi paneer:,53,Cash,Khana Khazana,Cancelled,3,Stale food
+FRBT691245BA,11-10-2020,8.31.21,902L902,Veg Premium Burger:,58,Wallet,Eat out,Delivered,5,Good service
+UYXR411673XC,11-10-2020,8.31.21,683T683,Paneer tikka:,93,Cash,Delhi pot,Delivered,2,Stale food
+SAMV824387MW,11-10-2020,8.31.21,635C635,salad:,31,Cash,Emperial,Delivered,3,Late delivery
+FSAM929386AQ,11-10-2020,8.31.21,680J680,Tawa naan:,678,Wallet,Johnahs,Delivered,5,Awesome experience
+SBXX592702XP,11-10-2020,8.31.21,723V723,Tawa naan:,80,Cash,Plan B,Delivered,5,Delicious food
+UYXR411673XC,11-10-2020,8.31.21,567U567,Curd:,70,Card,Johnahs,Delivered,2,Difficult to order
+SAMV824387MW,11-10-2020,8.31.21,148W148,Mango shake:,64,Online,Food point,Delivered,5,Easy to order
+FSAM929386AQ,11-10-2020,8.31.21,391A391,Pulao:,76,Cash,Sadabahar,Delivered,2,Late delivery
+XVTR474839TP,11-10-2020,8.31.21,131W131,Regular:,66,Cash,Eat out,Delivered,5,Awesome experience
+XVTR474839TP,11-10-2020,8.31.21,864V864,Manchurian:,45,Online,Khana Khazana,Delivered,2,Coupon applied
+LRKI603654KL,11-10-2020,8.31.21,538H538,Chikko shake:,56,Card,Johnahs,Delivered,1,Coupon applied
+UYXR411673XC,11-10-2020,8.31.21,481Q481,Idli:,68,Card,Food point,Delivered,4,Worth
+QTSI285174SG,11-10-2020,8.31.21,382X382,Prantha:,57,Card,Sadabahar,Delivered,3,Delivery boy didnt come at doorstep
+UFDF355524DM,11-10-2020,8.31.21,582O582,Biryani:,82,Cash,Johnahs,Delivered,5,Fast delivery
+FRBT691245BA,11-10-2020,8.31.21,889S889,pickle:,39,Wallet,Khana Khazana,Delivered,5,Awesome experience
+SAMV824387MW,11-10-2020,8.31.21,660E660,Veg Premium Burger:,89,Card,Food point,Delivered,3,High price
+LJBO9511000BL,11-10-2020,8.31.21,936X936,Roti:,92,Online,Plan B,Delivered,2,High price
+JXJY167254JK,11-10-2020,8.31.21,954S654,Fryams:Manchurian:Chow Mein,77,Wallet,Johnahs,Delivered,3,Late delivery
+JXJY167254JK,11-10-2020,8.31.21,154S644,Quiche:Noodles:Roti,123,Card,Eat out,Not delivered,4,Will order again
+FRBT691245BA,11-10-2020,8.31.21,579N579,salad:,62,Online,Toit,Not delivered,2,Delivery boy didnt come at doorstep
+UYXR411673XC,11-10-2020,8.31.21,253O253,Idli:,70,Card,Emperial,Not delivered,2,High price
+XVTR474839TP,11-10-2020,8.31.21,704P704,Prantha:,26,Wallet,Johnahs,Not delivered,3,Delivery boy didnt come at doorstep
+OXJY167254JK,11-10-2020,8.31.21,866Q866,Idli:,66,Wallet,Emperial,Not delivered,2,Late delivery
+LJBO9511000BL,11-10-2020,8.31.21,152I152,Banana shake:,50,Cash,Khana Khazana,Not delivered,2,Difficult to order
+SBXX592702XP,11-10-2020,8.31.21,837W837,Prantha:,74,Card,Delhi pot,Delivered,1,Coupon applied
+FRBT691245BA,11-10-2020,8.31.21,200B200,Noodles:,36,Wallet,Eat out,Delivered,4,Complicated procedure
+UYXR411673XC,11-10-2020,8.31.21,358R358,salad:,83,Card,Toit,Delivered,1,Complicated procedure
+UYXR411673XC,11-10-2020,8.31.21,537J537,Mango shake:,49,Online,Haus Khas,Delivered,2,Complicated procedure
+FSAM929386AQ,11-10-2020,8.31.21,997G997,Fryams:,88,Online,Johnahs,Delivered,4,Complicated procedure
+SBXX592702XP,11-10-2020,8.31.21,765X765,Chow Mein:,99,Wallet,Khana Khazana,Delivered,2,Complicated procedure
+QTSI285174SG,11-10-2020,8.31.21,180B180,Laccha Prantha:,41,Online,Plan B,Delivered,3,Complicated procedure
+SAMV824387MW,11-10-2020,8.31.21,282G282,Mushroom Masala:,88,Card,Toit,Delivered,5,Complicated procedure
+JXJY167254JK,11-10-2020,8.31.21,454S654,Noodles:Crispy Onion Rings:Roti,67,Wallet,Emperial,Delivered,5,Complicated procedure
+JXJY167254JK,11-10-2020,8.31.21,354S654,Quiche:Manchurian,90,Wallet,Eat out,Delivered,4,Will order again
+JXJY167254JK,11-10-2020,8.31.21,454S654,Fryams:Noodles,96,Wallet,Sadabahar,Delivered,4,Will order again
+JXJY167254JK,11-10-2020,8.31.21,654S754,Quiche:Fryams:Roti,127,Wallet,Johnahs,On Hold,4,Will order again
+JXJY167254JK,11-10-2020,8.31.21,554S854,Noodles,67,Wallet,Onesta,On Hold,4,Will order again
+JXJY167254JK,11-10-2020,8.31.21,654S954,Quiche:Pizza:Roti,97,Wallet,Emperial,On Hold,4,Awesome experience
+JXJY167254JK,11-10-2020,8.31.21,754S254,Pizza:as:Roti,237,Card,Eat out,On Hold,4,Will order again
+JXJY167254JK,11-10-2020,8.31.21,854S354,Quiche:Manchurian:Chow Mein,98,Wallet,Eat out,On Hold,3,Late delivery
+JXJY167254JK,11-10-2020,8.31.21,154S454,Pizza:Noodles:Crispy Onion Rings,107,Wallet,Eat out,On Hold,3,Late delivery
+JXJY167254JK,11-10-2020,8.31.21,954S554,Quiche:Fryams:Roti,27,Card,Eat out,On Hold,3,Late delivery
+UFDF355524DM,11-10-2020,8.31.21,354H354,Chow Mein:,91,Card,Plan B,On Hold,2,Coupon applied
+SBXX592702XP,11-10-2020,8.31.21,263Z263,Shahi paneer:,58,Card,Onesta,On Hold,5,Awesome experience
+LRKI603654KL,11-10-2020,8.31.21,631I631,Chikko shake:,47,Wallet,Little Cafe,Delivered,5,Fast delivery
+UFDF355524DM,11-10-2020,8.31.21,436K436,Regular:,72,Cash,Emperial,Delivered,4,Delicious food
+UYXR411673XC,11-10-2020,8.31.21,508M508,Curd:,32,Card,Food point,Delivered,3,Stale food
+UFDF355524DM,11-10-2020,8.31.21,894A894,Regular:,96,Cash,Khana Khazana,Delivered,2,Complicated procedure
+XVTR474839TP,11-10-2020,8.31.21,193H193,Curd:,96,Online,Delhi pot,Delivered,4,Easy to order
+LRKI603654KL,11-10-2020,8.31.21,501U501,Prantha:,64,Wallet,Delhi pot,Delivered,1,Coupon applied
+XVTR474839TP,11-10-2020,8.31.21,400Q400,pickle:,55,Wallet,Food point,Delivered,2,Delivery boy didnt come at doorstep
+FSAM929386AQ,11-10-2020,8.31.21,895R895,Veg Premium Burger:,88,Wallet,Haus Khas,Delivered,3,Stale food
+QTSI285174SG,11-10-2020,8.31.21,966I966,pickle:,46,Wallet,Toit,Delivered,2,Stale food
+FSAM929386AQ,11-10-2020,8.31.21,281A281,Chikko shake:,42,Online,Plan B,Delivered,1,Coupon applied
+FSAM929386AQ,11-10-2020,8.31.21,213F213,Chikko shake:,50,Online,Onesta,Delivered,1,Food not good
+SAMV824387MW,11-10-2020,8.31.21,570O570,Biryani:,52,Wallet,Little Cafe,Delivered,1,High price
+QTSI285174SG,11-10-2020,8.31.21,892Z892,Tawa naan:,54,Wallet,Onesta,Delivered,2,Coupon applied
+OXJY167254JK,11-10-2020,8.31.21,190V190,Fried Rice:,66,Wallet,Little Cafe,Delivered,1,Complicated procedure
+XVTR474839TP,11-10-2020,8.31.21,397T397,Fried Rice:,46,Card,Emperial,Delivered,3,Complicated procedure
+UFDF355524DM,11-10-2020,8.31.21,428K428,Noodles:,71,Card,Delhi pot,Delivered,1,Food not good
+FRBT691245BA,11-10-2020,8.31.21,437M437,Laccha Prantha:,29,Online,Eat out,Delivered,1,Stale food
+QTSI285174SG,11-10-2020,8.31.21,106S106,Fried Rice:,59,Cash,Toit,Delivered,2,Complicated procedure
+OXJY167254JK,11-10-2020,8.31.21,854A854,Chow Mein:,65,Cash,Sadabahar,Delivered,5,Awesome experience
+SAMV824387MW,11-10-2020,8.31.21,751C751,Quiche:,28,Wallet,Khana Khazana,Delivered,2,Difficult to order
+FRBT691245BA,11-10-2020,8.31.21,186Q186,salad:,61,Online,Little Cafe,Delivered,2,High price
+LJBO9511000BL,11-10-2020,8.31.21,956U956,Banana shake:,87,Cash,Onesta,Delivered,4,High price
+SAMV824387MW,11-10-2020,8.31.21,506K506,salad:,37,Online,Delhi pot,Delivered,4,High price
+LRKI603654KL,11-10-2020,8.31.21,739A739,Quiche:,51,Card,Plan B,Delivered,2,High price
+OXJY167254JK,11-10-2020,8.31.21,428U428,Shahi paneer:,53,Cash,Khana Khazana,Delivered,3,High price
+FRBT691245BA,11-10-2020,8.31.21,902L902,Veg Premium Burger:,58,Wallet,Eat out,Delivered,5,High price
+UYXR411673XC,11-10-2020,8.31.21,683T683,Paneer tikka:,93,Cash,Delhi pot,Delivered,2,High price
+SAMV824387MW,11-10-2020,8.31.21,635C635,salad:,96,Cash,Emperial,Delivered,3,High price
+FSAM929386AQ,11-10-2020,8.31.21,680J680,Tawa naan:,30,Wallet,Johnahs,Delivered,5,Awesome experience
+SBXX592702XP,11-10-2020,8.31.21,723V723,Tawa naan:,80,Cash,Plan B,Delivered,5,Delicious food
+UYXR411673XC,11-10-2020,8.31.21,567U567,Curd:,70,Card,Johnahs,Delivered,2,Difficult to order
+SAMV824387MW,11-10-2020,8.31.21,148W148,Mango shake:,64,Online,Food point,Delivered,5,Easy to order
+FSAM929386AQ,11-10-2020,8.31.21,391A391,Pulao:,76,Cash,Sadabahar,Delivered,2,Late delivery
+XVTR474839TP,11-10-2020,8.31.21,131W131,Regular:,66,Cash,Eat out,Delivered,5,Awesome experience
+XVTR474839TP,11-10-2020,8.31.21,864V864,Manchurian:,45,Online,Khana Khazana,Delivered,2,Coupon applied
+LRKI603654KL,11-10-2020,8.31.21,538H538,Chikko shake:,56,Card,Johnahs,Delivered,1,Coupon applied
+UYXR411673XC,11-10-2020,8.31.21,481Q481,Idli:,68,Card,Food point,Delivered,4,Worth
+QTSI285174SG,11-10-2020,8.31.21,382X382,Prantha:,57,Card,Sadabahar,Delivered,3,Delivery boy didnt come at doorstep
+UFDF355524DM,11-10-2020,8.31.21,582O582,Biryani:,82,Cash,Johnahs,Delivered,5,Fast delivery
+FRBT691245BA,11-10-2020,8.31.21,889S889,pickle:,39,Wallet,Khana Khazana,Delivered,5,Awesome experience
+SAMV824387MW,11-10-2020,8.31.21,660E660,Veg Premium Burger:,89,Card,Food point,Delivered,3,High price
+LJBO9511000BL,11-10-2020,8.31.21,936X936,Roti:,92,Online,Plan B,Delivered,2,High price
+FRBT691245BA,11-10-2020,8.31.21,579N579,salad:,62,Online,Toit,Delivered,2,Delivery boy didnt come at doorstep
+SBXX592702XP,11-10-2020,8.31.21,837W837,Prantha:,74,Card,Delhi pot,Delivered,1,Coupon applied
+FRBT691245BA,11-10-2020,8.31.21,200B200,Noodles:,36,Wallet,Eat out,Delivered,4,Fast delivery
+LRKI603654KL,11-10-2020,8.31.21,145T145,Chikko shake:,41,Wallet,Eat out,Delivered,2,Late delivery
+QTSI285174SG,11-10-2020,8.31.21,838T838,Curd:,91,Cash,Delhi pot,Delivered,2,Stale food
+QTSI285174SG,11-10-2020,8.31.21,155N155,Veg Premium Burger:,83,Cash,Little Cafe,Delivered,2,Late delivery
+LRKI603654KL,11-10-2020,8.31.21,117W117,Banana shake:,99,Card,Eat out,Delivered,2,Delivery boy didnt come at doorstep
+FSAM929386AQ,11-10-2020,8.31.21,370L370,Crispy Onion Rings:,93,Cash,Food point,Delivered,2,Delivery boy didnt come at doorstep
+OXJY167254JK,11-10-2020,8.31.21,281U281,Mushroom Masala:,49,Cash,Eat out,Delivered,2,Difficult to order
+QTSI285174SG,11-10-2020,8.31.21,947M947,Paneer tikka:,27,Cash,Johnahs,Delivered,1,High price
+UYXR411673XC,11-10-2020,8.31.21,269G269,Noodles:,99,Online,Khana Khazana,Delivered,1,Delivery boy didnt come at doorstep
+XVTR474839TP,11-10-2020,8.31.21,365K365,Fryams:,88,Online,Johnahs,Delivered,4,Delicious food
+SBXX592702XP,11-10-2020,8.31.21,765X765,Fried Rice:,82,Wallet,Food point,Delivered,4,Fast delivery
+UYXR411673XC,11-10-2020,8.31.21,151T151,Laccha Prantha:,41,Online,Plan B,Delivered,3,Stale food
+UFDF355524DM,11-10-2020,8.31.21,255O255,Fried Rice:,76,Online,Plan B,Delivered,3,Stale food
+SAMV824387MW,11-10-2020,8.31.21,282G282,Mushroom Masala:,88,Card,Toit,Delivered,5,Stale food
+SBXX592702XP,11-10-2020,8.31.21,596A596,Chop Suey,38,Card,Johnahs,Delivered,4,Stale food
+SBXX592702XP,11-10-2020,8.31.21,372X372,Fryams:,70,Wallet,Onesta,Delivered,5,Stale food
+SAMV824387MW,11-10-2020,8.31.21,682D682,pickle:,73,Cash,Food point,Delivered,3,Stale food
+XVTR474839TP,11-10-2020,8.31.21,271V271,Chikko shake:,67,Cash,Eat out,Delivered,2,Stale food
+SAMV824387MW,11-10-2020,8.31.21,607K607,Pizza:,24,Cash,Haus Khas,Delivered,2,Stale food
+OXJY167254JK,11-10-2020,8.31.21,986I986,Shahi paneer:,92,Wallet,Haus Khas,Delivered,4,Stale food
+LRKI603654KL,11-10-2020,8.31.21,107D107,Biryani:,56,Wallet,Delhi pot,Delivered,2,Stale food
+LRKI603654KL,11-10-2020,8.31.21,470N470,Noodles:,27,Cash,Onesta,Delivered,1,Stale food
+LRKI603654KL,11-10-2020,8.31.21,473Z473,pickle:,70,Cash,Plan B,Delivered,5,Stale food
+LJBO9511000BL,11-10-2020,8.31.21,996F996,Mango shake:,74,Online,Sadabahar,Delivered,1,Stale food
+UFDF355524DM,11-10-2020,8.31.21,436K436,Regular:,72,Cash,Emperial,Delivered,4,Stale food
+SBXX592702XP,11-10-2020,8.31.21,514H514,Banana shake:,87,Wallet,Food point,Delivered,3,Stale food
+FRBT691245BA,11-10-2020,8.31.21,713F713,Chikko shake:,32,Online,Little Cafe,Delivered,5,Stale food
+LRKI603654KL,11-10-2020,8.31.21,592A592,Curd:,32,Card,Food point,Delivered,3,Stale food
+UFDF355524DM,11-10-2020,8.31.21,894A894,Regular:,96,Cash,Khana Khazana,Delivered,2,Stale food
+XVTR474839TP,11-10-2020,8.31.21,452P452,Mushroom Masala:,32,Card,Delhi pot,Delivered,1,Difficult to order
+XVTR474839TP,11-10-2020,8.31.21,193H193,Curd:,96,Online,Delhi pot,Delivered,4,Easy to order
+LRKI603654KL,11-10-2020,8.31.21,985E985,Idli:,88,Cash,Khana Khazana,Delivered,1,Complicated procedure
+FSAM929386AQ,11-10-2020,8.31.21,104T104,Roti:,42,Wallet,Haus Khas,Delivered,2,Late delivery
+XVTR474839TP,11-10-2020,8.31.21,898B898,Veg Premium Burger:,69,Card,Toit,Delivered,2,Stale food
+XVTR474839TP,11-10-2020,8.31.21,400Q400,pickle:,55,Wallet,Food point,Delivered,2,Delivery boy didnt come at doorstep
+XVTR474839TP,11-10-2020,8.31.21,585X585,Mushroom Masala:,62,Wallet,Emperial,Delivered,5,Awesome experience
+UYXR411673XC,11-10-2020,8.31.21,335D335,Chow Mein:,81,Online,Food point,Delivered,2,Difficult to order
+LJBO9511000BL,11-10-2020,8.31.21,576M576,Veg Premium Burger:,23,Wallet,Delhi pot,Delivered,5,Nice
+XVTR474839TP,11-10-2020,8.31.21,983X983,salad:,100,Wallet,Sadabahar,Delivered,2,Late delivery
+LRKI603654KL,11-10-2020,8.31.21,589I589,Regular:,58,Wallet,Haus Khas,Delivered,5,Easy to order
+LJBO9511000BL,11-10-2020,8.31.21,835W835,Curd:,72,Cash,Plan B,Delivered,5,Cheap and best
+LRKI603654KL,11-10-2020,8.31.21,808W808,Chow Mein:,85,Wallet,Emperial,Delivered,1,Coupon applied
+QTSI285174SG,11-10-2020,8.31.21,769Z769,Chikko shake:,83,Card,Emperial,Delivered,1,Food not good
+QTSI285174SG,11-10-2020,8.31.21,690I690,Noodles:,76,Wallet,Haus Khas,Delivered,2,Delivery boy didnt come at doorstep
+SBXX592702XP,11-10-2020,8.31.21,748R748,Banana shake:,68,Online,Delhi pot,Delivered,3,Stale food
+QTSI285174SG,11-10-2020,8.31.21,710W710,salad:,80,Online,Khana Khazana,Delivered,3,Coupon applied
+FSAM929386AQ,11-10-2020,8.31.21,281A281,Chikko shake:,42,Online,Plan B,Delivered,1,Coupon applied
+FRBT691245BA,11-10-2020,8.31.21,932U932,Curd:,84,Online,Emperial,Delivered,1,Stale food
+UFDF355524DM,11-10-2020,8.31.21,451O451,Mango shake:,27,Wallet,Haus Khas,Delivered,4,Will order again
+FRBT691245BA,11-10-2020,8.31.21,539U539,Pulao:,25,Card,Delhi pot,Delivered,2,Complicated procedure
+FRBT691245BA,11-10-2020,8.31.21,327P327,salad:,87,Card,Toit,Delivered,4,Delicious food
+UFDF355524DM,11-10-2020,8.31.21,599Y599,Idli:,27,Card,Eat out,Delivered,2,Delivery boy didnt come at doorstep
+UFDF355524DM,11-10-2020,8.31.21,493N493,Chop Suey,100,Cash,Khana Khazana,Delivered,3,Delivery boy didnt come at doorstep
+SAMV824387MW,11-10-2020,8.31.21,570O570,Biryani:,52,Wallet,Little Cafe,Delivered,1,High price
+LJBO9511000BL,11-10-2020,8.31.21,635M635,pickle:,56,Wallet,Haus Khas,Delivered,4,Nice
+SBXX592702XP,11-10-2020,8.31.21,768Y768,Fryams:,88,Cash,Delhi pot,Delivered,2,High price
+FSAM929386AQ,11-10-2020,8.31.21,495Q495,Quiche:,30,Wallet,Little Cafe,Delivered,1,Late delivery
+XVTR474839TP,11-10-2020,8.31.21,761G761,Dosa:,96,Wallet,Delhi pot,Delivered,5,Nice
+SAMV824387MW,11-10-2020,8.31.21,414U414,Biryani:,56,Card,Onesta,Delivered,3,Difficult to order
+LJBO9511000BL,11-10-2020,8.31.21,783Z783,Idli:,60,Wallet,Delhi pot,Delivered,2,Food not good
+LRKI603654KL,11-10-2020,8.31.21,672W672,Mango shake:,58,Online,Haus Khas,Delivered,3,High price
+OXJY167254JK,11-10-2020,8.31.21,157H157,Manchurian:,43,Online,Delhi pot,Delivered,5,Cheap and best
+LRKI603654KL,11-10-2020,8.31.21,357R357,Regular:,99,Cash,Delhi pot,Delivered,3,Difficult to order
+XVTR474839TP,11-10-2020,8.31.21,905K905,Shahi paneer:,46,Online,Plan B,Delivered,4,Will order again
+UYXR411673XC,11-10-2020,8.31.21,424L424,Mango shake:,98,Cash,Johnahs,Delivered,3,Coupon applied
+SAMV824387MW,11-10-2020,8.31.21,141F141,Chikko shake:,78,Wallet,Onesta,Delivered,2,Food not good
+FRBT691245BA,11-10-2020,8.31.21,215C215,Curd:,40,Card,Little Cafe,Delivered,2,High price
+LJBO9511000BL,11-10-2020,8.31.21,925W925,Manchurian:,46,Wallet,Plan B,Delivered,2,Stale food
+LRKI603654KL,11-10-2020,8.31.21,747N747,Roti:,93,Wallet,Plan B,Delivered,1,Food not good
+FRBT691245BA,11-10-2020,8.31.21,441R441,Veg Premium Burger:,31,Card,Delhi pot,Delivered,5,Worth
+FSAM929386AQ,11-10-2020,8.31.21,292Q292,pickle:,49,Wallet,Onesta,Delivered,3,Difficult to order
+OXJY167254JK,11-10-2020,8.31.21,933W933,Mango shake:,44,Card,Toit,Delivered,4,Cheap and best
+LJBO9511000BL,11-10-2020,8.31.21,712N712,Shahi paneer:,42,Card,Plan B,Delivered,4,Cheap and best
+OXJY167254JK,11-10-2020,8.31.21,654S654,Laccha Prantha:,25,Online,Onesta,Delivered,5,Awesome experience
+QTSI285174SG,11-10-2020,8.31.21,556T556,Laccha Prantha:,70,Wallet,Emperial,Delivered,2,Late delivery
+SBXX592702XP,11-10-2020,8.31.21,594V594,Mushroom Masala:,72,Wallet,Delhi pot,Delivered,1,Coupon applied
+UYXR411673XC,11-10-2020,8.31.21,448B448,Veg Premium Burger:,37,Cash,Delhi pot,Delivered,5,Nice
+FRBT691245BA,11-10-2020,8.31.21,437M437,Laccha Prantha:,29,Online,Eat out,Delivered,1,Stale food
+QTSI285174SG,11-10-2020,8.31.21,838O838,Noodles:,20,Card,Toit,Delivered,4,Good service
+SAMV824387MW,11-10-2020,8.31.21,840A840,Roti:,27,Cash,Onesta,Delivered,2,Delivery boy didnt come at doorstep
+FRBT691245BA,11-10-2020,8.31.21,549N549,Regular:,45,Wallet,Eat out,Delivered,5,Cheap and best
+UFDF355524DM,11-10-2020,8.31.21,331B331,Chow Mein:,40,Wallet,Emperial,Delivered,2,Difficult to order
+OXJY167254JK,11-10-2020,8.31.21,816T816,Curd:,57,Online,Emperial,Delivered,2,Coupon applied
+SAMV824387MW,11-10-2020,8.31.21,751C751,Quiche:,28,Wallet,Khana Khazana,Delivered,2,Difficult to order
+QTSI285174SG,11-10-2020,8.31.21,284O284,Laccha Prantha:,40,Online,Haus Khas,Delivered,4,Worth
+LRKI603654KL,11-10-2020,8.31.21,673X673,Pizza:,44,Card,Johnahs,Delivered,5,Easy to order
+UFDF355524DM,11-10-2020,8.31.21,998P998,Pizza:,97,Online,Emperial,Delivered,2,Stale food
+UFDF355524DM,11-10-2020,8.31.21,667M667,Pizza:,95,Wallet,Emperial,Delivered,2,High price
+SBXX592702XP,11-10-2020,8.31.21,233S233,Biryani:,66,Online,Haus Khas,Delivered,4,Worth
+UYXR411673XC,11-10-2020,8.31.21,247T247,Idli:,86,Card,Onesta,Delivered,4,Easy to order
+SBXX592702XP,11-10-2020,8.31.21,835U835,Noodles:,47,Wallet,Sadabahar,Delivered,2,Food not good
+SBXX592702XP,11-10-2020,8.31.21,324V324,Mushroom Masala:,100,Cash,Johnahs,Delivered,5,Nice
+SAMV824387MW,11-10-2020,8.31.21,379G379,Dosa:,27,Card,Emperial,Delivered,2,Food not good
+SBXX592702XP,11-10-2020,8.31.21,585U585,Mango shake:,21,Wallet,Emperial,Delivered,1,Difficult to order
+XVTR474839TP,11-10-2020,8.31.21,957M957,Veg Premium Burger:,82,Cash,Emperial,Delivered,3,Difficult to order
+FSAM929386AQ,11-10-2020,8.31.21,881T881,Chikko shake:,62,Card,Delhi pot,Delivered,3,Coupon applied
+UFDF355524DM,11-10-2020,8.31.21,177A177,Roti:,32,Wallet,Onesta,Delivered,2,Food not good
+FSAM929386AQ,11-10-2020,8.31.21,737Q737,Laccha Prantha:,39,Online,Haus Khas,Delivered,2,High price
+XVTR474839TP,11-10-2020,8.31.21,524G524,Dosa:,75,Online,Johnahs,Delivered,2,Complicated procedure
+XVTR474839TP,11-10-2020,8.31.21,374Z374,Tawa naan:,91,Cash,Sadabahar,Delivered,4,Easy to order
+SBXX592702XP,11-10-2020,8.31.21,895Y895,Chikko shake:,56,Wallet,Little Cafe,Delivered,5,Awesome experience
+LRKI603654KL,11-10-2020,8.31.21,471O471,pickle:,65,Card,Sadabahar,Delivered,3,Stale food
+FRBT691245BA,11-10-2020,8.31.21,143C143,Pulao:,97,Wallet,Delhi pot,Delivered,3,High price
+OXJY167254JK,11-10-2020,8.31.21,504H504,Quiche:,50,Online,Sadabahar,Delivered,1,Stale food
+LJBO9511000BL,11-10-2020,8.31.21,223C223,Biryani:,33,Wallet,Onesta,Delivered,5,Fast delivery
+LJBO9511000BL,11-10-2020,8.31.21,956U956,Banana shake:,87,Cash,Onesta,Delivered,4,Cheap and best
+SAMV824387MW,11-10-2020,8.31.21,506K506,salad:,37,Online,Delhi pot,Delivered,4,Good service
+SBXX592702XP,11-10-2020,8.31.21,190Y190,Biryani:,92,Card,Onesta,Delivered,5,Delicious food
+LRKI603654KL,11-10-2020,8.31.21,578W578,Curd:,27,Online,Johnahs,Delivered,4,Delicious food
+FSAM929386AQ,11-10-2020,8.31.21,925D925,pickle:,63,Wallet,Emperial,Delivered,3,Late delivery
+UFDF355524DM,11-10-2020,8.31.21,302V302,Chop Suey,89,Card,Toit,Delivered,1,Delivery boy didnt come at doorstep
+UYXR411673XC,11-10-2020,8.31.21,683T683,Paneer tikka:,93,Cash,Delhi pot,Delivered,2,Stale food
+SAMV824387MW,11-10-2020,8.31.21,710Z710,Regular:,75,Wallet,Plan B,Delivered,4,Awesome experience
+LRKI603654KL,11-10-2020,8.31.21,183J183,Biryani:,22,Cash,Food point,Delivered,2,Complicated procedure
+SAMV824387MW,11-10-2020,8.31.21,1.00E+102,Veg Premium Burger:,22,Card,Toit,Delivered,4,Will order again
+UFDF355524DM,11-10-2020,8.31.21,464B464,Quiche:,65,Wallet,Haus Khas,Delivered,5,Awesome experience
+XVTR474839TP,11-10-2020,8.31.21,355K355,Banana shake:,57,Cash,Onesta,Delivered,2,Delivery boy didnt come at doorstep
+SAMV824387MW,11-10-2020,8.31.21,635C635,salad:,96,Cash,Emperial,Delivered,3,Late delivery
+SAMV824387MW,11-10-2020,8.31.21,111H111,Pulao:,34,Cash,Sadabahar,Delivered,2,Delivery boy didnt come at doorstep
+LJBO9511000BL,11-10-2020,8.31.21,753T753,Chikko shake:,71,Card,Johnahs,Delivered,2,High price
+OXJY167254JK,11-10-2020,8.31.21,488W488,Manchurian:,28,Wallet,Delhi pot,Delivered,1,Delivery boy didnt come at doorstep
+SAMV824387MW,11-10-2020,8.31.21,849W849,Chikko shake:,76,Online,Little Cafe,Delivered,5,Good service
+SAMV824387MW,11-10-2020,8.31.21,523N523,Fryams:,21,Wallet,Onesta,Delivered,4,Good service
+XVTR474839TP,11-10-2020,8.31.21,217Y217,Pulao:,42,Online,Toit,Delivered,2,Stale food
+SBXX592702XP,11-10-2020,8.31.21,501F501,Banana shake:,74,Cash,Emperial,Delivered,1,High price
+FRBT691245BA,11-10-2020,8.31.21,673Y673,Chikko shake:,98,Cash,Food point,Delivered,2,Late delivery
+LRKI603654KL,11-10-2020,8.31.21,538H538,Chikko shake:,56,Card,Johnahs,Delivered,1,Coupon applied
+UYXR411673XC,11-10-2020,8.31.21,481Q481,Idli:,68,Card,Food point,Delivered,4,Worth
+OXJY167254JK,11-10-2020,8.31.21,635P635,Regular:,82,Online,Plan B,Delivered,4,Awesome experience
+FRBT691245BA,11-10-2020,8.31.21,961Y961,salad:,40,Wallet,Onesta,Delivered,3,Stale food
+SBXX592702XP,11-10-2020,8.31.21,1.66E+168,Laccha Prantha:,28,Online,Toit,Delivered,5,Will order again
+FRBT691245BA,11-10-2020,8.31.21,194P194,Banana shake:,95,Wallet,Onesta,Delivered,2,Difficult to order
+FRBT691245BA,11-10-2020,8.31.21,184N184,Mushroom Masala:,77,Cash,Toit,Delivered,2,High price
+UFDF355524DM,11-10-2020,8.31.21,628V628,Roti:,28,Wallet,Haus Khas,Delivered,3,Complicated procedure
+UFDF355524DM,11-10-2020,8.31.21,582O582,Biryani:,82,Cash,Johnahs,Delivered,5,Fast delivery
+LJBO9511000BL,11-10-2020,8.31.21,955C955,Manchurian:,79,Cash,Delhi pot,Delivered,3,Food not good
+FRBT691245BA,11-10-2020,8.31.21,889S889,pickle:,39,Wallet,Khana Khazana,Delivered,5,Awesome experience
+SAMV824387MW,11-10-2020,8.31.21,660E660,Veg Premium Burger:,89,Card,Food point,Delivered,3,High price
+XVTR474839TP,11-10-2020,8.31.21,819L819,Banana shake:,76,Cash,Food point,Delivered,3,Coupon applied
+UFDF355524DM,11-10-2020,8.31.21,729H729,Laccha Prantha:,31,Online,Johnahs,Delivered,2,Delivery boy didnt come at doorstep
+LJBO9511000BL,11-10-2020,8.31.21,936X936,Prantha:,27,Wallet,Delhi pot,Delivered,2,Late delivery
+SBXX592702XP,11-10-2020,8.31.21,227G227,Shahi paneer:,51,Online,Onesta,Delivered,1,High price
+LJBO9511000BL,11-10-2020,8.31.21,215J215,Mushroom Masala:,35,Card,Eat out,Delivered,4,Cheap and best
+SAMV824387MW,11-10-2020,8.31.21,979X979,Noodles:,31,Online,Johnahs,Delivered,3,Complicated procedure
+LJBO9511000BL,11-10-2020,8.31.21,731C731,Idli:,85,Wallet,Delhi pot,Delivered,5,Worth
+FSAM929386AQ,11-10-2020,8.31.21,777X777,Regular:,76,Wallet,Eat out,Delivered,4,Worth
+UYXR411673XC,11-10-2020,8.31.21,294Q294,Chow Mein:,74,Wallet,Emperial,Delivered,2,Difficult to order
+SAMV824387MW,11-10-2020,8.31.21,271Q271,Paneer tikka:,68,Cash,Delhi pot,Delivered,4,Fast delivery
+QTSI285174SG,11-10-2020,8.31.21,205C205,Idli:,30,Cash,Food point,Delivered,4,Easy to order
+UYXR411673XC,11-10-2020,8.31.21,425R425,Shahi paneer:,38,Card,Onesta,Delivered,4,Good service
+SAMV824387MW,11-10-2020,8.31.21,551E551,Fryams:,36,Online,Haus Khas,Delivered,3,Food not good
+LRKI603654KL,11-10-2020,8.31.21,306A306,pickle:,73,Wallet,Haus Khas,Delivered,5,Good service
+SBXX592702XP,11-10-2020,8.31.21,689A689,Veg Premium Burger:,70,Online,Toit,Delivered,1,Delivery boy didnt come at doorstep
+UYXR411673XC,11-10-2020,8.31.21,101S101,pickle:,85,Cash,Delhi pot,Delivered,2,Stale food
+SAMV824387MW,11-10-2020,8.31.21,526K526,Banana shake:,64,Cash,Eat out,Delivered,3,Coupon applied
+OXJY167254JK,11-10-2020,8.31.21,161J161,Noodles:,91,Wallet,Sadabahar,Delivered,3,Coupon applied
+XVTR474839TP,11-10-2020,8.31.21,704P704,Prantha:,26,Wallet,Johnahs,Delivered,3,Delivery boy didnt come at doorstep
+LJBO9511000BL,11-10-2020,8.31.21,143P143,Manchurian:,48,Online,Little Cafe,Delivered,5,Worth
+LRKI603654KL,11-10-2020,8.31.21,947X947,Chikko shake:,93,Wallet,Haus Khas,Delivered,3,Difficult to order
+FSAM929386AQ,11-10-2020,8.31.21,938B938,Roti:,27,Card,Little Cafe,Delivered,4,Awesome experience
+XVTR474839TP,11-10-2020,8.31.21,902H902,Fryams:,56,Online,Khana Khazana,Delivered,2,Stale food
+LJBO9511000BL,11-10-2020,8.31.21,142J142,Fryams:,31,Cash,Haus Khas,Delivered,5,Will order again
+LRKI603654KL,11-10-2020,8.31.21,742G742,Roti:,86,Card,Little Cafe,Delivered,1,Difficult to order
+FRBT691245BA,11-10-2020,8.31.21,103Y103,Manchurian:,94,Online,Plan B,Delivered,2,Late delivery
+FSAM929386AQ,11-10-2020,8.31.21,208U208,Paneer tikka:,33,Wallet,Emperial,Delivered,2,Difficult to order
+FRBT691245BA,11-10-2020,8.31.21,819Q819,Regular:,86,Cash,Khana Khazana,Delivered,4,Cheap and best
+UFDF355524DM,11-10-2020,8.31.21,107K107,Biryani:,50,Card,Eat out,Delivered,4,Delicious food
+FSAM929386AQ,11-10-2020,8.31.21,671T671,Idli:,82,Card,Delhi pot,Delivered,5,Good service
+QTSI285174SG,11-10-2020,8.31.21,195K195,Crispy Onion Rings:,40,Cash,Delhi pot,Delivered,1,High price
+QTSI285174SG,11-10-2020,8.31.21,952U952,pickle:,29,Online,Toit,Delivered,3,Complicated procedure
+LRKI603654KL,11-10-2020,8.31.21,833E833,Chikko shake:,33,Cash,Emperial,Delivered,3,Coupon applied
+UFDF355524DM,11-10-2020,8.31.21,139A139,Chow Mein:,69,Cash,Plan B,Delivered,1,High price
+SBXX592702XP,11-10-2020,8.31.21,256A256,Mushroom Masala:,92,Wallet,Little Cafe,Delivered,4,Delicious food
+SBXX592702XP,11-10-2020,8.31.21,837W837,Prantha:,74,Card,Delhi pot,Delivered,1,Coupon applied
+FRBT691245BA,11-10-2020,8.31.21,200B200,Noodles:,36,Wallet,Eat out,Delivered,4,Fast delivery
+UYXR411673XC,11-10-2020,9.31.21,448B448,Dosa:,93,Online,Onesta,Delivered,5,Fast delivery
+QTSI285174SG,11-10-2020,8.31.21,838O838,Paneer tikka:,46,Cash,Sadabahar,Delivered,1,Delivery boy didnt come at doorstep
+FSAM929386AQ,11-10-2020,8.31.21,313Q313,Paneer tikka:,45,Wallet,Sadabahar,Delivered,3,Late delivery
+UFDF355524DM,11-10-2020,8.31.21,320H320,Noodles:,77,Cash,Toit,Delivered,2,Difficult to order
+UYXR411673XC,11-10-2020,8.31.21,194J194,Regular:,34,Wallet,Sadabahar,Delivered,4,Good service
+FSAM929386AQ,11-10-2020,8.31.21,811B811,Prantha:,95,Card,Food point,Delivered,2,Difficult to order
+SBXX592702XP,11-10-2020,8.31.21,897D897,Pulao:,52,Card,Plan B,Delivered,5,Good service
+UFDF355524DM,11-10-2020,8.31.21,970L970,Curd:,35,Card,Sadabahar,Delivered,1,Complicated procedure
+XVTR474839TP,11-10-2020,8.31.21,312R312,Manchurian:,47,Wallet,Sadabahar,Delivered,2,Stale food
+QTSI285174SG,11-10-2020,8.31.21,744G744,Mango shake:,43,Online,Delhi pot,Delivered,2,Food not good
+FRBT691245BA,11-10-2020,8.31.21,246T246,Paneer tikka:,79,Cash,Johnahs,Delivered,1,Difficult to order
+UYXR411673XC,11-10-2020,8.31.21,859F859,Roti:,55,Card,Haus Khas,Delivered,2,Food not good
+SBXX592702XP,11-10-2020,8.31.21,980I980,Fryams:,28,Card,Johnahs,Delivered,4,Will order again
+LRKI603654KL,11-10-2020,8.31.21,598V598,Fryams:,65,Online,Little Cafe,Delivered,3,High price
+LRKI603654KL,11-10-2020,8.31.21,589B589,Dosa:,45,Cash,Khana Khazana,Delivered,2,Food not good
+LRKI603654KL,11-10-2020,8.31.21,327N327,Dosa:,62,Cash,Johnahs,Delivered,2,High price
+XVTR474839TP,11-10-2020,8.31.21,605Y605,Veg Premium Burger:,82,Cash,Emperial,Delivered,3,Difficult to order
+LRKI603654KL,11-10-2020,8.31.21,758W758,Laccha Prantha:,79,Cash,Johnahs,Delivered,3,Delivery boy didnt come at doorstep
+SBXX592702XP,11-10-2020,8.31.21,477F477,salad:,89,Wallet,Emperial,Delivered,2,Coupon applied
+UFDF355524DM,11-10-2020,8.31.21,274T274,Biryani:,22,Cash,Food point,Delivered,2,Complicated procedure
+UYXR411673XC,11-10-2020,8.31.21,845P845,Quiche:,65,Wallet,Haus Khas,Delivered,5,Awesome experience
+OXJY167254JK,11-10-2020,8.31.21,869G869,Roti:,77,Wallet,Eat out,Delivered,2,Late delivery
+OXJY167254JK,11-10-2020,8.31.21,488W488,Idli:,87,Cash,Toit,Delivered,2,Difficult to order
+UYXR411673XC,11-10-2020,8.31.21,1.08E+110,Idli:,56,Wallet,Food point,Delivered,4,Fast delivery
+SBXX592702XP,11-10-2020,8.31.21,549E549,Mango shake:,32,Card,Plan B,Delivered,3,Difficult to order
+OXJY167254JK,11-10-2020,8.31.21,673F673,Idli:,95,Wallet,Little Cafe,Delivered,5,Good service
+LJBO9511000BL,11-10-2020,8.31.21,288T288,Biryani:,100,Card,Sadabahar,Delivered,1,Delivery boy didnt come at doorstep
+FSAM929386AQ,11-10-2020,8.31.21,378E378,Shahi paneer:,64,Card,Eat out,Delivered,3,High price
+UFDF355524DM,11-10-2020,8.31.21,540T540,Dosa:,40,Online,Toit,Delivered,2,Difficult to order
+OXJY167254JK,11-10-2020,8.31.21,639I639,pickle:,92,Wallet,Johnahs,Delivered,2,Stale food
+QTSI285174SG,11-10-2020,8.31.21,824X824,Chop Suey,65,Wallet,Delhi pot,Delivered,1,Late delivery
+OXJY167254JK,11-10-2020,8.31.21,522P522,Roti:,24,Card,Haus Khas,Delivered,2,High price
+OXJY167254JK,11-10-2020,8.31.21,390X390,Paneer tikka:,31,Wallet,Khana Khazana,Delivered,4,Fast delivery
+UFDF355524DM,11-10-2020,8.31.21,865S865,Mushroom Masala:,29,Wallet,Plan B,Delivered,2,Stale food
+QTSI285174SG,11-10-2020,8.31.21,115Y115,Dosa:,51,Cash,Food point,Delivered,3,Complicated procedure
+FRBT691245BA,11-10-2020,8.31.21,176S176,Manchurian:,51,Card,Johnahs,Delivered,2,Stale food
+QTSI285174SG,11-10-2020,8.31.21,710R710,Crispy Onion Rings:,97,Online,Eat out,Delivered,5,Awesome experience
+UFDF355524DM,11-10-2020,8.31.21,816A816,Mushroom Masala:,40,Card,Toit,Delivered,1,Difficult to order
+XVTR474839TP,11-10-2020,8.31.21,999L999,Crispy Onion Rings:,20,Cash,Little Cafe,Delivered,3,High price
+XVTR474839TP,11-10-2020,8.31.21,110L110,Idli:,90,Cash,Eat out,Delivered,2,Stale food
+UFDF355524DM,11-10-2020,8.31.21,2.83E+285,Tawa naan:,51,Online,Delhi pot,Delivered,5,Cheap and best
+UFDF355524DM,11-10-2020,8.31.21,629Y629,Biryani:,38,Wallet,Food point,Delivered,1,High price
+XVTR474839TP,11-10-2020,8.31.21,256D256,Laccha Prantha:,38,Wallet,Plan B,Delivered,3,Stale food
+SAMV824387MW,11-10-2020,8.31.21,424B424,Chikko shake:,56,Online,Delhi pot,Delivered,5,Worth
+UFDF355524DM,11-10-2020,8.31.21,212L212,Shahi paneer:,35,Cash,Haus Khas,Delivered,1,Coupon applied
+XVTR474839TP,11-10-2020,8.31.21,757O757,Crispy Onion Rings:,96,Online,Khana Khazana,Delivered,1,High price
+LJBO9511000BL,11-10-2020,8.31.21,143P143,Fried Rice:,66,Online,Plan B,Delivered,4,Awesome experience
+UYXR411673XC,11-10-2020,8.31.21,471J471,Regular:,49,Wallet,Sadabahar,Delivered,2,Stale food
+LJBO9511000BL,11-10-2020,8.31.21,834M834,Banana shake:,72,Online,Delhi pot,Delivered,2,Coupon applied
+QTSI285174SG,11-10-2020,8.31.21,497V497,Idli:,50,Cash,Johnahs,Delivered,4,Worth
+UFDF355524DM,11-10-2020,8.31.21,476Z476,Chow Mein:,69,Cash,Plan B,Delivered,1,High price
+LJBO9511000BL,11-10-2020,8.31.21,399D399,Chow Mein:,41,Wallet,Emperial,Delivered,4,Fast delivery
+LRKI603654KL,11-10-2020,8.31.21,589I589,pickle:,30,Cash,Toit,Delivered,5,Awesome experience
+UFDF355524DM,11-10-2020,8.31.21,713R713,Fried Rice:,44,Card,Little Cafe,Delivered,1,Coupon applied
+UYXR411673XC,11-10-2020,8.31.21,475V475,Pulao:,61,Wallet,Delhi pot,Delivered,4,Cheap and best
+FRBT691245BA,11-10-2020,8.31.21,932U932,Fryams:,44,Cash,Emperial,Delivered,5,Will order again
+LJBO9511000BL,11-10-2020,8.31.21,896C896,Crispy Onion Rings:,23,Cash,Food point,Delivered,3,Stale food
+UFDF355524DM,11-10-2020,8.31.21,493N493,Chop Suey,37,Card,Khana Khazana,Delivered,3,Delivery boy didnt come at doorstep
+LJBO9511000BL,11-10-2020,8.31.21,321F321,Chikko shake:,24,Cash,Eat out,Delivered,5,Cheap and best
+FSAM929386AQ,11-10-2020,8.31.21,258T258,Shahi paneer:,54,Card,Emperial,Delivered,2,Food not good
+LJBO9511000BL,11-10-2020,8.31.21,831G831,Laccha Prantha:,36,Wallet,Sadabahar,Delivered,5,Fast delivery
+XVTR474839TP,11-10-2020,8.31.21,981A981,Mango shake:,58,Online,Haus Khas,Delivered,3,High price
+UFDF355524DM,11-10-2020,8.31.21,403X403,Pulao:,89,Wallet,Little Cafe,Delivered,1,Difficult to order
+OXJY167254JK,11-10-2020,8.31.21,963O963,Idli:,77,Online,Toit,Delivered,1,Late delivery
+SAMV824387MW,11-10-2020,8.31.21,308A308,Laccha Prantha:,60,Wallet,Onesta,Delivered,3,High price
+JXJY167254JK,11-10-2020,8.31.21,954S954,Pizza:Crispy Onion Rings:Roti:Manchurian,89,Wallet,Emperial,Delivered,5,Awesome experience
+OXJY167254JK,11-10-2020,8.31.21,424Z424,pickle:,49,Wallet,Onesta,Delivered,3,Difficult to order
+LRKI603654KL,11-10-2020,8.31.21,467S467,Curd:,23,Wallet,Little Cafe,Delivered,5,Worth
+SAMV824387MW,11-10-2020,8.31.21,794P794,Mango shake:,68,Wallet,Khana Khazana,Delivered,2,High price
+UYXR411673XC,11-10-2020,8.31.21,448B448,Dosa:,93,Online,Onesta,Delivered,5,Fast delivery
+QTSI285174SG,11-10-2020,8.31.21,838O838,Paneer tikka:,46,Cash,Sadabahar,Delivered,1,Delivery boy didnt come at doorstep
+XVTR474839TP,11-10-2020,8.31.21,605Y605,Veg Premium Burger:,82,Cash,Emperial,Delivered,3,Difficult to order
+JXJY167254JK,11-10-2020,8.31.21,954Sg54,Crispy Onion Rings:Fryams:Chow Mein,67,Wallet,Johnahs,Delivered,4,Will order again
+LRKI603654KL,11-10-2020,8.31.21,758W758,Laccha Prantha:,79,Cash,Johnahs,Delivered,3,Delivery boy didnt come at doorstep
+SBXX592702XP,11-10-2020,8.31.21,477F477,salad:,89,Wallet,Emperial,Delivered,2,Coupon applied
+UFDF355524DM,11-10-2020,8.31.21,274T274,Biryani:,22,Cash,Food point,Delivered,2,Complicated procedure
+UYXR411673XC,11-10-2020,8.31.21,845P845,Quiche:,65,Wallet,Haus Khas,Delivered,5,Awesome experience
+OXJY167254JK,11-10-2020,8.31.21,869G869,Roti:,77,Wallet,Eat out,Delivered,2,Late delivery
+OXJY167254JK,11-10-2020,8.31.21,488W488,Idli:,87,Cash,Toit,Delivered,2,Difficult to order
+JXJY167254JK,11-10-2020,8.31.21,954S954,Pizza:Crispy Onion Rings:Roti:Manchurian,89,Wallet,Emperial,Delivered,5,Awesome experience
+UYXR411673XC,11-10-2020,8.31.21,1.08E+110,Idli:,56,Wallet,Food point,Delivered,4,Fast delivery
+SBXX592702XP,11-10-2020,8.31.21,549E549,Mango shake:,32,Card,Plan B,Delivered,3,Difficult to order
+OXJY167254JK,11-10-2020,8.31.21,673F673,Idli:,95,Wallet,Little Cafe,Delivered,5,Good service
+LJBO9511000BL,11-10-2020,8.31.21,288T288,Biryani:,100,Card,Sadabahar,Delivered,1,Delivery boy didnt come at doorstep
+UFDF355524DM,11-10-2020,8.31.21,540T540,Dosa:,40,Online,Toit,Delivered,2,Difficult to order
+OXJY167254JK,11-10-2020,8.31.21,639I639,pickle:,92,Wallet,Johnahs,Delivered,2,Stale food
+QTSI285174SG,11-10-2020,8.31.21,824X824,Chop Suey,65,Wallet,Delhi pot,Delivered,1,Late delivery
+OXJY167254JK,11-10-2020,8.31.21,522P522,Roti:,24,Card,Haus Khas,Delivered,2,High price
+OXJY167254JK,11-10-2020,8.31.21,390X390,Paneer tikka:,31,Wallet,Khana Khazana,Delivered,4,Fast delivery
+UFDF355524DM,11-10-2020,8.31.21,865S865,Mushroom Masala:,29,Wallet,Plan B,Delivered,2,Stale food
+QTSI285174SG,11-10-2020,8.31.21,115Y115,Dosa:,51,Cash,Food point,Delivered,3,Complicated procedure
+FRBT691245BA,11-10-2020,8.31.21,176S176,Manchurian:,51,Card,Johnahs,Delivered,2,Stale food
+QTSI285174SG,11-10-2020,8.31.21,710R710,Crispy Onion Rings:,97,Online,Eat out,Delivered,5,Awesome experience
+UFDF355524DM,11-10-2020,8.31.21,816A816,Mushroom Masala:,40,Card,Toit,Delivered,1,Difficult to order
+XVTR474839TP,11-10-2020,8.31.21,999L999,Crispy Onion Rings:,20,Cash,Little Cafe,Delivered,3,High price
+XVTR474839TP,11-10-2020,8.31.21,110L110,Idli:,90,Cash,Eat out,Delivered,2,Stale food
+UFDF355524DM,11-10-2020,8.31.21,2.83E+285,Tawa naan:,51,Online,Delhi pot,Delivered,5,Cheap and best
+UFDF355524DM,11-10-2020,8.31.21,629Y629,Biryani:,38,Wallet,Food point,Delivered,1,High price
+XVTR474839TP,11-10-2020,8.31.21,256D256,Laccha Prantha:,38,Wallet,Plan B,Delivered,3,Stale food
+SAMV824387MW,11-10-2020,8.31.21,424B424,Chikko shake:,56,Online,Delhi pot,Delivered,5,Worth
+UFDF355524DM,11-10-2020,8.31.21,212L212,Shahi paneer:,35,Cash,Haus Khas,Delivered,1,Coupon applied
+XVTR474839TP,11-10-2020,8.31.21,757O757,Crispy Onion Rings:,96,Online,Khana Khazana,Delivered,1,High price
+OXJY167254JK,11-10-2020,8.31.21,315P315,Fryams:,49,Online,Eat out,Delivered,2,Late delivery
+LJBO9511000BL,11-10-2020,8.31.21,285S285,Chikko shake:,24,Card,Food point,Delivered,4,Delicious food
+UFDF355524DM,11-10-2020,8.31.21,504F504,Curd:,23,Cash,Eat out,Delivered,1,Difficult to order
+OXJY167254JK,11-10-2020,8.31.21,858S858,Fryams:,73,Online,Khana Khazana,Delivered,1,Delivery boy didnt come at doorstep
+SBXX592702XP,11-10-2020,8.31.21,286U286,Fryams:,82,Wallet,Khana Khazana,Delivered,1,High price
+LRKI603654KL,11-10-2020,8.31.21,264H264,Mushroom Masala:,84,Wallet,Haus Khas,Delivered,1,Stale food
+OXJY167254JK,11-10-2020,8.31.21,364H364,salad:,83,Card,Toit,Delivered,1,Complicated procedure
+QTSI285174SG,11-10-2020,8.31.21,320Q320,pickle:,75,Online,Eat out,Delivered,4,Will order again
+SAMV824387MW,11-10-2020,8.31.21,893U893,Tawa naan:,45,Wallet,Plan B,Delivered,1,High price
+UFDF355524DM,11-10-2020,8.31.21,350E350,Dosa:,36,Card,Sadabahar,Delivered,2,Coupon applied
+XVTR474839TP,11-10-2020,8.31.21,166W166,Fried Rice:,98,Cash,Khana Khazana,Delivered,2,Complicated procedure
+SBXX592702XP,11-10-2020,8.31.21,975Q975,Pizza:,57,Card,Delhi pot,Delivered,1,Complicated procedure
+SBXX592702XP,11-10-2020,8.31.21,539D539,Chow Mein:,86,Cash,Emperial,Delivered,3,Food not good
+XVTR474839TP,11-10-2020,8.31.21,536D536,Shahi paneer:,60,Cash,Onesta,Delivered,3,Food not good
+FRBT691245BA,11-10-2020,8.31.21,219S219,salad:,80,Cash,Johnahs,Delivered,4,Cheap and best
+UYXR411673XC,11-10-2020,8.31.21,306Y306,Quiche:,92,Card,Onesta,Delivered,3,High price
+SAMV824387MW,11-10-2020,8.31.21,607D607,Fried Rice:,93,Online,Onesta,Delivered,2,Stale food
+FRBT691245BA,11-10-2020,8.31.21,120C120,Chow Mein:,42,Online,Plan B,Delivered,3,High price
+LJBO9511000BL,11-10-2020,8.31.21,678S678,Veg Premium Burger:,77,Online,Khana Khazana,Delivered,5,Awesome experience
+QTSI285174SG,11-10-2020,8.31.21,244M244,Idli:,44,Wallet,Johnahs,Delivered,2,Difficult to order
+UFDF355524DM,11-10-2020,8.31.21,763Q763,Mushroom Masala:,25,Online,Emperial,Delivered,2,High price
+XVTR474839TP,11-10-2020,8.31.21,169H169,Curd:,41,Card,Eat out,Delivered,1,Difficult to order
+UYXR411673XC,11-10-2020,8.31.21,829I829,Paneer tikka:,71,Online,Haus Khas,Delivered,3,Late delivery
+OXJY167254JK,11-10-2020,8.31.21,624T624,Idli:,55,Online,Little Cafe,Delivered,2,Complicated procedure
+OXJY167254JK,11-10-2020,8.31.21,556M556,Noodles:,99,Card,Khana Khazana,Delivered,1,Complicated procedure
+QTSI285174SG,11-10-2020,8.31.21,908S908,Fryams:,79,Cash,Johnahs,Delivered,3,Complicated procedure
+SAMV824387MW,11-10-2020,8.31.21,136C136,Chop Suey,43,Card,Food point,Delivered,4,Delicious food
+UYXR411673XC,11-10-2020,8.31.21,575J575,Chop Suey,21,Card,Toit,Delivered,4,Fast delivery
+SBXX592702XP,11-10-2020,8.31.21,584A584,Curd:,51,Wallet,Onesta,Delivered,3,High price
+XVTR474839TP,11-10-2020,8.31.21,276D276,Chikko shake:,47,Wallet,Little Cafe,Delivered,5,Fast delivery
+UYXR411673XC,11-10-2020,8.31.21,248W248,Quiche:,51,Card,Johnahs,Delivered,3,Difficult to order
+UFDF355524DM,11-10-2020,8.31.21,904M904,Mushroom Masala:,94,Online,Haus Khas,Delivered,2,Coupon applied
+SBXX592702XP,11-10-2020,8.31.21,327U327,Crispy Onion Rings:,66,Online,Eat out,Delivered,1,High price
+XVTR474839TP,11-10-2020,8.31.21,411E411,Pulao:,82,Wallet,Eat out,Delivered,2,High price
+UFDF355524DM,11-10-2020,8.31.21,765Q765,Pizza:,69,Wallet,Onesta,Delivered,2,Stale food
+FRBT691245BA,11-10-2020,8.31.21,734P734,Chop Suey,64,Card,Emperial,Delivered,3,Stale food
+LJBO9511000BL,11-10-2020,8.31.21,399D399,Chow Mein:,41,Wallet,Emperial,Delivered,4,Fast delivery
+SBXX592702XP,11-10-2020,8.31.21,973O973,salad:,58,Cash,Emperial,Delivered,2,Coupon applied
+UYXR411673XC,11-10-2020,8.31.21,891U891,Chop Suey,53,Wallet,Delhi pot,Delivered,2,Complicated procedure
+FRBT691245BA,11-10-2020,8.31.21,279R279,pickle:,22,Online,Haus Khas,Delivered,4,Awesome experience
+UFDF355524DM,11-10-2020,8.31.21,934X934,Fried Rice:,68,Card,Toit,Delivered,3,Late delivery
+SAMV824387MW,11-10-2020,8.31.21,573R573,Banana shake:,77,Card,Plan B,Delivered,5,Cheap and best
+SAMV824387MW,11-10-2020,8.31.21,604F604,Tawa naan:,91,Cash,Emperial,Delivered,4,Delicious food
+UFDF355524DM,11-10-2020,8.31.21,814Y814,Paneer tikka:,46,Card,Plan B,Delivered,5,Delicious food
+SBXX592702XP,11-10-2020,8.31.21,175M175,pickle:,52,Wallet,Khana Khazana,Delivered,3,Food not good
+LJBO9511000BL,11-10-2020,8.31.21,625Z625,Chow Mein:,93,Online,Toit,Delivered,5,Will order again
+UFDF355524DM,11-10-2020,8.31.21,899A899,Veg Premium Burger:,31,Online,Delhi pot,Delivered,3,Stale food
+OXJY167254JK,11-10-2020,8.31.21,719J719,Quiche:,82,Cash,Khana Khazana,Delivered,5,Worth
+OXJY167254JK,11-10-2020,8.31.21,602V602,Regular:,64,Cash,Onesta,Delivered,4,Delicious food
+QTSI285174SG,11-10-2020,8.31.21,828Y828,Tawa naan:,32,Wallet,Toit,Delivered,4,Good service
+QTSI285174SG,11-10-2020,8.31.21,576H576,Manchurian:,38,Card,Plan B,Delivered,2,Difficult to order
+LJBO9511000BL,11-10-2020,8.31.21,579S579,pickle:,46,Wallet,Toit,Delivered,2,Stale food
+UFDF355524DM,11-10-2020,8.31.21,590K590,Laccha Prantha:,67,Cash,Sadabahar,Delivered,1,Difficult to order
+LRKI603654KL,11-10-2020,8.31.21,562J562,Mango shake:,95,Online,Plan B,Delivered,5,Fast delivery
+XVTR474839TP,11-10-2020,8.31.21,862F862,Banana shake:,32,Card,Johnahs,Delivered,3,Coupon applied
+FRBT691245BA,11-10-2020,8.31.21,329N329,Crispy Onion Rings:,23,Cash,Food point,Delivered,3,Stale food
+OXJY167254JK,11-10-2020,8.31.21,764T764,Fried Rice:,32,Card,Emperial,Delivered,2,High price
+XVTR474839TP,11-10-2020,8.31.21,412W412,Mango shake:,60,Wallet,Khana Khazana,Delivered,2,Difficult to order
+XVTR474839TP,11-10-2020,8.31.21,298O298,Tawa naan:,82,Wallet,Johnahs,Delivered,3,Late delivery
+XVTR474839TP,11-10-2020,8.31.21,430S430,Veg Premium Burger:,35,Wallet,Plan B,Delivered,4,Nice
+QTSI285174SG,11-10-2020,8.31.21,997J997,Prantha:,88,Cash,Delhi pot,Delivered,5,Easy to order
+LJBO9511000BL,11-10-2020,8.31.21,666G666,Pulao:,83,Cash,Plan B,Delivered,5,Awesome experience
+LJBO9511000BL,11-10-2020,8.31.21,382J382,Quiche:,20,Online,Delhi pot,Delivered,5,Good service
+XVTR474839TP,11-10-2020,8.31.21,468M468,Banana shake:,80,Wallet,Onesta,Delivered,5,Delicious food
+XVTR474839TP,11-10-2020,8.31.21,100R100,Prantha:,92,Card,Food point,Delivered,5,Worth
+QTSI285174SG,11-10-2020,8.31.21,481H481,Pulao:,34,Cash,Toit,Delivered,2,Coupon applied
+FRBT691245BA,11-10-2020,8.31.21,848J848,Prantha:,50,Online,Emperial,Delivered,2,Delivery boy didnt come at doorstep
+OXJY167254JK,11-10-2020,8.31.21,703K703,Paneer tikka:,36,Card,Food point,Delivered,2,Stale food
+UYXR411673XC,11-10-2020,8.31.21,445Y445,Pizza:,78,Cash,Khana Khazana,Delivered,2,Coupon applied
+FRBT691245BA,11-10-2020,8.31.21,175H175,Noodles:,23,Card,Haus Khas,Delivered,3,Late delivery
+SAMV824387MW,11-10-2020,8.31.21,725Q725,Mushroom Masala:,24,Online,Little Cafe,Delivered,2,Coupon applied
+LRKI603654KL,11-10-2020,8.31.21,310K310,Idli:,95,Online,Onesta,Delivered,1,Late delivery
+LJBO9511000BL,11-10-2020,8.31.21,329T329,Crispy Onion Rings:,22,Online,Eat out,Delivered,4,Delicious food
+UFDF355524DM,11-10-2020,8.31.21,481L481,Shahi paneer:,97,Cash,Little Cafe,Delivered,2,Complicated procedure
+SAMV824387MW,11-10-2020,8.31.21,308A308,Manchurian:,42,Card,Johnahs,Delivered,2,Complicated procedure
+XVTR474839TP,11-10-2020,8.31.21,596E596,Dosa:,50,Wallet,Onesta,Delivered,3,Delivery boy didnt come at doorstep
+FSAM929386AQ,11-10-2020,8.31.21,951Q951,Banana shake:,93,Online,Plan B,Delivered,2,Difficult to order
+SBXX592702XP,11-10-2020,8.31.21,840X840,Fried Rice:,43,Cash,Eat out,Delivered,2,Delivery boy didnt come at doorstep
+QTSI285174SG,11-10-2020,8.31.21,378C378,Regular:,97,Wallet,Eat out,Delivered,4,Will order again
+SBXX592702XP,11-10-2020,8.31.21,392T392,Banana shake:,86,Online,Haus Khas,Delivered,5,Fast delivery
+UYXR411673XC,11-10-2020,8.31.21,558Q558,Mango shake:,27,Card,Johnahs,Delivered,5,Cheap and best
+UYXR411673XC,11-10-2020,8.31.21,311N311,Tawa naan:,71,Cash,Plan B,Delivered,1,Food not good
+UYXR411673XC,11-10-2020,8.31.21,511Q511,Mushroom Masala:,59,Online,Little Cafe,Delivered,1,Food not good
+UYXR411673XC,11-10-2020,8.31.21,302P302,Shahi paneer:,79,Wallet,Food point,Delivered,5,Will order again
+LJBO9511000BL,11-10-2020,8.31.21,258M258,Laccha Prantha:,36,Online,Khana Khazana,Delivered,1,Stale food
+LRKI603654KL,11-10-2020,8.31.21,512U512,Pulao:,27,Card,Sadabahar,Delivered,1,Late delivery
+UFDF355524DM,11-10-2020,8.31.21,932N932,salad:,82,Wallet,Sadabahar,Delivered,2,High price
+FRBT691245BA,11-10-2020,8.31.21,634O634,Fried Rice:,45,Wallet,Onesta,Delivered,5,Awesome experience
+SAMV824387MW,11-10-2020,8.31.21,208X208,Laccha Prantha:,37,Card,Food point,Delivered,5,Awesome experience
+UFDF355524DM,11-10-2020,8.31.21,795Q795,Chikko shake:,77,Wallet,Eat out,Delivered,1,High price
+SAMV824387MW,11-10-2020,8.31.21,916L916,Chop Suey,60,Wallet,Haus Khas,Delivered,2,Stale food
+OXJY167254JK,11-10-2020,8.31.21,979V979,Curd:,95,Card,Delhi pot,Delivered,2,Late delivery
+SAMV824387MW,11-10-2020,8.31.21,135F135,Regular:,83,Cash,Haus Khas,Delivered,1,Complicated procedure
+XVTR474839TP,11-10-2020,8.31.21,959O959,Dosa:,88,Wallet,Sadabahar,Delivered,3,Difficult to order
+XVTR474839TP,11-10-2020,8.31.21,672E672,Chop Suey,22,Card,Sadabahar,Delivered,2,Delivery boy didnt come at doorstep
+LJBO9511000BL,11-10-2020,8.31.21,675F675,Shahi paneer:,70,Wallet,Food point,Delivered,3,Stale food
+LRKI603654KL,11-10-2020,8.31.21,463X463,Veg Premium Burger:,77,Card,Onesta,Delivered,5,Cheap and best
+OXJY167254JK,11-10-2020,8.31.21,228R228,Pizza:,68,Card,Food point,Delivered,2,Difficult to order
+LJBO9511000BL,11-10-2020,8.31.21,327G327,Curd:,40,Cash,Haus Khas,Delivered,1,Complicated procedure
+FRBT691245BA,11-10-2020,8.31.21,168V168,Manchurian:,53,Wallet,Food point,Delivered,2,Difficult to order
+SBXX592702XP,11-10-2020,8.31.21,596G596,Tawa naan:,72,Card,Khana Khazana,Delivered,4,Delicious food
+LRKI603654KL,11-10-2020,8.31.21,758W758,Banana shake:,58,Wallet,Johnahs,Delivered,1,Stale food
+SBXX592702XP,11-10-2020,8.31.21,239O239,Pulao:,98,Cash,Plan B,Delivered,2,Stale food
+OXJY167254JK,11-10-2020,8.31.21,345Z345,Fried Rice:,36,Cash,Sadabahar,Delivered,4,Delicious food
+FRBT691245BA,11-10-2020,8.31.21,492M492,Idli:,56,Card,Haus Khas,Delivered,2,Stale food
+OXJY167254JK,11-10-2020,8.31.21,179Y179,Shahi paneer:,99,Card,Onesta,Delivered,4,Easy to order
+QTSI285174SG,11-10-2020,8.31.21,413L413,Manchurian:,33,Online,Emperial,Delivered,2,Delivery boy didnt come at doorstep
+SBXX592702XP,11-10-2020,8.31.21,910U910,Chow Mein:,57,Cash,Onesta,Delivered,5,Nice
+SBXX592702XP,11-10-2020,8.31.21,347B347,Tawa naan:,38,Card,Khana Khazana,Delivered,3,Food not good
+UFDF355524DM,11-10-2020,8.31.21,723H723,Laccha Prantha:,95,Online,Eat out,Delivered,2,Late delivery
+OXJY167254JK,11-10-2020,8.31.21,375D375,Laccha Prantha:,36,Cash,Johnahs,Delivered,2,Coupon applied
+LJBO9511000BL,11-10-2020,8.31.21,689M689,Manchurian:,81,Card,Johnahs,Delivered,2,Delivery boy didnt come at doorstep
+QTSI285174SG,11-10-2020,8.31.21,902X902,Laccha Prantha:,38,Card,Haus Khas,Delivered,4,Awesome experience
+OXJY167254JK,11-10-2020,8.31.21,963R963,Banana shake:,73,Cash,Toit,Delivered,3,Stale food
+OXJY167254JK,11-10-2020,8.31.21,2.21E+223,Quiche:,69,Card,Delhi pot,Delivered,4,Easy to order
+SBXX592702XP,11-10-2020,8.31.21,559Z559,Pulao:,32,Online,Toit,Delivered,5,Fast delivery
+LJBO9511000BL,11-10-2020,8.31.21,105Z105,Idli:,64,Wallet,Toit,Delivered,4,Easy to order
+XVTR474839TP,11-10-2020,8.31.21,761U761,Chow Mein:,52,Cash,Haus Khas,Delivered,5,Cheap and best
+SBXX592702XP,11-10-2020,8.31.21,932D932,Regular:,55,Cash,Delhi pot,Delivered,4,Nice
+XVTR474839TP,11-10-2020,8.31.21,257S257,Crispy Onion Rings:,44,Wallet,Eat out,Delivered,3,Food not good
+UFDF355524DM,11-10-2020,8.31.21,728T728,Biryani:,49,Wallet,Johnahs,Delivered,5,Awesome experience
+OXJY167254JK,11-10-2020,8.31.21,869G869,Roti:,77,Wallet,Eat out,Delivered,2,Late delivery
+LRKI603654KL,11-10-2020,8.31.21,316O316,Tawa naan:,78,Cash,Delhi pot,Delivered,4,Delicious food
+LJBO9511000BL,11-10-2020,8.31.21,330M330,Chow Mein:,71,Online,Johnahs,Delivered,2,Food not good
+XVTR474839TP,11-10-2020,8.31.21,381I381,Mango shake:,82,Card,Sadabahar,Delivered,5,Nice
+UFDF355524DM,11-10-2020,8.31.21,188W188,pickle:,58,Online,Khana Khazana,Delivered,2,Food not good
+FSAM929386AQ,11-10-2020,8.31.21,408G408,Quiche:,75,Online,Onesta,Delivered,5,Awesome experience
+UFDF355524DM,11-10-2020,8.31.21,605B605,Pulao:,84,Wallet,Food point,Delivered,3,Coupon applied
+OXJY167254JK,11-10-2020,8.31.21,198N198,Tawa naan:,30,Wallet,Johnahs,Delivered,5,Awesome experience
+SBXX592702XP,11-10-2020,8.31.21,549E549,Fried Rice:,61,Online,Onesta,Delivered,2,Food not good
+UFDF355524DM,11-10-2020,8.31.21,171L171,Laccha Prantha:,31,Wallet,Plan B,Delivered,3,Coupon applied
+FRBT691245BA,11-10-2020,8.31.21,128T128,Veg Premium Burger:,81,Cash,Johnahs,Delivered,5,Easy to order
+LJBO9511000BL,11-10-2020,8.31.21,494G494,Tawa naan:,39,Card,Johnahs,Delivered,4,Awesome experience
+FRBT691245BA,11-10-2020,8.31.21,234L234,pickle:,51,Online,Johnahs,Delivered,5,Delicious food
+QTSI285174SG,11-10-2020,8.31.21,378G378,Tawa naan:,21,Card,Plan B,Delivered,3,Delivery boy didnt come at doorstep
+UYXR411673XC,11-10-2020,8.31.21,182Y182,Crispy Onion Rings:,84,Wallet,Toit,Delivered,2,Delivery boy didnt come at doorstep
+FRBT691245BA,11-10-2020,8.31.21,928E928,Chop Suey,76,Online,Onesta,Delivered,4,Nice
+XVTR474839TP,11-10-2020,8.31.21,427V427,Veg Premium Burger:,37,Online,Delhi pot,Delivered,3,Coupon applied
+UYXR411673XC,11-10-2020,8.31.21,598X598,Tawa naan:,80,Cash,Eat out,Delivered,5,Awesome experience
+UFDF355524DM,11-10-2020,8.31.21,200S200,Quiche:,44,Online,Food point,Delivered,1,Difficult to order
+QTSI285174SG,11-10-2020,8.31.21,824X824,Chop Suey,65,Wallet,Delhi pot,Delivered,1,Late delivery
+OXJY167254JK,11-10-2020,8.31.21,519B519,pickle:,76,Online,Plan B,Delivered,5,Will order again
+FRBT691245BA,11-10-2020,8.31.21,932S932,Roti:,24,Card,Haus Khas,Delivered,2,High price
+OXJY167254JK,11-10-2020,8.31.21,390X390,Noodles:,100,Card,Plan B,Delivered,3,Stale food
+LRKI603654KL,11-10-2020,8.31.21,617D617,Manchurian:,53,Card,Sadabahar,Delivered,4,Fast delivery
+LJBO9511000BL,11-10-2020,8.31.21,237Z237,Banana shake:,54,Card,Toit,Delivered,2,Late delivery
+UFDF355524DM,11-10-2020,8.31.21,865S865,Mushroom Masala:,29,Wallet,Plan B,Delivered,2,Stale food
+QTSI285174SG,11-10-2020,8.31.21,115Y115,Dosa:,51,Cash,Food point,Delivered,3,Complicated procedure
+LJBO9511000BL,11-10-2020,8.31.21,332C332,Curd:,38,Card,Toit,Delivered,3,Coupon applied
+FRBT691245BA,11-10-2020,8.31.21,176S176,Manchurian:,51,Card,Johnahs,Delivered,2,Stale food
+OXJY167254JK,11-10-2020,8.31.21,552I552,Laccha Prantha:,29,Online,Plan B,Delivered,2,Food not good
+OXJY167254JK,11-10-2020,8.31.21,877M877,Shahi paneer:,30,Wallet,Johnahs,Delivered,4,Easy to order
+QTSI285174SG,11-10-2020,8.31.21,710R710,Crispy Onion Rings:,97,Online,Eat out,Delivered,5,Awesome experience
+SAMV824387MW,11-10-2020,8.31.21,593K593,Chow Mein:,30,Wallet,Toit,Delivered,5,Awesome experience
+SBXX592702XP,11-10-2020,8.31.21,535L535,Laccha Prantha:,58,Wallet,Little Cafe,Delivered,2,Delivery boy didnt come at doorstep
+UFDF355524DM,11-10-2020,8.31.21,816A816,Noodles:,43,Online,Sadabahar,Delivered,1,Food not good
+FRBT691245BA,11-10-2020,8.31.21,913D913,Prantha:,57,Card,Sadabahar,Delivered,3,Delivery boy didnt come at doorstep
+XVTR474839TP,11-10-2020,8.31.21,999L999,Crispy Onion Rings:,20,Cash,Little Cafe,Delivered,3,High price
+LRKI603654KL,11-10-2020,8.31.21,281D281,Pulao:,52,Wallet,Delhi pot,Delivered,4,Delicious food
+QTSI285174SG,11-10-2020,8.31.21,963V963,pickle:,87,Cash,Eat out,Delivered,5,Awesome experience
+OXJY167254JK,11-10-2020,8.31.21,895B895,Quiche:,20,Cash,Khana Khazana,Delivered,2,Difficult to order
+UYXR411673XC,11-10-2020,8.31.21,367P367,Dosa:,64,Wallet,Toit,Delivered,4,Delicious food
+SAMV824387MW,11-10-2020,8.31.21,551N551,Crispy Onion Rings:,96,Wallet,Eat out,Delivered,2,Coupon applied
+QTSI285174SG,11-10-2020,8.31.21,616Z616,Chop Suey,40,Card,Plan B,Delivered,2,High price
+UFDF355524DM,11-10-2020,8.31.21,196G196,salad:,89,Card,Eat out,Delivered,2,Difficult to order
+QTSI285174SG,11-10-2020,8.31.21,640X640,Biryani:,79,Online,Plan B,Delivered,2,High price
+FRBT691245BA,11-10-2020,8.31.21,181R181,Paneer tikka:,39,Online,Food point,Delivered,1,Delivery boy didnt come at doorstep
+UFDF355524DM,11-10-2020,8.31.21,936S936,Noodles:,47,Card,Plan B,Delivered,2,Stale food
+QTSI285174SG,11-10-2020,8.31.21,532A532,Curd:,66,Online,Haus Khas,Delivered,3,Delivery boy didnt come at doorstep
+SBXX592702XP,11-10-2020,8.31.21,264Z264,Shahi paneer:,59,Wallet,Little Cafe,Delivered,5,Fast delivery
+UYXR411673XC,11-10-2020,8.31.21,854Q854,Veg Premium Burger:,62,Card,Delhi pot,Delivered,4,Good service
+SAMV824387MW,11-10-2020,8.31.21,757C757,Regular:,67,Cash,Onesta,Delivered,3,Stale food
+LRKI603654KL,11-10-2020,8.31.21,264U264,Chikko shake:,40,Cash,Food point,Delivered,1,Coupon applied
+LRKI603654KL,11-10-2020,8.31.21,167A167,Prantha:,70,Online,Little Cafe,Delivered,3,Coupon applied
+FRBT691245BA,11-10-2020,8.31.21,114L114,Manchurian:,85,Wallet,Johnahs,Delivered,1,Delivery boy didnt come at doorstep
+LRKI603654KL,11-10-2020,8.31.21,341I341,Chop Suey,49,Card,Delhi pot,Delivered,5,Delicious food
+SBXX592702XP,11-10-2020,8.31.21,773C773,Tawa naan:,37,Online,Food point,Delivered,2,Complicated procedure
+XVTR474839TP,11-10-2020,8.31.21,228N228,Fried Rice:,38,Online,Eat out,Delivered,1,Delivery boy didnt come at doorstep
+UYXR411673XC,11-10-2020,8.31.21,412H412,Tawa naan:,55,Online,Food point,Delivered,2,Coupon applied
+SAMV824387MW,11-10-2020,8.31.21,597W597,Crispy Onion Rings:,91,Online,Onesta,Delivered,5,Easy to order
+LJBO9511000BL,11-10-2020,8.31.21,601F601,Pulao:,41,Wallet,Delhi pot,Delivered,4,Fast delivery
+QTSI285174SG,11-10-2020,8.31.21,140Z140,Prantha:,39,Cash,Emperial,Delivered,1,Difficult to order
+UYXR411673XC,11-10-2020,8.31.21,825W825,Dosa:,45,Online,Delhi pot,Delivered,2,Difficult to order
+UYXR411673XC,11-10-2020,8.31.21,234F234,Crispy Onion Rings:,66,Card,Johnahs,Delivered,1,Late delivery
+LJBO9511000BL,11-10-2020,8.31.21,930J930,Curd:,75,Card,Emperial,Delivered,5,Good service
+QTSI285174SG,11-10-2020,8.31.21,101P101,Roti:,26,Online,Food point,Delivered,2,Complicated procedure
+LJBO9511000BL,11-10-2020,8.31.21,208I208,Fried Rice:,72,Card,Food point,Delivered,2,High price
+LJBO9511000BL,11-10-2020,8.31.21,907Q907,Idli:,52,Online,Toit,Delivered,2,High price
+XVTR474839TP,11-10-2020,8.31.21,890T890,pickle:,95,Online,Khana Khazana,Delivered,4,Awesome experience
+LJBO9511000BL,11-10-2020,8.31.21,811Q811,Veg Premium Burger:,65,Cash,Emperial,Delivered,3,Complicated procedure
+OXJY167254JK,11-10-2020,8.31.21,168N168,Pizza:,88,Cash,Plan B,Delivered,2,Food not good
+XVTR474839TP,11-10-2020,8.31.21,926H926,Roti:,89,Wallet,Sadabahar,Delivered,3,Food not good
+OXJY167254JK,11-10-2020,8.31.21,575G575,Quiche:,67,Cash,Emperial,Delivered,3,Delivery boy didnt come at doorstep
+XVTR474839TP,11-10-2020,8.31.21,329X329,salad:,28,Online,Johnahs,Delivered,5,Will order again
+UFDF355524DM,11-10-2020,8.31.21,654N654,salad:,38,Card,Delhi pot,Delivered,1,Stale food
+LRKI603654KL,11-10-2020,8.31.21,213S213,Quiche:,48,Online,Eat out,Delivered,2,Food not good
+LJBO9511000BL,11-10-2020,8.31.21,342T342,Regular:,82,Online,Toit,Delivered,1,Delivery boy didnt come at doorstep
+SBXX592702XP,11-10-2020,8.31.21,821D821,Curd:,90,Card,Emperial,Delivered,2,Food not good
+UFDF355524DM,11-10-2020,8.31.21,306H306,Idli:,98,Wallet,Eat out,Delivered,2,Coupon applied
+UYXR411673XC,11-10-2020,8.31.21,676G676,Crispy Onion Rings:,92,Online,Toit,Delivered,2,Coupon applied
+UFDF355524DM,11-10-2020,8.31.21,320H320,Noodles:,77,Cash,Toit,Delivered,2,Difficult to order
+UYXR411673XC,11-10-2020,8.31.21,194J194,Regular:,34,Wallet,Sadabahar,Delivered,4,Good service
+FSAM929386AQ,11-10-2020,8.31.21,811B811,Prantha:,95,Card,Food point,Delivered,2,Difficult to order
+SBXX592702XP,11-10-2020,8.31.21,897D897,Pulao:,52,Card,Plan B,Delivered,5,Good service
+UFDF355524DM,11-10-2020,8.31.21,970L970,Curd:,35,Card,Sadabahar,Delivered,1,Complicated procedure
+XVTR474839TP,11-10-2020,8.31.21,312R312,Manchurian:,47,Wallet,Sadabahar,Delivered,2,Stale food
+QTSI285174SG,11-10-2020,8.31.21,744G744,Mango shake:,43,Online,Delhi pot,Delivered,2,Food not good
+FRBT691245BA,11-10-2020,8.31.21,246T246,Paneer tikka:,79,Cash,Johnahs,Delivered,1,Difficult to order
+UYXR411673XC,11-10-2020,8.31.21,859F859,Roti:,55,Card,Haus Khas,Delivered,2,Food not good
+SBXX592702XP,11-10-2020,8.31.21,980I980,Fryams:,28,Card,Johnahs,Delivered,4,Will order again
+LRKI603654KL,11-10-2020,8.31.21,598V598,Fryams:,65,Online,Little Cafe,Delivered,3,High price
+LRKI603654KL,11-10-2020,8.31.21,589B589,Dosa:,45,Cash,Khana Khazana,Delivered,2,Food not good
+LRKI603654KL,11-10-2020,8.31.21,327N327,Dosa:,62,Cash,Johnahs,Delivered,2,High price
+OXJY167254JK,11-10-2020,8.31.21,315P315,Fryams:,49,Online,Eat out,Delivered,2,Late delivery
+OXJY167254JK,11-10-2020,18.31.21,654S654,Regular:Mango shake:Roti,97,Wallet,Eat out,Delivered,4,Will order again
+QTSI285174SG,11-10-2020,8.34.21,556T556,Chow Mein:pickle,34,Card,Little Cafe,Delivered,2,Food not good
+FRBT691245BA,11-10-2020,8.21.21,616X616,Mango shake:Noodles,68,Wallet,Khana Khazana,Delivered,2,High price
+LRKI603654KL,11-10-2020,5.31.21,562T562,Roti:,20,Card,Johnahs,Delivered,4,Cheap and best
+LRKI603654KL,11-10-2020,9.31.21,611D611,Dosa:,94,Cash,Onesta,Delivered,1,Complicated procedure
+LJBO9511000BL,11-10-2020,8.31.21,441M441,salad:,82,Wallet,Sadabahar,Delivered,2,High price
+SAMV824387MW,11-10-2020,8.31.28,352G352,pickle:,62,Online,Emperial,Delivered,2,Difficult to order
+UYXR411673XC,11-10-2020,8.31.21,662X662,Shahi paneer:,49,Online,Haus Khas,Delivered,2,Coupon applied
+QTSI285174SG,11-10-2020,8.31.21,249A249,Curd:,57,Online,Emperial,Delivered,2,Coupon applied
+QTSI285174SG,11-10-2020,8.31.21,284O284,Pizza:,44,Card,Johnahs,Delivered,5,Easy to order
+UFDF355524DM,11-10-2020,8.31.21,998P998,Veg Premium Burger:,48,Wallet,Johnahs,Delivered,4,Cheap and best
+OXJY167254JK,11-10-2020,8.31.21,586V586,Curd:,95,Card,Delhi pot,Delivered,2,Late delivery
+UFDF355524DM,11-10-2020,8.31.21,667M667,Curd:,96,Card,Onesta,Delivered,1,High price
+UFDF355524DM,11-10-2020,8.31.21,152D152,Noodles:,22,Cash,Sadabahar,Delivered,3,Coupon applied
+SBXX592702XP,11-10-2020,8.31.21,409H409,Chow Mein:,71,Online,Johnahs,Delivered,2,Stale food
+LJBO9511000BL,11-10-2020,8.31.21,158J158,Manchurian:,24,Card,Food point,Delivered,3,Difficult to order
+OXJY167254JK,11-10-2020,8.31.21,187L187,Veg Premium Burger:,28,Cash,Johnahs,Delivered,5,Fast delivery
+QTSI285174SG,11-10-2020,8.31.21,878Q878,Manchurian:,64,Wallet,Delhi pot,Delivered,5,Delicious food
+LRKI603654KL,11-10-2020,8.31.21,699V699,Roti:,89,Card,Onesta,Delivered,4,Easy to order
+UYXR411673XC,11-10-2020,8.31.21,102M102,Banana shake:,42,Card,Emperial,Delivered,2,High price
+FSAM929386AQ,11-10-2020,8.31.21,127K127,Mushroom Masala:,48,Wallet,Haus Khas,Delivered,3,Stale food
+SBXX592702XP,11-10-2020,8.31.21,400S400,Chikko shake:,62,Card,Delhi pot,Delivered,3,Coupon applied
+UFDF355524DM,11-10-2020,8.31.21,177A177,Laccha Prantha:,39,Online,Haus Khas,Delivered,2,High price
+FRBT691245BA,11-10-2020,8.31.21,168V168,Dosa:,75,Online,Johnahs,Delivered,2,Complicated procedure
+XVTR474839TP,11-10-2020,8.31.21,374Z374,Tawa naan:,72,Card,Khana Khazana,Delivered,4,Delicious food
+SBXX592702XP,11-10-2020,8.31.21,895Y895,pickle:,65,Card,Sadabahar,Delivered,3,Stale food
+UFDF355524DM,11-10-2020,8.31.21,202U202,Roti:,62,Wallet,Sadabahar,Delivered,2,Delivery boy didnt come at doorstep
+SBXX592702XP,11-10-2020,8.31.21,925Y925,Biryani:,86,Cash,Little Cafe,Delivered,5,Cheap and best
+SBXX592702XP,11-10-2020,8.31.21,190Y190,Pulao:,81,Cash,Haus Khas,Delivered,1,Late delivery
+SAMV824387MW,11-10-2020,8.31.21,732H732,pickle:,71,Wallet,Emperial,Delivered,3,Difficult to order
+OXJY167254JK,11-10-2020,8.31.21,994T994,Idli:,83,Wallet,Emperial,Delivered,2,Delivery boy didnt come at doorstep
+OXJY167254JK,11-10-2020,8.31.21,722N722,Banana shake:,41,Wallet,Toit,Delivered,2,Complicated procedure
+SAMV824387MW,11-10-2020,8.31.21,885W885,Manchurian:,76,Online,Johnahs,Delivered,5,Easy to order
+UFDF355524DM,11-10-2020,8.31.21,217O217,Noodles:,86,Card,Khana Khazana,Delivered,2,Food not good
+UYXR411673XC,11-10-2020,8.31.21,533X533,Manchurian:,81,Card,Johnahs,Delivered,2,Delivery boy didnt come at doorstep
+QTSI285174SG,11-10-2020,8.31.21,902X902,Chikko shake:,33,Card,Little Cafe,Delivered,1,Complicated procedure
+OXJY167254JK,11-10-2020,8.31.21,963R963,Fried Rice:,82,Online,Eat out,Delivered,4,Easy to order
+OXJY167254JK,11-10-2020,8.31.21,2.21E+223,Fryams:,69,Cash,Little Cafe,Delivered,2,Difficult to order
+FRBT691245BA,11-10-2020,8.31.21,701A701,Pulao:,32,Online,Toit,Delivered,5,Fast delivery
+LJBO9511000BL,11-10-2020,8.31.21,105Z105,Paneer tikka:,80,Card,Eat out,Delivered,2,Stale food
+LJBO9511000BL,11-10-2020,8.31.21,557Z557,Regular:,55,Cash,Delhi pot,Delivered,4,Nice
+LRKI603654KL,11-10-2020,8.31.21,689S689,Biryani:,49,Wallet,Johnahs,Delivered,5,Awesome experience
+LRKI603654KL,11-10-2020,8.31.21,316O316,Laccha Prantha:,29,Cash,Haus Khas,Delivered,4,Fast delivery
+OXJY167254JK,11-10-2020,8.31.21,307X307,Fryams:,69,Wallet,Eat out,Delivered,4,Delicious food
+LRKI603654KL,11-10-2020,8.31.21,983A983,Manchurian:,35,Wallet,Emperial,Delivered,4,Delicious food
+UYXR411673XC,11-10-2020,8.31.21,742Y742,Fryams:,21,Wallet,Onesta,Delivered,4,Good service
+XVTR474839TP,11-10-2020,8.31.21,381I381,Pulao:,42,Online,Toit,Delivered,2,Stale food
+SBXX592702XP,11-10-2020,8.31.21,501F501,Pulao:,43,Card,Food point,Delivered,3,Complicated procedure
+XVTR474839TP,11-10-2020,8.31.21,668P668,Banana shake:,96,Wallet,Johnahs,Delivered,2,Delivery boy didnt come at doorstep
+UFDF355524DM,11-10-2020,8.31.21,825D825,Chikko shake:,98,Cash,Food point,Delivered,2,Late delivery
+OXJY167254JK,11-10-2020,8.31.21,847M847,Roti:,31,Wallet,Plan B,Delivered,3,Coupon applied
+FRBT691245BA,11-10-2020,8.31.21,128T128,Quiche:,38,Wallet,Johnahs,Delivered,2,Late delivery
+FRBT691245BA,11-10-2020,8.31.21,234L234,Crispy Onion Rings:,45,Online,Sadabahar,Delivered,4,Cheap and best
+OXJY167254JK,11-10-2020,8.31.21,421H421,Chop Suey,23,Cash,Little Cafe,Delivered,1,High price
+OXJY167254JK,11-10-2020,8.31.21,519B519,Chop Suey,94,Card,Delhi pot,Delivered,1,Complicated procedure
+QTSI285174SG,11-10-2020,8.31.21,358J358,Crispy Onion Rings:,78,Online,Plan B,Delivered,3,Stale food
+XVTR474839TP,11-10-2020,8.31.21,376E376,Banana shake:,54,Card,Toit,Delivered,2,Late delivery
+LJBO9511000BL,11-10-2020,8.31.21,332C332,Pizza:,76,Card,Eat out,Delivered,4,Delicious food
+FRBT691245BA,11-10-2020,8.31.21,584R584,Regular:,57,Card,Sadabahar,Delivered,5,Delicious food
+OXJY167254JK,11-10-2020,8.31.21,552I552,Chow Mein:,28,Cash,Plan B,Delivered,4,Delicious food
+SAMV824387MW,11-10-2020,8.31.21,919M919,Shahi paneer:,30,Wallet,Johnahs,Delivered,4,Easy to order
+FRBT691245BA,11-10-2020,8.31.21,961Y961,Laccha Prantha:,28,Online,Toit,Delivered,5,Will order again
+SAMV824387MW,11-10-2020,8.31.21,593K593,Chop Suey,38,Online,Sadabahar,Delivered,5,Will order again
+OXJY167254JK,11-10-2020,8.31.21,752N752,Banana shake:,95,Wallet,Onesta,Delivered,2,Difficult to order
+LJBO9511000BL,11-10-2020,8.31.21,455W455,Biryani:,96,Online,Emperial,Delivered,2,Complicated procedure
+LRKI603654KL,11-10-2020,8.31.21,281D281,Manchurian:,79,Cash,Delhi pot,Delivered,3,Food not good
+XVTR474839TP,11-10-2020,8.31.21,819L819,Laccha Prantha:,31,Online,Johnahs,Delivered,2,Delivery boy didnt come at doorstep
+XVTR474839TP,11-10-2020,8.31.21,373I373,Quiche:,37,Card,Emperial,Delivered,2,Late delivery
+OXJY167254JK,11-10-2020,8.31.21,564J564,salad:,63,Wallet,Onesta,Delivered,5,Cheap and best
+SAMV824387MW,11-10-2020,8.31.21,149F149,Roti:,31,Cash,Sadabahar,Delivered,4,Worth
+XVTR474839TP,11-10-2020,8.31.21,539I539,Shahi paneer:,51,Online,Onesta,Delivered,1,High price
+LJBO9511000BL,11-10-2020,8.31.21,215J215,Chow Mein:,39,Cash,Emperial,Delivered,1,Delivery boy didnt come at doorstep
+SAMV824387MW,11-10-2020,8.31.21,363Z363,Shahi paneer:,52,Cash,Khana Khazana,Delivered,5,Worth
+UYXR411673XC,11-10-2020,8.31.21,726Z726,Biryani:,55,Wallet,Johnahs,Delivered,2,Delivery boy didnt come at doorstep
+LRKI603654KL,11-10-2020,8.31.21,741F741,Banana shake:,67,Online,Haus Khas,Delivered,3,Stale food
+LRKI603654KL,11-10-2020,8.31.21,264U264,Shahi paneer:,52,Card,Sadabahar,Delivered,1,Difficult to order
+SBXX592702XP,11-10-2020,8.31.21,775V775,Chikko shake:,54,Cash,Haus Khas,Delivered,3,Delivery boy didnt come at doorstep
+XVTR474839TP,11-10-2020,8.31.21,403H403,pickle:,55,Online,Sadabahar,Delivered,2,Difficult to order
+SBXX592702XP,11-10-2020,8.31.21,517U517,pickle:,27,Online,Sadabahar,Delivered,2,Complicated procedure
+UYXR411673XC,11-10-2020,8.31.21,715H715,Paneer tikka:,66,Wallet,Haus Khas,Delivered,5,Nice
+QTSI285174SG,11-10-2020,8.31.21,527W527,Fryams:,59,Wallet,Plan B,Delivered,2,Late delivery
+LRKI603654KL,11-10-2020,8.31.21,491A491,Fried Rice:,80,Online,Toit,Delivered,5,Easy to order
+UYXR411673XC,11-10-2020,8.31.21,510N510,Curd:,75,Card,Emperial,Delivered,5,Good service
+QTSI285174SG,11-10-2020,8.31.21,101P101,Veg Premium Burger:,70,Online,Toit,Delivered,1,Delivery boy didnt come at doorstep
+LJBO9511000BL,11-10-2020,8.31.21,208I208,Prantha:,52,Card,Haus Khas,Delivered,5,Nice
+QTSI285174SG,11-10-2020,8.31.21,798W798,Crispy Onion Rings:,95,Cash,Sadabahar,Delivered,4,Awesome experience
+LJBO9511000BL,11-10-2020,8.31.21,811Q811,Quiche:,62,Online,Khana Khazana,Delivered,4,Nice
+UFDF355524DM,11-10-2020,8.31.21,966E966,Laccha Prantha:,67,Card,Emperial,Delivered,2,Complicated procedure
+SBXX592702XP,11-10-2020,8.31.21,457Y457,Pulao:,91,Cash,Toit,Delivered,3,Coupon applied
+UFDF355524DM,11-10-2020,8.31.21,919I919,Manchurian:,92,Cash,Khana Khazana,Delivered,2,Food not good
+SBXX592702XP,11-10-2020,8.31.21,902G902,salad:,38,Card,Delhi pot,Delivered,1,Stale food
+LRKI603654KL,11-10-2020,8.31.21,213S213,Noodles:,60,Card,Food point,Delivered,2,Late delivery
+QTSI285174SG,11-10-2020,8.31.21,393C393,Pizza:,70,Cash,Haus Khas,Delivered,4,Easy to order
+SBXX592702XP,11-10-2020,8.31.21,851P851,Paneer tikka:,48,Online,Onesta,Delivered,5,Fast delivery
+SAMV824387MW,11-10-2020,8.31.21,491V491,Noodles:,31,Online,Haus Khas,Delivered,3,Difficult to order
+LRKI603654KL,11-10-2020,8.31.21,360Z360,Pizza:,50,Online,Plan B,Delivered,1,Difficult to order
+SBXX592702XP,11-10-2020,8.31.21,625P625,Shahi paneer:,96,Wallet,Delhi pot,Delivered,1,High price
+UYXR411673XC,11-10-2020,8.31.21,210B210,Chop Suey,75,Online,Emperial,Delivered,3,Stale food
+XVTR474839TP,11-10-2020,8.31.21,644C644,Mango shake:,43,Online,Delhi pot,Delivered,2,Food not good
+FRBT691245BA,11-10-2020,8.31.21,246T246,Fried Rice:,93,Card,Haus Khas,Delivered,1,Coupon applied
+SBXX592702XP,11-10-2020,8.31.21,378A378,Regular:,86,Cash,Khana Khazana,Delivered,4,Cheap and best
+UFDF355524DM,11-10-2020,8.31.21,107K107,Curd:,32,Online,Plan B,Delivered,2,Food not good
+LJBO9511000BL,11-10-2020,8.31.21,570T570,Chikko shake:,97,Online,Johnahs,Delivered,5,Good service
+UYXR411673XC,11-10-2020,8.31.21,847B847,Regular:,68,Cash,Khana Khazana,Delivered,5,Delicious food
+SBXX592702XP,11-10-2020,8.31.21,860Q860,Crispy Onion Rings:,49,Online,Haus Khas,Delivered,1,Late delivery
+LRKI603654KL,11-10-2020,8.31.21,327N327,Mushroom Masala:,92,Wallet,Little Cafe,Delivered,4,Delicious food
+OXJY167254JK,11-10-2020,8.31.21,315P315,Manchurian:,67,Online,Emperial,Delivered,5,Fast delivery
+UYXR411673XC,11-10-2020,8.31.21,499O499,Banana shake:,23,Cash,Eat out,Delivered,1,Difficult to order
+OXJY167254JK,11-10-2020,8.31.21,858S858,Mushroom Masala:,28,Wallet,Delhi pot,Delivered,2,Coupon applied
+SBXX592702XP,11-10-2020,8.31.21,286U286,Veg Premium Burger:,83,Cash,Little Cafe,Delivered,2,Late delivery
+LRKI603654KL,11-10-2020,8.31.21,264H264,Manchurian:,71,Card,Eat out,Delivered,1,Coupon applied
+QTSI285174SG,11-10-2020,8.31.21,320Q320,Curd:,60,Cash,Delhi pot,Delivered,4,Will order again
+QTSI285174SG,11-10-2020,8.31.21,923T923,Chop Suey,95,Online,Food point,Delivered,2,Stale food
+SBXX592702XP,11-10-2020,8.31.21,501N501,Dosa:,36,Card,Sadabahar,Delivered,2,Coupon applied
+QTSI285174SG,11-10-2020,8.31.21,947M947,Regular:,81,Wallet,Emperial,Delivered,5,Worth
+FSAM929386AQ,11-10-2020,8.31.21,218R218,Mango shake:,83,Card,Eat out,Delivered,3,Coupon applied
+OXJY167254JK,11-10-2020,8.31.21,123F123,Pizza:,57,Card,Delhi pot,Delivered,1,Complicated procedure
+XVTR474839TP,11-10-2020,8.31.21,536D536,Prantha:,52,Card,Johnahs,Delivered,5,Worth
+UYXR411673XC,11-10-2020,8.31.21,306Y306,Manchurian:,60,Online,Little Cafe,Delivered,5,Good service
+SAMV824387MW,11-10-2020,8.31.21,607D607,Chow Mein:,68,Cash,Plan B,Delivered,2,Complicated procedure
+JXJY167254JK,11-10-2020,8.31.21,954Sr54,Noodles:as:Roti,89,Wallet,Onesta,Delivered,5,Awesome experience
+UYXR411673XC,11-10-2020,8.31.21,123W123,Curd:,49,Wallet,Eat out,Delivered,5,Fast delivery
+OXJY167254JK,11-10-2020,8.31.21,183M183,Chow Mein:,48,Wallet,Johnahs,Delivered,4,Easy to order
+QTSI285174SG,11-10-2020,8.31.21,779Q779,Banana shake:,23,Wallet,Toit,Delivered,3,Late delivery
+LJBO9511000BL,11-10-2020,8.31.21,836M836,Shahi paneer:,61,Cash,Onesta,Delivered,1,Difficult to order
+XVTR474839TP,11-10-2020,8.31.21,655V655,salad:,30,Wallet,Onesta,Delivered,1,High price
+FRBT691245BA,11-10-2020,8.31.21,389V389,Crispy Onion Rings:,55,Card,Toit,Delivered,2,Complicated procedure
+XVTR474839TP,11-10-2020,8.31.21,351F351,Tawa naan:,39,Card,Plan B,Delivered,2,High price
+LJBO9511000BL,11-10-2020,8.31.21,468P468,Roti:,44,Card,Emperial,Delivered,3,Late delivery
+UFDF355524DM,11-10-2020,8.31.21,904M904,Banana shake:,70,Card,Little Cafe,Delivered,5,Nice
+UYXR411673XC,11-10-2020,8.31.21,334A334,Banana shake:,87,Wallet,Food point,Delivered,3,High price
+XVTR474839TP,11-10-2020,8.31.21,518A518,Chikko shake:,32,Online,Little Cafe,Delivered,5,Awesome experience
+UFDF355524DM,11-10-2020,8.31.21,765Q765,Curd:,78,Wallet,Plan B,Delivered,2,Delivery boy didnt come at doorstep
+XVTR474839TP,11-10-2020,8.31.21,452P452,Chop Suey,64,Card,Emperial,Delivered,3,Stale food
+SBXX592702XP,11-10-2020,8.31.21,973O973,Banana shake:,90,Cash,Onesta,Delivered,5,Awesome experience
+JXJY167254JK,11-10-2020,9.31.21,954Sr54,Roti,12,Wallet,Onesta,Delivered,4,Awesome experience
+OXJY167254JK,11-10-2020,8.31.21,394G394,Chikko shake:,78,Cash,Delhi pot,Delivered,2,Late delivery
+UYXR411673XC,11-10-2020,8.31.21,773E773,Veg Premium Burger:,69,Card,Toit,Delivered,2,Stale food
+FRBT691245BA,11-10-2020,8.31.21,279R279,Crispy Onion Rings:,26,Cash,Haus Khas,Delivered,4,Nice
+SBXX592702XP,11-10-2020,8.31.21,848O848,Chow Mein:,81,Online,Food point,Delivered,2,Difficult to order
+LJBO9511000BL,11-10-2020,8.31.21,576M576,Dosa:,44,Wallet,Emperial,Delivered,4,Good service
+LRKI603654KL,11-10-2020,8.31.21,697A697,salad:,100,Wallet,Sadabahar,Delivered,2,Late delivery
+LRKI603654KL,11-10-2020,8.31.21,176C176,Idli:,74,Cash,Onesta,Delivered,2,Late delivery
+XVTR474839TP,11-10-2020,8.31.21,566F566,Tawa naan:,91,Cash,Emperial,Delivered,4,Delicious food
+JXJY167254JK,11-10-2020,8.31.21,954Sr54,Noodles:Roti,19,Wallet,Onesta,Delivered,5,Awesome experience
+QTSI285174SG,11-10-2020,8.31.21,769Z769,Veg Premium Burger:,28,Card,Plan B,Delivered,5,Worth
+FSAM929386AQ,11-10-2020,8.31.21,874C874,Manchurian:,78,Online,Sadabahar,Delivered,5,Good service
+OXJY167254JK,11-10-2020,8.31.21,937A937,Chow Mein:,60,Card,Eat out,Delivered,4,Delicious food
+OXJY167254JK,11-10-2020,8.31.21,658B658,Chikko shake:,70,Online,Onesta,Delivered,2,Complicated procedure
+QTSI285174SG,11-10-2020,8.31.21,755B755,Manchurian:,76,Cash,Little Cafe,Delivered,3,High price
+LRKI603654KL,11-10-2020,8.31.21,771L771,Tawa naan:,94,Cash,Onesta,Delivered,2,Late delivery
+SAMV824387MW,11-10-2020,8.31.21,859K859,Crispy Onion Rings:,67,Cash,Haus Khas,Delivered,2,Coupon applied
+OXJY167254JK,11-10-2020,8.31.21,873Y873,Paneer tikka:,45,Wallet,Emperial,Delivered,2,Food not good
+OXJY167254JK,11-10-2020,8.31.21,764T764,Shahi paneer:,25,Card,Food point,Delivered,4,Cheap and best
+QTSI285174SG,11-10-2020,8.31.21,341I341,Laccha Prantha:,40,Wallet,Khana Khazana,Delivered,3,Complicated procedure
+LRKI603654KL,11-10-2020,8.31.21,404X404,Idli:,27,Card,Eat out,Delivered,2,Delivery boy didnt come at doorstep
+XVTR474839TP,11-10-2020,8.31.21,758D758,Shahi paneer:,36,Card,Food point,Delivered,3,Stale food
+XVTR474839TP,11-10-2020,8.31.21,430S430,Mango shake:,96,Wallet,Toit,Delivered,1,Delivery boy didnt come at doorstep
+QTSI285174SG,11-10-2020,8.31.21,823G823,Fryams:,88,Cash,Delhi pot,Delivered,2,High price
+FRBT691245BA,11-10-2020,8.31.21,666X666,Dosa:,96,Wallet,Delhi pot,Delivered,5,Nice
+LJBO9511000BL,11-10-2020,8.31.21,382J382,Crispy Onion Rings:,91,Card,Plan B,Delivered,2,Food not good
+OXJY167254JK,11-10-2020,8.31.21,752W752,Chikko shake:,89,Card,Little Cafe,Delivered,4,Easy to order
+LJBO9511000BL,11-10-2020,8.31.21,912Z912,Prantha:,50,Online,Emperial,Delivered,2,Delivery boy didnt come at doorstep
+OXJY167254JK,11-10-2020,8.31.21,703K703,Banana shake:,57,Wallet,Food point,Delivered,5,Good service
+UYXR411673XC,11-10-2020,8.31.21,445Y445,Crispy Onion Rings:,56,Wallet,Onesta,Delivered,1,Complicated procedure
+LJBO9511000BL,11-10-2020,8.31.21,309J309,Mango shake:,51,Cash,Delhi pot,Delivered,1,Difficult to order
+LRKI603654KL,11-10-2020,8.31.21,608Q608,Mushroom Masala:,24,Online,Little Cafe,Delivered,2,Coupon applied
+XVTR474839TP,11-10-2020,8.31.21,905K905,Idli:,95,Online,Onesta,Delivered,1,Late delivery
+LJBO9511000BL,11-10-2020,8.31.21,329T329,Roti:,26,Online,Emperial,Delivered,2,Coupon applied
+LJBO9511000BL,11-10-2020,8.31.21,627Z627,Pulao:,66,Online,Johnahs,Delivered,3,Delivery boy didnt come at doorstep
+XVTR474839TP,11-10-2020,8.31.21,787I787,Fryams:,80,Online,Khana Khazana,Delivered,2,Stale food
+SBXX592702XP,11-10-2020,8.31.21,938D938,Veg Premium Burger:,91,Cash,Onesta,Delivered,2,Delivery boy didnt come at doorstep
+OXJY167254JK,11-10-2020,8.31.21,933W933,Shahi paneer:,42,Card,Plan B,Delivered,4,Cheap and best
+FRBT691245BA,11-10-2020,8.31.21,792P792,Biryani:,48,Online,Food point,Delivered,2,Delivery boy didnt come at doorstep
+XVTR474839TP,11-10-2020,8.31.21,425V425,Mango shake:,41,Cash,Sadabahar,Delivered,1,Coupon applied
+LRKI603654KL,11-10-2020,8.31.21,562T562,Roti:,20,Card,Johnahs,Delivered,4,Cheap and best
+LRKI603654KL,11-10-2020,8.31.21,611D611,Dosa:,94,Cash,Onesta,Delivered,1,Complicated procedure
+LJBO9511000BL,11-10-2020,8.31.21,441M441,salad:,82,Wallet,Sadabahar,Delivered,2,High price
+SAMV824387MW,11-10-2020,8.31.21,352G352,pickle:,62,Online,Emperial,Delivered,2,Difficult to order
+UYXR411673XC,11-10-2020,8.31.21,662X662,Shahi paneer:,49,Online,Haus Khas,Delivered,2,Coupon applied
+QTSI285174SG,11-10-2020,8.31.21,249A249,Curd:,57,Online,Emperial,Delivered,2,Coupon applied
+QTSI285174SG,11-10-2020,8.31.21,284O284,Pizza:,44,Card,Johnahs,Delivered,5,Easy to order
+UFDF355524DM,11-10-2020,8.31.21,998P998,Veg Premium Burger:,48,Wallet,Johnahs,Delivered,4,Cheap and best
+OXJY167254JK,11-10-2020,8.31.21,586V586,Curd:,95,Card,Delhi pot,Delivered,2,Late delivery
+UFDF355524DM,11-10-2020,8.31.21,667M667,Curd:,96,Card,Onesta,Delivered,1,High price
+UFDF355524DM,11-10-2020,8.31.21,152D152,Noodles:,22,Cash,Sadabahar,Delivered,3,Coupon applied
+SBXX592702XP,11-10-2020,8.31.21,409H409,Chow Mein:,71,Online,Johnahs,Delivered,2,Stale food
+LJBO9511000BL,11-10-2020,8.31.21,158J158,Manchurian:,24,Card,Food point,Delivered,3,Difficult to order
+OXJY167254JK,11-10-2020,8.31.21,187L187,Veg Premium Burger:,28,Cash,Johnahs,Delivered,5,Fast delivery
+QTSI285174SG,11-10-2020,8.31.21,878Q878,Manchurian:,64,Wallet,Delhi pot,Delivered,5,Delicious food
+LRKI603654KL,11-10-2020,8.31.21,699V699,Roti:,89,Card,Onesta,Delivered,4,Easy to order
+UYXR411673XC,11-10-2020,8.31.21,102M102,Banana shake:,42,Card,Emperial,Delivered,2,High price
+SBXX592702XP,11-10-2020,8.31.21,400S400,Chikko shake:,62,Card,Delhi pot,Delivered,3,Coupon applied
+UFDF355524DM,11-10-2020,8.31.21,177A177,Laccha Prantha:,39,Online,Haus Khas,Delivered,2,High price
+FRBT691245BA,11-10-2020,8.31.21,168V168,Dosa:,75,Online,Johnahs,Delivered,2,Complicated procedure
+XVTR474839TP,11-10-2020,8.31.21,374Z374,Tawa naan:,72,Card,Khana Khazana,Delivered,4,Delicious food
+SBXX592702XP,11-10-2020,8.31.21,895Y895,pickle:,65,Card,Sadabahar,Delivered,3,Stale food
+UFDF355524DM,11-10-2020,8.31.21,202U202,Roti:,62,Wallet,Sadabahar,Delivered,2,Delivery boy didnt come at doorstep
+SBXX592702XP,11-10-2020,8.31.21,925Y925,Biryani:,86,Cash,Little Cafe,Delivered,5,Cheap and best
+SBXX592702XP,11-10-2020,8.31.21,190Y190,Pulao:,81,Cash,Haus Khas,Delivered,1,Late delivery
+SAMV824387MW,11-10-2020,8.31.21,732H732,pickle:,71,Wallet,Emperial,Delivered,3,Difficult to order
+OXJY167254JK,11-10-2020,8.31.21,994T994,Idli:,83,Wallet,Emperial,Delivered,2,Delivery boy didnt come at doorstep
+OXJY167254JK,11-10-2020,8.31.21,722N722,Banana shake:,41,Wallet,Toit,Delivered,2,Complicated procedure
+SAMV824387MW,11-10-2020,8.31.21,885W885,Manchurian:,76,Online,Johnahs,Delivered,5,Easy to order
+UFDF355524DM,11-10-2020,8.31.21,217O217,Noodles:,86,Card,Khana Khazana,Delivered,2,Food not good
+UYXR411673XC,11-10-2020,8.31.21,533X533,Manchurian:,81,Card,Johnahs,Delivered,2,Delivery boy didnt come at doorstep
+QTSI285174SG,11-10-2020,8.31.21,902X902,Chikko shake:,33,Card,Little Cafe,Delivered,1,Complicated procedure
+OXJY167254JK,11-10-2020,8.31.21,963R963,Fried Rice:,82,Online,Eat out,Delivered,4,Easy to order
+OXJY167254JK,11-10-2020,8.31.21,2.21E+223,Fryams:,69,Cash,Little Cafe,Delivered,2,Difficult to order
+FRBT691245BA,11-10-2020,8.31.21,701A701,Pulao:,32,Online,Toit,Delivered,5,Fast delivery
+LJBO9511000BL,11-10-2020,8.31.21,105Z105,Paneer tikka:,80,Card,Eat out,Delivered,2,Stale food
+LJBO9511000BL,11-10-2020,8.31.21,557Z557,Regular:,55,Cash,Delhi pot,Delivered,4,Nice
+LRKI603654KL,11-10-2020,8.31.21,689S689,Biryani:,49,Wallet,Johnahs,Delivered,5,Awesome experience
+LRKI603654KL,11-10-2020,8.31.21,316O316,Laccha Prantha:,29,Cash,Haus Khas,Delivered,4,Fast delivery
+OXJY167254JK,11-10-2020,8.31.21,307X307,Fryams:,69,Wallet,Eat out,Delivered,4,Delicious food
+LRKI603654KL,11-10-2020,8.31.21,983A983,Manchurian:,35,Wallet,Emperial,Delivered,4,Delicious food
+UYXR411673XC,11-10-2020,8.31.21,742Y742,Fryams:,21,Wallet,Onesta,Delivered,4,Good service
+XVTR474839TP,11-10-2020,8.31.21,381I381,Pulao:,42,Online,Toit,Delivered,2,Stale food
+SBXX592702XP,11-10-2020,8.31.21,501F501,Pulao:,43,Card,Food point,Delivered,3,Complicated procedure
+XVTR474839TP,11-10-2020,8.31.21,668P668,Banana shake:,96,Wallet,Johnahs,Delivered,2,Delivery boy didnt come at doorstep
+UFDF355524DM,11-10-2020,8.31.21,825D825,Chikko shake:,98,Cash,Food point,Delivered,2,Late delivery
+OXJY167254JK,11-10-2020,8.31.21,847M847,Roti:,31,Wallet,Plan B,Delivered,3,Coupon applied
+FRBT691245BA,11-10-2020,8.31.21,128T128,Quiche:,38,Wallet,Johnahs,Delivered,2,Late delivery
+FRBT691245BA,11-10-2020,8.31.21,234L234,Crispy Onion Rings:,45,Online,Sadabahar,Delivered,4,Cheap and best
+OXJY167254JK,11-10-2020,8.31.21,421H421,Chop Suey,23,Cash,Little Cafe,Delivered,1,High price
+OXJY167254JK,11-10-2020,8.31.21,519B519,Chop Suey,94,Card,Delhi pot,Delivered,1,Complicated procedure
+QTSI285174SG,11-10-2020,8.31.21,358J358,Crispy Onion Rings:,78,Online,Plan B,Delivered,3,Stale food
+XVTR474839TP,11-10-2020,8.31.21,376E376,Banana shake:,54,Card,Toit,Delivered,2,Late delivery
+LJBO9511000BL,11-10-2020,8.31.21,332C332,Pizza:,76,Card,Eat out,Delivered,4,Delicious food
+FRBT691245BA,11-10-2020,8.31.21,584R584,Regular:,57,Card,Sadabahar,Delivered,5,Delicious food
+OXJY167254JK,11-10-2020,8.31.21,552I552,Chow Mein:,28,Cash,Plan B,Delivered,4,Delicious food
+SAMV824387MW,11-10-2020,8.31.21,919M919,Shahi paneer:,30,Wallet,Johnahs,Delivered,4,Easy to order
+FRBT691245BA,11-10-2020,8.31.21,961Y961,Laccha Prantha:,28,Online,Toit,Delivered,5,Will order again
+SAMV824387MW,11-10-2020,8.31.21,593K593,Chop Suey,38,Online,Sadabahar,Delivered,5,Will order again
+OXJY167254JK,11-10-2020,8.31.21,752N752,Banana shake:,95,Wallet,Onesta,Delivered,2,Difficult to order
+LJBO9511000BL,11-10-2020,8.31.21,455W455,Biryani:,96,Online,Emperial,Delivered,2,Complicated procedure
+LRKI603654KL,11-10-2020,8.31.21,281D281,Manchurian:,79,Cash,Delhi pot,Delivered,3,Food not good
+XVTR474839TP,11-10-2020,8.31.21,819L819,Laccha Prantha:,31,Online,Johnahs,Delivered,2,Delivery boy didnt come at doorstep
+XVTR474839TP,11-10-2020,8.31.21,373I373,Quiche:,37,Card,Emperial,Delivered,2,Late delivery
+OXJY167254JK,11-10-2020,8.31.21,564J564,salad:,63,Wallet,Onesta,Delivered,5,Cheap and best
+SAMV824387MW,11-10-2020,8.31.21,149F149,Roti:,31,Cash,Sadabahar,Delivered,4,Worth
+XVTR474839TP,11-10-2020,8.31.21,539I539,Shahi paneer:,51,Online,Onesta,Delivered,1,High price
+LJBO9511000BL,11-10-2020,8.31.21,215J215,Chow Mein:,39,Cash,Emperial,Delivered,1,Delivery boy didnt come at doorstep
+SAMV824387MW,11-10-2020,8.31.21,363Z363,Shahi paneer:,52,Cash,Khana Khazana,Delivered,5,Worth
+UYXR411673XC,11-10-2020,8.31.21,726Z726,Biryani:,55,Wallet,Johnahs,Delivered,2,Delivery boy didnt come at doorstep
+LRKI603654KL,11-10-2020,8.31.21,741F741,Banana shake:,67,Online,Haus Khas,Delivered,3,Stale food
+LRKI603654KL,11-10-2020,8.31.21,264U264,Shahi paneer:,52,Card,Sadabahar,Delivered,1,Difficult to order
+SBXX592702XP,11-10-2020,8.31.21,775V775,Chikko shake:,54,Cash,Haus Khas,Delivered,3,Delivery boy didnt come at doorstep
+XVTR474839TP,11-10-2020,8.31.21,403H403,pickle:,55,Online,Sadabahar,Delivered,2,Difficult to order
+SBXX592702XP,11-10-2020,8.31.21,517U517,pickle:,27,Online,Sadabahar,Delivered,2,Complicated procedure
+UYXR411673XC,11-10-2020,8.31.21,715H715,Paneer tikka:,66,Wallet,Haus Khas,Delivered,5,Nice
+QTSI285174SG,11-10-2020,8.31.21,527W527,Fryams:,59,Wallet,Plan B,Delivered,2,Late delivery
+LRKI603654KL,11-10-2020,8.31.21,491A491,Fried Rice:,80,Online,Toit,Delivered,5,Easy to order
+JXJY167254JK,11-10-2020,8.31.21,154S644,Quiche:Noodles:Roti,123,Card,Eat out,Delivered,4,Will order again
+LJBO9511000BL,11-10-2020,8.31.21,105Z105,Paneer tikka:,80,Card,Eat out,Delivered,2,Stale food
+LJBO9511000BL,11-10-2020,8.31.21,557Z557,Regular:,55,Cash,Delhi pot,Delivered,4,Nice
+LRKI603654KL,11-10-2020,8.31.21,689S689,Biryani:,49,Wallet,Johnahs,Delivered,5,Awesome experience
+LRKI603654KL,11-10-2020,8.31.21,316O316,Laccha Prantha:,29,Cash,Haus Khas,Delivered,4,Fast delivery
+OXJY167254JK,11-10-2020,8.31.21,307X307,Fryams:,69,Wallet,Eat out,Delivered,4,Delicious food
+LRKI603654KL,11-10-2020,8.31.21,983A983,Manchurian:,35,Wallet,Emperial,Delivered,4,Delicious food
+UYXR411673XC,11-10-2020,8.31.21,742Y742,Fryams:,21,Wallet,Onesta,Delivered,4,Good service
+XVTR474839TP,11-10-2020,8.31.21,381I381,Pulao:,42,Online,Toit,Delivered,2,Stale food
+SBXX592702XP,11-10-2020,8.31.21,501F501,Pulao:,43,Card,Food point,Delivered,3,Complicated procedure
+XVTR474839TP,11-10-2020,8.31.21,668P668,Banana shake:,96,Wallet,Johnahs,Delivered,2,Delivery boy didnt come at doorstep
+UFDF355524DM,11-10-2020,8.31.21,825D825,Chikko shake:,98,Cash,Food point,Delivered,2,Late delivery
+OXJY167254JK,11-10-2020,8.31.21,847M847,Roti:,31,Wallet,Plan B,Delivered,3,Coupon applied
+FRBT691245BA,11-10-2020,8.31.21,128T128,Quiche:,38,Wallet,Johnahs,Delivered,2,Late delivery
+FRBT691245BA,11-10-2020,8.31.21,234L234,Crispy Onion Rings:,45,Online,Sadabahar,Delivered,4,Cheap and best
+OXJY167254JK,11-10-2020,8.31.21,421H421,Chop Suey,23,Cash,Little Cafe,Delivered,1,High price
+OXJY167254JK,11-10-2020,8.31.21,519B519,Chop Suey,94,Card,Delhi pot,Delivered,1,Complicated procedure
+QTSI285174SG,11-10-2020,8.31.21,358J358,Crispy Onion Rings:,78,Online,Plan B,Delivered,3,Stale food
+XVTR474839TP,11-10-2020,8.31.21,376E376,Banana shake:,54,Card,Toit,Delivered,2,Late delivery
+LJBO9511000BL,11-10-2020,8.31.21,332C332,Pizza:,76,Card,Eat out,Delivered,4,Delicious food
+FRBT691245BA,11-10-2020,8.31.21,584R584,Regular:,57,Card,Sadabahar,Delivered,5,Delicious food
+OXJY167254JK,11-10-2020,8.31.21,552I552,Chow Mein:,28,Cash,Plan B,Delivered,4,Delicious food
+SAMV824387MW,11-10-2020,8.31.21,919M919,Shahi paneer:,30,Wallet,Johnahs,Delivered,4,Easy to order
+FRBT691245BA,11-10-2020,8.31.21,961Y961,Laccha Prantha:,28,Online,Toit,Delivered,5,Will order again
+SAMV824387MW,11-10-2020,8.31.21,593K593,Chop Suey,38,Online,Sadabahar,Delivered,5,Will order again
+OXJY167254JK,11-10-2020,8.31.21,752N752,Banana shake:,95,Wallet,Onesta,Delivered,2,Difficult to order
+LJBO9511000BL,11-10-2020,8.31.21,455W455,Biryani:,96,Online,Emperial,Delivered,2,Complicated procedure
+LRKI603654KL,11-10-2020,8.31.21,281D281,Manchurian:,79,Cash,Delhi pot,Delivered,3,Food not good
+XVTR474839TP,11-10-2020,8.31.21,819L819,Laccha Prantha:,31,Online,Johnahs,Delivered,2,Delivery boy didnt come at doorstep
+XVTR474839TP,11-10-2020,8.31.21,373I373,Quiche:,37,Card,Emperial,Delivered,2,Late delivery
+OXJY167254JK,11-10-2020,8.31.21,564J564,salad:,63,Wallet,Onesta,Delivered,5,Cheap and best
+SAMV824387MW,11-10-2020,8.31.21,149F149,Roti:,31,Cash,Sadabahar,Delivered,4,Worth
+XVTR474839TP,11-10-2020,8.31.21,539I539,Shahi paneer:,51,Online,Onesta,Delivered,1,High price
+LJBO9511000BL,11-10-2020,8.31.21,215J215,Chow Mein:,39,Cash,Emperial,Delivered,1,Delivery boy didnt come at doorstep
+SAMV824387MW,11-10-2020,8.31.21,363Z363,Shahi paneer:,52,Cash,Khana Khazana,Delivered,5,Worth
