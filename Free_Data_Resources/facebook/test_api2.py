@@ -1,6 +1,7 @@
 import json
 import facebook
 
+# secrets = json.loads(open('../../../facebook_WM_app_credential.json', 'r').read())
 secrets = json.loads(open('../../../facebook_app_credential.json', 'r').read())
 
 
@@ -8,10 +9,9 @@ def main():
     token = (secrets['auth']['access_token'])
     graph = facebook.GraphAPI(token)
 
-    fields = ['email, gender']
+    fields = ['email, gender', 'likes']
     profile = graph.get_object('me', fields=fields)
     # profile = graph.get_object('me')
-
 
     print(json.dumps(profile, indent=4))
 

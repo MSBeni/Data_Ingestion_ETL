@@ -18,10 +18,22 @@ options = PipelineOptions(pipeline_args)
 
 p = beam.Pipeline(options=options)
 ############################################################################################################
-# a method which is used in Map transformation. Map basically applies a simple one to one mapping function over each
-# element in the collection. It means it just receive one row and its output is just one row.
+
+
 def remove_last_colon(row):
-    pass
+    """
+    a method which is used in Map transformation. Map basically applies a simple one to one mapping function over each
+    element in the collection. It means it just receive one row and its output is just one row.
+    :param row:
+    :return:
+    """
+    cols = row.split(',')
+    item = str(cols[4])
+
+    if item.endswith(':'):
+        cols[4] = item[:-1]
+
+    return ','.join(cols)
 
 # Write Transformation to clean the data in beam
 # p collection is a unified storage of beam that store any batch or streaming data
