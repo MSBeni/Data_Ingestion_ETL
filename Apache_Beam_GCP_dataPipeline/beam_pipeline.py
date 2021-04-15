@@ -2,7 +2,10 @@ import apache_beam as beam
 # import the packages PipelineOptions and StandardOptions for standard configurations like executing the pipeline
 from apache_beam.options.pipeline_options import PipelineOptions, StandardOptions
 import argparse
+from google.cloud import bigquery
 
+# project-id:dataset_id.table_id
+delivered_table_spec = 'bigquery-demo-308819:dataset_food_orders.delivered.orders'
 
 # ######################## Mandatory Part to run any Beam pipeline ########################################
 parser = argparse.ArgumentParser()
@@ -96,3 +99,30 @@ other_orders = (
  | 'total map' >> beam.Map(lambda x: 'Total Count:' + str(x))
  | 'print total' >> beam.Map(print_row)
 )
+
+service_account_json = r'/home/.../bigquery-demo-308819-96977b1b6c1e.json'
+
+client = bigquery.Client.from_service_account_json(service_account_json)
+
+dataset_id = "bigquery-demo-308819.dataset_py"
+
+# if the dataset is available do not create it, else create the dataset
+try:
+    client.get_dataset(dataset_id)
+except:
+    dataset = bigquery.Dataset(dataset_id)
+    dataset.location = "US"
+    dataset.description = "Dataset for food orders"
+    dataset_ref = client.create_dataset(dataset, timeout=30)   # Making an API request
+
+# Beam has a library to create and load data into BigQuery tables, by using Beam io package, WriteToBigQuery transform
+# can be called. This command can create a table into bigquery while loading a p collection in it. It takes table_name,
+# its schema, create_deposition and some additional things like partitioning and clustering as parameters.This transform
+# takes input as json while the p collection we have now is in csv format and json conversion is needed.
+
+(delivered_orders
+ | 'delivered to json' >> beam.Map(to_json)
+ | 'write delivered' >> beam.io.WriteToBigQuery(
+
+        )
+ )
