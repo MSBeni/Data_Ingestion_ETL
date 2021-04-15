@@ -61,5 +61,5 @@ cleaned_data = (
     | beam.io.ReadFromText(input_pattern, skip_header_lines=1)
     | beam.Map(remove_last_colon)     # Map applies a simple one to one mapping func over each element in the collection
     | beam.Map(lambda row: row.lower())
-    | beam.Mpp(remove_special_characters)
+    | beam.Map(remove_special_characters)
 )
