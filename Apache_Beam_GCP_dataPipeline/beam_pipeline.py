@@ -100,7 +100,7 @@ other_orders = (
  | 'print other count' >> beam.Map(print_row)
 )
 
-service_account_json = r'/home/..../bigquery-demo-308819-96977b1b6c1e.json'
+service_account_json = r'/home/i-sip_iot/PycharmProjects/bigquery-demo-308819-96977b1b6c1e.json'
 
 client = bigquery.Client.from_service_account_json(service_account_json)
 
@@ -175,17 +175,23 @@ else:
     print('Error Running beam pipeline')
 
 
-view_name = "daily_food_orders"
-dataset_ref = client.dataset('dataset_food_orders')
-view_ref = dataset_ref.table(view_name)
-view_to_create = bigquery.Table(view_ref)
+view_id = "bigquery-demo-308819.dataset_food_orders.daily_food_orders"
+source_id = "bigquery-demo-308819:dataset_food_orders.delivered_orders"
+view = bigquery.Table(view_id)
 
-view_to_create.view_query = 'select * from `bigquery-demo-308819:dataset_food_orders.delivered_orders` ' \
-                            'where _PARTITIONDATE = DATE(current_date ())'
+# The source table in this example is created from a CSV file in Google
+# Cloud Storage located at
+# `gs://cloud-samples-data/bigquery/us-states/us-states.csv`. It contains
+# 50 US states, while the view returns only those states with names
+# starting with the letter 'W'.
+# view.view_query = f"SELECT * FROM `{source_id}` WHERE _PARTITIONDATE = DATE(current_date ())"
+view.view_query = 'select * from `bigquery-demo-308819:dataset_food_orders.delivered_orders` ' \
+                  'where _PARTITIONDATE = DATE(current_date ())'
 
-view_to_create.view_use_legacy_sql = False
-
+# Make an API request to create the view.
 try:
-    client.create_table(view_to_create)
+    view = client.create_table(view)
+    print(f"Created {view.table_type}: {str(view.reference)}")
+
 except:
     print('view already exists')
