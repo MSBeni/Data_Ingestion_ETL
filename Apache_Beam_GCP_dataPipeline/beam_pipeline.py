@@ -5,8 +5,8 @@ import argparse
 from google.cloud import bigquery
 
 # project-id:dataset_id.table_id
-delivered_table_spec = 'bigquery-demo-308819:dataset_food_orders.delivered_orders'
-other_table_spec = 'bigquery-demo-308819:dataset_food_orders.other_status_orders'
+delivered_table_spec = 'bigquery-demo-308819:dataset_food_orders_latest.delivered_orders'
+other_table_spec = 'bigquery-demo-308819:dataset_food_orders_latest.other_status_orders'
 # ######################## Mandatory Part to run any Beam pipeline ########################################
 parser = argparse.ArgumentParser()
 
@@ -175,8 +175,7 @@ else:
     print('Error Running beam pipeline')
 
 
-view_id = "bigquery-demo-308819.dataset_food_orders.daily_food_orders"
-source_id = "bigquery-demo-308819:dataset_food_orders.delivered_orders"
+view_id = "bigquery-demo-308819.dataset_food_orders_latest.daily_food_orders"
 view = bigquery.Table(view_id)
 
 # The source table in this example is created from a CSV file in Google
@@ -185,7 +184,7 @@ view = bigquery.Table(view_id)
 # 50 US states, while the view returns only those states with names
 # starting with the letter 'W'.
 # view.view_query = f"SELECT * FROM `{source_id}` WHERE _PARTITIONDATE = DATE(current_date ())"
-view.view_query = 'select * from `bigquery-demo-308819:dataset_food_orders.delivered_orders` ' \
+view.view_query = 'select * from `bigquery-demo-308819.dataset_food_orders_latest.delivered_orders` ' \
                   'where _PARTITIONDATE = DATE(current_date ())'
 
 # Make an API request to create the view.
