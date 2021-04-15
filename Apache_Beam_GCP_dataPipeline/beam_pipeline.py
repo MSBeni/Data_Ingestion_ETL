@@ -36,6 +36,7 @@ def remove_last_colon(row):
 
     return ','.join(cols)
 
+
 def remove_special_characters(row):
     """
     remove the special characters from the rows
@@ -47,12 +48,14 @@ def remove_special_characters(row):
     ret = ''
     for col in cols:
         clean_col = re.sub(r'[?%&]', '', col)
-        ret = ret + clean_col
+        ret = ret + clean_col + ','
     ret = ret[:-1]
     return ret
 
 # Write Transformation to clean the data in beam
 # p collection is a unified storage of beam that store any batch or streaming data
+
+
 cleaned_data = (
     p
     | beam.io.ReadFromText(input_pattern, skip_header_lines=1)
