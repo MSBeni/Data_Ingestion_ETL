@@ -100,11 +100,11 @@ other_orders = (
  | 'print other count' >> beam.Map(print_row)
 )
 
-service_account_json = r'/home/i-sip_iot/PycharmProjects/bigquery-demo-308819-96977b1b6c1e.json'
+service_account_json = r'/home/..../bigquery-demo-308819-96977b1b6c1e.json'
 
 client = bigquery.Client.from_service_account_json(service_account_json)
 
-dataset_id = "bigquery-demo-308819.dataset_py"
+dataset_id = "bigquery-demo-308819.dataset_food_orders_latest"
 
 # if the dataset is available do not create it, else create the dataset
 try:
