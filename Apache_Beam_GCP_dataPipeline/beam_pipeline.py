@@ -52,6 +52,10 @@ def remove_special_characters(row):
     ret = ret[:-1]
     return ret
 
+
+def print_row(row):
+    print(row)
+
 # Write Transformation to clean the data in beam
 # p collection is a unified storage of beam that store any batch or streaming data
 cleaned_data = (
@@ -78,5 +82,17 @@ other_orders = (
 (cleaned_data
  | 'count table' >> beam.combiners.Count.Globally()
  | 'total map' >> beam.Map(lambda x: 'Total Count:' + str(x))   # Total Count: 900
+ | 'print total' >> beam.Map(print_row)
+)
+
+(delivered_orders
+ | 'count table' >> beam.combiners.Count.Globally()
+ | 'total map' >> beam.Map(lambda x: 'Total Count:' + str(x))
+ | 'print total' >> beam.Map(print_row)
+)
+
+(other_orders
+ | 'count table' >> beam.combiners.Count.Globally()
+ | 'total map' >> beam.Map(lambda x: 'Total Count:' + str(x))
  | 'print total' >> beam.Map(print_row)
 )
