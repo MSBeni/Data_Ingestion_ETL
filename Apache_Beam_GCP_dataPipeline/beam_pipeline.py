@@ -5,8 +5,8 @@ import argparse
 from google.cloud import bigquery
 
 # project-id:dataset_id.table_id
-delivered_table_spec = 'bigquery-demo-308819:dataset_food_orders.delivered.orders'
-
+delivered_table_spec = 'bigquery-demo-308819:dataset_food_orders.delivered_orders'
+other_table_spec = 'bigquery-demo-308819:dataset_food_orders.other_status_orders'
 # ######################## Mandatory Part to run any Beam pipeline ########################################
 parser = argparse.ArgumentParser()
 
@@ -120,9 +120,56 @@ except:
 # its schema, create_deposition and some additional things like partitioning and clustering as parameters.This transform
 # takes input as json while the p collection we have now is in csv format and json conversion is needed.
 
+
+def to_json(csv_str):
+    fields = csv_str.split(',')
+
+    json_str = {"customer_id": fields[0],
+                "date": fields[1],
+                "timestamp": fields[2],
+                "order_id": fields[3],
+                "items": fields[4],
+                "amount": fields[5],
+                "mode": fields[6],
+                "restaurant": fields[7],
+                "status": fields[8],
+                "ratings": fields[9],
+                "feedback": fields[10],
+                "new_col": fields[11]
+                }
+
+    return json_str
+
+
+table_schema = 'customer_id:STRING,date:STRING,timestamp:STRING,order_id:STRING,items:STRING,amount:STRING,' \
+               'mode:STRING,restaurant:STRING,status:STRING,ratings:STRING,feedback:STRING,new_col:STRING'
+
 (delivered_orders
  | 'delivered to json' >> beam.Map(to_json)
  | 'write delivered' >> beam.io.WriteToBigQuery(
-
+            delivered_table_spec,
+            schema=table_schema,
+            create_disposition=beam.io.BigQueryDisposition.CREATE_IF_NEEDED,
+            write_disposition=beam.io.BigQueryDisposition.WRITE_APPEND,
+            additional_bq_parameters={'timePartitioning': {'type': 'DAY'}}
         )
  )
+
+(other_orders
+ | 'delivered to json' >> beam.Map(to_json)
+ | 'write delivered' >> beam.io.WriteToBigQuery(
+            other_table_spec,
+            schema=table_schema,
+            create_disposition=beam.io.BigQueryDisposition.CREATE_IF_NEEDED,
+            write_disposition=beam.io.BigQueryDisposition.WRITE_APPEND,
+            additional_bq_parameters={'timePartitioning': {'type': 'DAY'}}
+        )
+ )
+
+
+from apache_beam.runners.runner import PipelineState
+ret = p.run()
+if ret.state == PipelineState.DONE:
+    print('Success!!!')
+else:
+    print('Error Running beam pipeline')
