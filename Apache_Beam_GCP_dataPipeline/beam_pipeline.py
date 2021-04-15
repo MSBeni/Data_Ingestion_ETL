@@ -68,5 +68,15 @@ cleaned_data = (
 # any unique label to it
 delivered_orders = (
     cleaned_data
-    | 'delivered filter' >>
+    | 'delivered filter' >> beam.Filter(lambda row: row.split(',')[8].lower() == 'delivered')
+)
+other_orders = (
+    cleaned_data
+    | 'delivered filter' >> beam.Filter(lambda row: row.split(',')[8].lower() != 'delivered')
+)
+
+(cleaned_data
+ | 'count table' >> beam.combiners.Count.Globally()
+ | 'total map' >> beam.Map(lambda x: 'Total Count:' + str(x))   # Total Count: 900
+ | 'print total' >> beam.Map(print_row)
 )
