@@ -23,7 +23,8 @@ p = beam.Pipeline(options=options)
 def remove_last_colon(row):
     """
     a method which is used in Map transformation. Map basically applies a simple one to one mapping function over each
-    element in the collection. It means it just receive one row and its output is just one row.
+    element in the collection. It means it just receive one row and its output is just one row. This function will
+    split each row based on , and then remove the : and join the material again
     :param row:
     :return:
     """
