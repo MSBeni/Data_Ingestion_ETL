@@ -79,7 +79,7 @@ delivered_orders = (
 )
 other_orders = (
     cleaned_data
-    | 'delivered filter' >> beam.Filter(lambda row: row.split(',')[8].lower() != 'delivered')
+    | 'undelivered filter' >> beam.Filter(lambda row: row.split(',')[8].lower() != 'delivered')
 )
 
 (cleaned_data
@@ -89,18 +89,18 @@ other_orders = (
 )
 
 (delivered_orders
- | 'count table' >> beam.combiners.Count.Globally()
- | 'total map' >> beam.Map(lambda x: 'Total Count:' + str(x))
- | 'print total' >> beam.Map(print_row)
+ | 'count delivered' >> beam.combiners.Count.Globally()
+ | 'delivered map' >> beam.Map(lambda x: 'Total Count:' + str(x))
+ | 'print delivered count' >> beam.Map(print_row)
 )
 
 (other_orders
- | 'count table' >> beam.combiners.Count.Globally()
- | 'total map' >> beam.Map(lambda x: 'Total Count:' + str(x))
- | 'print total' >> beam.Map(print_row)
+ | 'count others' >> beam.combiners.Count.Globally()
+ | 'other map' >> beam.Map(lambda x: 'Total Count:' + str(x))
+ | 'print other count' >> beam.Map(print_row)
 )
 
-service_account_json = r'/home/.../bigquery-demo-308819-96977b1b6c1e.json'
+service_account_json = r'/home/..../bigquery-demo-308819-96977b1b6c1e.json'
 
 client = bigquery.Client.from_service_account_json(service_account_json)
 
@@ -156,8 +156,8 @@ table_schema = 'customer_id:STRING,date:STRING,timestamp:STRING,order_id:STRING,
  )
 
 (other_orders
- | 'delivered to json' >> beam.Map(to_json)
- | 'write delivered' >> beam.io.WriteToBigQuery(
+ | 'other to json' >> beam.Map(to_json)
+ | 'write other_orders' >> beam.io.WriteToBigQuery(
             other_table_spec,
             schema=table_schema,
             create_disposition=beam.io.BigQueryDisposition.CREATE_IF_NEEDED,
@@ -173,3 +173,19 @@ if ret.state == PipelineState.DONE:
     print('Success!!!')
 else:
     print('Error Running beam pipeline')
+
+
+view_name = "daily_food_orders"
+dataset_ref = client.dataset('dataset_food_orders')
+view_ref = dataset_ref.table(view_name)
+view_to_create = bigquery.Table(view_ref)
+
+view_to_create.view_query = 'select * from `bigquery-demo-308819:dataset_food_orders.delivered_orders` ' \
+                            'where _PARTITIONDATE = DATE(current_date ())'
+
+view_to_create.view_use_legacy_sql = False
+
+try:
+    client.create_table(view_to_create)
+except:
+    print('view already exists')
