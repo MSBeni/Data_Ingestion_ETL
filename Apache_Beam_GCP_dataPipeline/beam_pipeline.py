@@ -54,12 +54,19 @@ def remove_special_characters(row):
 
 # Write Transformation to clean the data in beam
 # p collection is a unified storage of beam that store any batch or streaming data
-
-
 cleaned_data = (
     p
     | beam.io.ReadFromText(input_pattern, skip_header_lines=1)
     | beam.Map(remove_last_colon)     # Map applies a simple one to one mapping func over each element in the collection
     | beam.Map(lambda row: row.lower())
     | beam.Map(remove_special_characters)
+    | beam.Map(lambda row: row + ',1')
+)
+# Now wee need to write the deliver status item in one table and the rest in another table
+# so we need to store these two types of the data into two p collections, the first would be delivered_orders
+# You can provide a unique label to any p transform, you cannot use two transformation in same code without providing
+# any unique label to it
+delivered_orders = (
+    cleaned_data
+    | 'delivered filter' >>
 )
