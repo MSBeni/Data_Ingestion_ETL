@@ -175,3 +175,13 @@ the generated pod ```microk8s kubectl get pods -w```
 microk8s kubectl create deployment httpenv --image=msbeni/httpenv
 microk8s kubectl get pods -w
 ```
+You can scale them and see the results:
+```shell
+microk8s kubectl scale deployment httpenv --replicas 10
+```
+
+Now using the ```expose``` command we cann create the service for those
+pods:
+```shell
+microk8s kubectl expose deployment httpenv --port 8893
+```
