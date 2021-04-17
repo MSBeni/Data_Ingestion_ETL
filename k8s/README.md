@@ -172,7 +172,7 @@ In practice, it will often flow through a NodePort first
 the generated pod ```microk8s kubectl get pods -w```
 
 ```shell
-microk8s kubectl create deployment httpenv --image=msbeni/httpenv
+microk8s kubectl create deployment httpenv --image=bretfisher/httpenv
 microk8s kubectl get pods -w
 ```
 You can scale them and see the results:
@@ -184,4 +184,20 @@ Now using the ```expose``` command we cann create the service for those
 pods:
 ```shell
 microk8s kubectl expose deployment httpenv --port 8893
+```
+
+Now check the services:
+```shell
+microk8s kubectl get services
+```
+
+Now you can test your services using these commands:
+
+```shell
+microk8s kubectl apply -f https://bret.run/shpod.yml
+microk8s kubectl attach --namespace=shpod -it shpod
+```
+Now in the provided shell you can run these commands:
+```shell
+IP=$(kubectl get svc httpenv -o go-template --template '{{ .spec.clusterIP }}')  # getting the IP
 ```
