@@ -24,6 +24,8 @@ Now you can simply check the k8s internal:
 ```shell
 microk8s kubectl get nodes   # or node or no
 microk8s kubectl get nodes -o wide
-microk8s kubectl get nodes -o json | jq ".items[] | {name:metadata.name} + .status.capacity"
+microk8s kubectl get nodes -o json | jq ".items[] | {name:.metadata.name} + .status.capacity"
+microk8s kubectl describe node/pop-os    # describing the active node 
+
 ```
 If you do not have the ```jq``` you can simply install it ```sudo snap install jq```.
