@@ -13,3 +13,8 @@ Now Please log out and log in again:
 sudo microk8s.enable dns
 microk8s.status
 ```
+
+Now you can activate the shpod:
+```shell
+microk8s kubectl apply -f https://k8smastery.com/shpod.yaml
+```
