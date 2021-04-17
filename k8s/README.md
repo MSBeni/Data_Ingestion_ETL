@@ -38,3 +38,17 @@ microk8s kubectl -n kube-public get configmaps
 microk8s kubectl -n kube-public get configmap your_namespaces -o yaml
 ```
 If you do not have the ```jq``` you can simply install it ```sudo snap install jq```.
+
+
+## Running Container on Kubernetes:
+You cannot create containers directly. At the lowest level we can just create a pod. In most of the cases
+we are not even creating a pod, we are creating something higher than that in the abstraction layers. let's
+just start with a simple command:
+```shell
+microk8s kubectl run pingpong --image alpine ping 1.1.1.1
+```
+You will receive this message: ```pod/pingpong created```
+Running the command below, you should see the new pod:
+```shell
+microk8s kubectl get all
+```
