@@ -100,7 +100,7 @@ other_orders = (
  | 'print other count' >> beam.Map(print_row)
 )
 
-service_account_json = r'/home/..../bigquery-demo-308819-96977b1b6c1e.json'
+service_account_json = r'/home/i-sip_iot/PycharmProjects/bigquery-demo-308819-6768ec362a88_beam.json'
 
 client = bigquery.Client.from_service_account_json(service_account_json)
 
@@ -166,13 +166,14 @@ table_schema = 'customer_id:STRING,date:STRING,timestamp:STRING,order_id:STRING,
         )
  )
 
+p.run()
 
-from apache_beam.runners.runner import PipelineState
-ret = p.run()
-if ret.state == PipelineState.DONE:
-    print('Success!!!')
-else:
-    print('Error Running beam pipeline')
+# from apache_beam.runners.runner import PipelineState
+# ret = p.run()
+# if ret.state == PipelineState.DONE:
+#     print('Success!!!')
+# else:
+#     print('Error Running beam pipeline')
 
 
 view_id = "bigquery-demo-308819.dataset_food_orders_latest.daily_food_orders"
