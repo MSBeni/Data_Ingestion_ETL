@@ -50,5 +50,18 @@ microk8s kubectl run pingpong --image alpine ping 1.1.1.1
 You will receive this message: ```pod/pingpong created```
 Running the command below, you should see the new pod:
 ```shell
-microk8s kubectl get all
+microk8s kubectl get all   # all the resources in the cluster
 ```
+This can be a sample result:
+```shell
+NAME           READY   STATUS    RESTARTS   AGE
+pod/pingpong   1/1     Running   0          85s
+
+NAME                 TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)   AGE
+service/kubernetes   ClusterIP   10.00.100.00   <none>        443/TCP   20h
+
+```
+Actually by running this command we create a ReplicaSet and then this resource finally create the pod.
+All deployment layer, ReplicaSet and Pod are called abstractions. Finally that pod will create the 
+Container which is a real object running on Docker and inside the container we are running the specific command 
+which is the ```ping``` command in the above case.
