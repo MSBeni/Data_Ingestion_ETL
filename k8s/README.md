@@ -31,7 +31,7 @@ microk8s kubectl get pods
 microk8s kubectl explain pods
 microk8s kubectl explain pods.metadata
 microk8s kubectl explain pods.metadata.uid
-microk8s kubectl get services      # or svc
+microk8s kubectl get services      # or svc # A service is a stable endpoint to connect to "something"
 microk8s kubectl get namespaces
 microk8s kubectl get pods --all-namespaces
 microk8s kubectl -n kube-public get configmaps
@@ -39,6 +39,16 @@ microk8s kubectl -n kube-public get configmap your_namespaces -o yaml
 ```
 If you do not have the ```jq``` you can simply install it ```sudo snap install jq```.
 
+### Pods:
+Pods are a new abstraction!
+
+- A pod can have multiple containers working together
+- (But you usually only have on container per pod)
+- Pod is our smallest deployable unit; Kubernetes can't mange containers directly
+- IP addresses are associated with pods, not with individual containers
+- Containers in a pod share localhost, and can share volumes
+- Multiple containers in a pod are deployed together
+- In reality, Docker doesn't know a pod, only containers/namespaces/volumes
 
 ## Running Container on Kubernetes:
 You cannot create containers directly. At the lowest level we can just create a pod. In most of the cases
@@ -65,3 +75,12 @@ Actually by running this command we create a ReplicaSet and then this resource f
 All deployment layer, ReplicaSet and Pod are called abstractions. Finally that pod will create the 
 Container which is a real object running on Docker and inside the container we are running the specific command 
 which is the ```ping``` command in the above case.
+
+- A ```deployment``` is a high-level construct, allows scaling, rolling updates, rollbacks, 
+  multiple deployments can be used together to implement a canary deployment,delegates 
+  pods management to replica sets
+
+- A ```replica set``` is a low-level construct, makes sure that a given number of identical pods are running, 
+  allows scaling, rarely used directly
+
+    - Note: A replication controller is the deprecated predecessor of a replica set
