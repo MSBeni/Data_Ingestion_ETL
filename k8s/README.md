@@ -106,3 +106,16 @@ To see the tail of the command and just printing one by one the results:
 ```shell
 kubectl logs deploy/pingpong --tail 1 --follow
 ```
+
+### Deleting the Pods:
+You use delete, but you will see another one will run again:
+```shell
+microk8s kubectl delete pod/pingpong-8f6db4897-dd9d4
+```
+
+## Cronjobs
+sample command:
+```shell
+microk8s kubectl create cronjob sleep-job --image=sleep --schedule="*/3 * * * *" --restart=OnFailure
+microk8s kubectl get cronjobs
+```
