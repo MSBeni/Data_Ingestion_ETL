@@ -183,7 +183,7 @@ microk8s kubectl scale deployment httpenv --replicas 10
 Now using the ```expose``` command we cann create the service for those
 pods:
 ```shell
-microk8s kubectl expose deployment httpenv --port 8893
+microk8s kubectl expose deployment httpenv --port 8888
 ```
 
 Now check the services:
@@ -201,3 +201,28 @@ Now in the provided shell you can run these commands:
 ```shell
 IP=$(kubectl get svc httpenv -o go-template --template '{{ .spec.clusterIP }}')  # getting the IP
 ```
+This should return the IP.
+```shell
+echo $IP
+```
+```shell
+curl http://$IP:8888
+```
+
+- other command:
+```shell
+microk8s kubectl describe service httpenv
+microk8s kubectl get endpoints
+microk8s kubectl get endpoints httpenv -o yaml
+microk8s kubectl get pods -l app=httpenv -o wide
+```
+
+## Kubernetes network model:
+- Everything can reach everything
+- No address translation
+- No port translation
+- No new protocol
+- The network implementation can decide how to allocate addresses
+- IP addresses don't have to be "portable" from a node to another
+(For example, We can use a subnet per node and use a simple routed topology)
+- The specification is simple enough to allow many various implementations
