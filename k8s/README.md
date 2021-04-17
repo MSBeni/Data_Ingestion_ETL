@@ -119,3 +119,32 @@ sample command:
 microk8s kubectl create cronjob sleep-job --image=sleep --schedule="*/3 * * * *" --restart=OnFailure
 microk8s kubectl get cronjobs
 ```
+
+## Streaming logs of multiple pods
+Can we stream the logs of all our pingpong pods.
+Combine -l and -f flags:
+```shell
+microk8s kubectl logs -l run=pingpong --tail 1 -f
+```
+### Stern: Shortcomings of kubectl logs
+Follow installation on https://github.com/wercker/stern.
+or simply use:
+```shell
+brew install stern
+```
+Sample:
+```shell
+stern pingpong
+stern --tail 1 --timestamps pingpong
+```
+
+## Service types:
+There are different types of services:
+
+```ClusterIP, NodePort, LoadBalancer, ExternalName```
+
+- ClusterIP:
+It's the default service type, A virtual IP address is allocated for the service 
+  (in an internal, private range; e.g. 10.96.0.0/12), This IP address is reachable 
+  only from within the cluster (nodes and pods), Our code can connect to the service 
+  using the original port number, Perfect for internal communication, within the cluster
