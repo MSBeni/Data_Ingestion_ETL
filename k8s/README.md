@@ -148,3 +148,12 @@ It's the default service type, A virtual IP address is allocated for the service
   (in an internal, private range; e.g. 10.96.0.0/12), This IP address is reachable 
   only from within the cluster (nodes and pods), Our code can connect to the service 
   using the original port number, Perfect for internal communication, within the cluster
+  
+  
+- NodePort
+A port number is allocated for the service, (by default, in the 30000-32767 range)
+That port is made available on all our nodes and anybody can connect to it
+(we can connect to any node on that port to reach the service)
+Our code needs to be changed to connect to that new port number, 
+  Under the hood: kube-proxy sets up a bunch of iptables rules on our nodes
+Sometimes, it's the only available option for external traffic (e.g. most clusters deployed with kubeadm or on-premises)
