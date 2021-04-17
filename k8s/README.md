@@ -17,10 +17,12 @@ microk8s.status
 Now you can activate the shpod:
 ```shell
 microk8s kubectl apply -f https://k8smastery.com/shpod.yaml
-
+microk8s kubectl attach --namespace=shpod -ti shpod
 ```
 
 Now you can simply check the k8s internal:
 ```shell
 microk8s kubectl get nodes   # or node or no
+microk8s kubectl get nodes -o wide
+microk8s kubectl get nodes -o json | jq ".items[] | {name:metadata.name} + .status.capacity"
 ```
