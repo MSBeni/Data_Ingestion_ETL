@@ -55,7 +55,7 @@ You cannot create containers directly. At the lowest level we can just create a 
 we are not even creating a pod, we are creating something higher than that in the abstraction layers. let's
 just start with a simple command:
 ```shell
-microk8s kubectl create deployment pingpong --image=alpine.ping/1.1.1.1
+microk8s kubectl create deployment my-dep --image=busybox
 microk8s kubectl run pingpong --image alpine ping 1.1.1.1
 ```
 other example:
@@ -91,4 +91,10 @@ which is the ```ping``` command in the above case.
 
     - Note: A replication controller is the deprecated predecessor of a replica set
 
-
+### view logs command:
+Exploiting ```Kubectl logs ```command, you can pass either a pod name, or a type/name to see the result of the service.
+View the result of our ping command:
+```shell
+microk8s kubectl logs deploy/pingpong
+microk8s kubectl logs pod/pingpong
+```
