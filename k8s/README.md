@@ -26,3 +26,4 @@ microk8s kubectl get nodes   # or node or no
 microk8s kubectl get nodes -o wide
 microk8s kubectl get nodes -o json | jq ".items[] | {name:metadata.name} + .status.capacity"
 ```
+If you do not have the ```jq``` you can simply install it ```sudo snap install jq```.
