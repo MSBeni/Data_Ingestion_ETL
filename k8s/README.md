@@ -10,5 +10,6 @@ echo "alias kubectl='microk8s.kubectl'" >> ~/.bashrc
 ```
 Now Please log out and log in again:
 ```shell
-
+sudo microk8s.enable dns
+microk8s.status
 ```
