@@ -30,5 +30,7 @@ microk8s kubectl api-resources
 microk8s kubectl get pods
 microk8s kubectl explain pods
 microk8s kubectl explain pods.metadata
+microk8s kubectl explain pods.metadata.uid
+microk8s kubectl get services      # or svc
 ```
 If you do not have the ```jq``` you can simply install it ```sudo snap install jq```.
