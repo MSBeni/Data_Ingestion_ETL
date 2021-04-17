@@ -34,5 +34,7 @@ microk8s kubectl explain pods.metadata.uid
 microk8s kubectl get services      # or svc
 microk8s kubectl get namespaces
 microk8s kubectl get pods --all-namespaces
+microk8s kubectl -n kube-public get configmaps
+microk8s kubectl -n kube-public get configmap your_namespaces -o yaml
 ```
 If you do not have the ```jq``` you can simply install it ```sudo snap install jq```.
