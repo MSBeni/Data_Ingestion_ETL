@@ -167,3 +167,11 @@ Each service of that type will typically cost a little bit of money
 (e.g. a few cents per hour on AWS or GCE)
 Ideally, traffic would flow directly from the load balancer to the pods
 In practice, it will often flow through a NodePort first
+  
+- Creating a deployment for our HTTP server and then real time watching 
+the generated pod ```microk8s kubectl get pods -w```
+
+```shell
+microk8s kubectl create deployment httpenv --image=msbeni/httpenv
+microk8s kubectl get pods -w
+```
