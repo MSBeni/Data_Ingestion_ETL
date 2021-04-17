@@ -95,6 +95,10 @@ which is the ```ping``` command in the above case.
 Exploiting ```Kubectl logs ```command, you can pass either a pod name, or a type/name to see the result of the service.
 View the result of our ping command:
 ```shell
-microk8s kubectl logs deploy/pingpong
+microk8s kubectl logs deploy/my-dep
 microk8s kubectl logs pod/pingpong
+```
+Or we can scale our application, We can create additional copies of our container (I mean, our pod) with kubectl scale:
+```shell
+microk8s kubectl scale deployment my-dep --replicas 3
 ```
