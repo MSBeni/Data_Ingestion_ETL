@@ -102,3 +102,7 @@ Or we can scale our application, We can create additional copies of our containe
 ```shell
 microk8s kubectl scale deployment my-dep --replicas 3
 ```
+To see the tail of the command and just printing one by one the results:
+```shell
+kubectl logs deploy/pingpong --tail 1 --follow
+```
