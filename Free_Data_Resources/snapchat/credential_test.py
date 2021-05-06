@@ -7,7 +7,6 @@ secrets = json.loads(open('../../../snapchat_snap_ads.json', 'r').read())
 
 # client_id = secrets['auth']['Confidential_Client_ID_auth']
 client_id = secrets['auth']['Confidential_Client_ID']
-# client_id = '135459c5-275f-4567-b16f-ef2b79a4bd1e'
 # client_secret = secrets['auth']['Confidential_Client_Secret_auth']
 client_secret = secrets['auth']['Confidential_Client_Secret']
 redirect_uri = 'http://localhost:3000/auth/snapchat/callback'
