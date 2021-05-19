@@ -1,6 +1,5 @@
 from google.cloud import bigquery
 
-
 service_account_json = r'/home/.../bigquery-demo-308819-96977b1b6c1e.json'
 
 client = bigquery.Client.from_service_account_json(service_account_json)
