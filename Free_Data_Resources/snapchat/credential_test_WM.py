@@ -1,6 +1,6 @@
 import json
 
-secrets = json.loads(open('../../../snapchat_WM_App.json', 'r').read())
+secrets = json.loads(open('../../../snapchat_Test_App_new.json', 'r').read())
 
 # print(secrets['auth']['Confidential_Client_Secret'])
 
@@ -22,22 +22,22 @@ secrets = json.loads(open('../../../snapchat_WM_App.json', 'r').read())
 # client_secret = secrets['auth']['OAuth2_Staging_Client_Secret']
 #############################################################################
 ########################## Test App 4 #########################################
-# client_id = secrets['auth']['Confidential_Staging_Client_ID']   # Error: Invalid redirect_uri.
-# client_secret = secrets['auth']['OAuth2_Staging_Client_Secret']
+client_id = secrets['auth']['Confidential_Staging_Client_ID']   # Error: Invalid redirect_uri.
+client_secret = secrets['auth']['OAuth2_Staging_Client_Secret']
 #############################################################################
 ########################## Test App 5 #########################################
 # client_id = secrets['auth']['OAuth2_Production_Client_ID']   # Error: Invalid redirect_uri.
 # client_secret = secrets['auth']['Confidential_Production_Client_Secret']
 #############################################################################
 ########################## Test App 6 #########################################
-client_id = secrets['auth']['Confidential_Production_Client_ID']    # Error: Invalid redirect_uri.
-client_secret = secrets['auth']['Confidential_Production_Client_Secret']
+# client_id = secrets['auth']['Confidential_Production_Client_ID']    # Error: Invalid redirect_uri.
+# client_secret = secrets['auth']['Confidential_Production_Client_Secret']
 #############################################################################
 ########################## Test App #########################################
 # client_id = secrets['auth']['OAuth2_Staging_Client_ID']   # Error: Invalid redirect_uri.
 # client_secret = secrets['auth']['Confidential_Staging_Client_ID']
 #############################################################################
-redirect_uri = 'https://unity-stage.watchmojo.com'
+redirect_uri = 'https://localhost:50000/aftereffectsauth'
 
 from oauthlib.oauth2 import BackendApplicationClient
 from requests.auth import HTTPBasicAuth
