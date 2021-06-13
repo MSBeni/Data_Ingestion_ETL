@@ -14,7 +14,7 @@ import json
 #   OAUTH_SCOPE_URL_PREFIX: 'https://auth.snapchat.com/oauth2/api/'}
 
 
-secrets = json.loads(open('../../../snapchat_final_test_app.json', 'r').read())
+secrets = json.loads(open('../../../../snapchat_final_test_app.json', 'r').read())
 
 # client_key = ''
 # client_secret = ''

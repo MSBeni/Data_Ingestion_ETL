@@ -2,41 +2,13 @@ import json
 
 secrets = json.loads(open('../../../snapchat_Test_App_2.json', 'r').read())
 
-# print(secrets['auth']['Confidential_Client_Secret'])
 
 
-# client_id = secrets['auth']['Confidential_Client_ID_auth']
-# client_id = secrets['auth']['Confidential_Client_ID']
-# client_secret = secrets['auth']['Confidential_Client_Secret_auth']
-# client_secret = secrets['auth']['Confidential_Client_Secret']
-########################## Test App 1 #########################################
-# client_id = secrets['auth']['Snap_Kit_App_ID']    # Error: Invalid Client
-# client_secret = secrets['auth']['Confidential_Production_Client_Secret']
-#############################################################################
-########################## Test App 2 #########################################
-# client_id = secrets['auth']['Snap_Kit_App_ID']      # Error: Invalid Client
-# client_secret = secrets['auth']['OAuth2_Staging_Client_Secret']
-#############################################################################
 ########################## Test App 3 #########################################
 client_id = secrets['auth']['OAuth2_Staging_Client_ID']    # Error: Missing PKCE parameters.
 client_secret = secrets['auth']['OAuth2_Staging_Client_Secret']
 #############################################################################
-########################## Test App 4 #########################################
-# client_id = secrets['auth']['Confidential_Staging_Client_ID']   # Error: Something went wrong.
-# client_secret = secrets['auth']['OAuth2_Staging_Client_Secret']
-#############################################################################
-########################## Test App 5 #########################################
-# client_id = secrets['auth']['OAuth2_Production_Client_ID']   # Error: Invalid redirect_uri.
-# client_secret = secrets['auth']['Confidential_Production_Client_Secret']
-#############################################################################
-########################## Test App 6 #########################################
-# client_id = secrets['auth']['Confidential_Production_Client_ID']    # Error: Invalid redirect_uri.
-# client_secret = secrets['auth']['Confidential_Production_Client_Secret']
-#############################################################################
-########################## Test App #########################################
-# client_id = secrets['auth']['OAuth2_Staging_Client_ID']
-# client_secret = secrets['auth']['Confidential_Staging_Client_ID']
-#############################################################################
+
 redirect_uri = 'http://localhost:3000/auth/snapchat/callback'
 
 from oauthlib.oauth2 import BackendApplicationClient

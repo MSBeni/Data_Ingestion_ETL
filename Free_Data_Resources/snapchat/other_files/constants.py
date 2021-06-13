@@ -1,6 +1,6 @@
 import json
 
-secrets = json.loads(open('../../../snapchat_mine.json', 'r').read())
+secrets = json.loads(open('../../../../snapchat_mine.json', 'r').read())
 
 CONSUMER_KEY = secrets['auth']['Confidential_Client_ID']
 
