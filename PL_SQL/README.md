@@ -186,7 +186,7 @@ END;
 END;
 ```
 
-
+----------------------------------------------------------------
 ## Using Bind Variables (Code Samples)
 --------------------------BIND VARIABLES--------------------------
 ```sql
@@ -220,5 +220,5 @@ end;
 select * from employees where employee_id = :var_sql;
 ```
  
------NOTE: When you run a bind variable creation and select statement together, SQL Developer may return an error. But when you execute them separately, there will be no problem--------
+NOTE: When you run a bind variable creation and select statement together, SQL Developer may return an error. But when you execute them separately, there will be no problem--------
 ------------------------------------------------------------------
