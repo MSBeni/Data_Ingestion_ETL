@@ -112,6 +112,7 @@ END;
 
 ## PL/SQL Delimiters and Commenting (Code Samples)
 ------------------DELIMITERS AND COMMENTING------------------
+```sql
 DECLARE
 V_TEXT VARCHAR2(10):= 'PL/SQL';
 BEGIN
@@ -122,6 +123,27 @@ BEGIN
 --DBMS_OUTPUT.PUT_LINE(V_TEXT || ' is a good language');
 null;
 END;
+```
 -------------------------------------------------------------
 
+```sql
+-- DESC HR.EMPLOYEES;
+DECLARE
+    V_TEXT VARCHAR(50) := 'OUTER-VAR';
+    V_TEST HR.EMPLOYEES.FIRST_NAME%TYPE := 'HASAN';
+BEGIN
+    DECLARE
+        INNER_TEXT VARCHAR(50) := 'INNER-VAR';
+    BEGIN
+        DBMS_OUTPUT.PUT_LINE(INNER_TEXT || ' INSIDE');
+    END;
+    DBMS_OUTPUT.PUT_LINE(V_TEXT || ' OUTSIDE');
+    DBMS_OUTPUT.PUT_LINE(V_TEST || ' WITH TYPE FROM EMPLOYEES');
+END;
+```
+
+```sql
+```
+
+```sql
 ```
