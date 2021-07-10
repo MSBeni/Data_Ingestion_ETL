@@ -108,7 +108,7 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE(V_TYPE3 ||  'yes!....');
 END;
 ```
-----------------==================================---------------
+----------------------------------------------------------------
 
 ## PL/SQL Delimiters and Commenting (Code Samples)
 ------------------DELIMITERS AND COMMENTING------------------
