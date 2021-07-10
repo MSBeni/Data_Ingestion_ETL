@@ -187,7 +187,7 @@ END;
 ```
 
 
-Using Bind Variables (Code Samples)
+## Using Bind Variables (Code Samples)
 --------------------------BIND VARIABLES--------------------------
 ```sql
 set serveroutput on;
