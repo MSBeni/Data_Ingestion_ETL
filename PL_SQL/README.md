@@ -221,9 +221,11 @@ end;
 select * from employees where employee_id = :var_sql;
 ```
  
-NOTE: When you run a bind variable creation and select statement together, SQL Developer may return an error. But when you execute them separately, there will be no problem--------
+* NOTE: When you run a bind variable creation and select statement together, SQL Developer may return an error. But when you execute them separately, there will be no problem--------
 ------------------------------------------------------------------
 
+## What are Control Structures & IF Statements (Code Samples)
+------------------------------IF STATEMENTS--------------------------------
 
 ```sql
 DECLARE NUM_N NUMBER := 50;
@@ -235,3 +237,43 @@ BEGIN
     END IF;
 END;
 ```
+---------------------------------------------------------------------------
+```sql
+set serveroutput on;
+declare
+v_number number := 30;
+begin
+  if v_number < 10 then
+    dbms_output.put_line('I am smaller than 10');
+  elsif v_number < 20 then
+    dbms_output.put_line('I am smaller than 20');
+  elsif v_number < 30 then
+    dbms_output.put_line('I am smaller than 30');
+  else
+    dbms_output.put_line('I am equal or greater than 30');
+  end if;
+end;
+```
+---------------------------------------------------------------------------
+```sql
+declare
+v_number number := 5;
+v_name varchar2(30) := 'Adam';
+begin
+  if v_number < 10 or v_name = 'Carol' then
+    dbms_output.put_line('HI');
+    dbms_output.put_line('I am smaller than 10');
+  elsif v_number < 20 then
+    dbms_output.put_line('I am smaller than 20');
+  elsif v_number < 30 then
+    dbms_output.put_line('I am smaller than 30');
+  else
+    if v_number is null then 
+      dbms_output.put_line('The number is null..');
+    else
+      dbms_output.put_line('I am equal or greater than 30');
+    end if;
+  end if;
+end;
+```
+---------------------------------------------------------------------------
