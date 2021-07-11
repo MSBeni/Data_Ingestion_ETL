@@ -399,10 +399,30 @@ END;
 ```
 -------------------------------------------------------------------------
 
+## For Loops (Code Samples)
+-----------------------------FOR LOOPS-----------------------------
+```sql
+begin
+  for i in REVERSE 1..3 loop
+    dbms_output.put_line('My counter is : '|| i);
+  end loop;
+end;
+```
+-------------------------------------------------------------------
 ```sql
 DECLARE NUM_N NUMBER := 50;
 BEGIN 
     FOR i IN
+        0..10 LOOP
+        DBMS_OUTPUT.PUT_LINE(i * 2);
+    END LOOP;
+END;
+```
+-------------------------------------------------------------------------
+```sql
+DECLARE NUM_N NUMBER := 50;
+BEGIN 
+    FOR i IN REVERSE
         0..10 LOOP
         DBMS_OUTPUT.PUT_LINE(i * 2);
     END LOOP;
