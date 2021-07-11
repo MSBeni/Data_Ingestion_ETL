@@ -481,3 +481,13 @@ BEGIN
     END LOOP;
 END;
 ```
+```sql
+DECLARE NUM_N NUMBER := 50;
+BEGIN 
+    FOR i IN REVERSE
+        0..10 LOOP
+        CONTINUE WHEN (I=5 OR I=10);
+        DBMS_OUTPUT.PUT_LINE(i * 2);
+    END LOOP;
+END;
+```
