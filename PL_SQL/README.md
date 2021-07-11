@@ -330,3 +330,16 @@ begin
 end;
 ```
 -------------------------------------------------------------------------------
+
+```sql
+DECLARE NUM_N NUMBER := 50;
+BEGIN 
+    LOOP
+        DBMS_OUTPUT.PUT_LINE(NUM_N || ' IS THE VALUE');
+        NUM_N := NUM_N -1;
+        IF NUM_N < 30 THEN
+            EXIT;
+        END IF;
+    END LOOP;
+END;
+```
