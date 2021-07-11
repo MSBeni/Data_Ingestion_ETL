@@ -223,3 +223,15 @@ select * from employees where employee_id = :var_sql;
  
 NOTE: When you run a bind variable creation and select statement together, SQL Developer may return an error. But when you execute them separately, there will be no problem--------
 ------------------------------------------------------------------
+
+
+```sql
+DECLARE NUM_N NUMBER := 50;
+BEGIN 
+    IF NUM_N > 40 THEN
+        DBMS_OUTPUT.PUT_LINE(NUM_N || ' IS BIGGER THAN 50');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE(NUM_N || ' IS SMALLER THAN 50');
+    END IF;
+END;
+```
