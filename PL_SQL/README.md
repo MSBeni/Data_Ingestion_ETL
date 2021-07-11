@@ -279,8 +279,9 @@ end;
 ---------------------------------------------------------------------------
 
 
-Case Expressions (Code Samples)
+## Case Expressions (Code Samples)
 ----------------------------CASE EXPRESSIONS--------------------------------
+```sql
 declare
   v_job_code varchar2(10) := 'SA_MAN';
   v_salary_increase number;
@@ -292,7 +293,9 @@ begin
   end;
   dbms_output.put_line('Your salary increase is : '|| v_salary_increase);
 end;
+```
 -------------------------SEARCHED CASE EXPRESSION----------------------------
+```sql
 declare
   v_job_code varchar2(10) := 'IT_PROG';
   v_department varchar2(10) := 'IT';
@@ -305,7 +308,9 @@ begin
   end;
   dbms_output.put_line('Your salary increase is : '|| v_salary_increase);
 end;
+```
 ---------------------------CASE STATEMENTS------------------------------------
+```sql
 declare
   v_job_code varchar2(10) := 'IT_PROG';
   v_department varchar2(10) := 'IT';
@@ -323,4 +328,5 @@ begin
       dbms_output.put_line('The salary increase for this job code is : '|| v_salary_increase);
   end CASE;
 end;
+```
 -------------------------------------------------------------------------------
