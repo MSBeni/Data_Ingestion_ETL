@@ -468,3 +468,16 @@ begin
 end;
 ```
 --------------------------------------------------------------------------------
+
+```sql
+DECLARE NUM_N NUMBER := 50;
+BEGIN 
+    FOR i IN REVERSE
+        0..10 LOOP
+        IF I=5 THEN
+            CONTINUE;
+        END IF;
+        DBMS_OUTPUT.PUT_LINE(i * 2);
+    END LOOP;
+END;
+```
