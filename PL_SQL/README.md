@@ -360,7 +360,7 @@ BEGIN
     END LOOP;
 END;
 ```
-
+--------------------------------------------------------------
 ```sql
 DECLARE NUM_N NUMBER := 50;
 BEGIN 
@@ -368,6 +368,43 @@ BEGIN
         DBMS_OUTPUT.PUT_LINE(NUM_N || ' IS THE VALUE');
         NUM_N := NUM_N -1;
         EXIT WHEN NUM_N < 40;
+    END LOOP;
+END;
+```
+--------------------------------------------------------------
+
+## While Loops (Code Samples)
+```sql
+------------------------------WHILE LOOPS-------------------------------
+declare
+v_counter number(2) := 1;
+begin
+  while v_counter <= 10 loop
+    dbms_output.put_line('My counter is : '|| v_counter);
+    v_counter := v_counter + 1;
+   -- exit when v_counter > 3;
+  end loop;
+end;
+```
+-------------------------------------------------------------------------
+
+```sql
+DECLARE NUM_N NUMBER := 50;
+BEGIN 
+    WHILE NUM_N > 35 LOOP
+        DBMS_OUTPUT.PUT_LINE(NUM_N || ' IS THE VALUE');
+        NUM_N := NUM_N -1;
+    END LOOP;
+END;
+```
+-------------------------------------------------------------------------
+
+```sql
+DECLARE NUM_N NUMBER := 50;
+BEGIN 
+    FOR i IN
+        0..10 LOOP
+        DBMS_OUTPUT.PUT_LINE(i * 2);
     END LOOP;
 END;
 ```
