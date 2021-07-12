@@ -800,6 +800,7 @@ end;
 --------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------PL/SQL RECORDS--------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------
+```sql
 declare
   r_emp employees%rowtype;
 begin
@@ -808,7 +809,9 @@ begin
   dbms_output.put_line(r_emp.first_name||' '||r_emp.last_name|| ' earns '||r_emp.salary||
                        ' and hired at :' || r_emp.hire_date);
 end;
+```
 ------------------------------
+```sql
 declare
   --r_emp employees%rowtype;
   type t_emp is record (first_name varchar2(50),
@@ -825,7 +828,9 @@ begin
   dbms_output.put_line(r_emp.first_name||' '||r_emp.last_name|| ' earns '||r_emp.salary||
                        ' and hired at :' || r_emp.hire_date);
 end;
+```
 -------------------------------
+```sql
 declare
   type t_edu is record (primary_school varchar2(100),
                         high_school varchar2(100),
@@ -855,3 +860,37 @@ begin
   dbms_output.put_line('She graduated from '|| r_emp.education.university|| ' at '||  r_emp.education.uni_graduate_date);
   dbms_output.put_line('Her Department Name is : '|| r_emp.department.department_name);
 end;
+```
+-------------------------------
+## Easy DML With Records (Code Samples)
+--------------------------------------------------------------------------------------------------------------------
+-----------------------------------------EASY DML WITH RECORDS------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+```sql
+create table retired_employees as select * from employees where 1=2;
+select * from retired_employees;
+/
+declare
+    r_emp employees%rowtype;
+begin
+    select * into r_emp from employees where employee_id = 104;
+ r_emp.salary := 0;
+    r_emp.commission_pct := 0;
+    insert into retired_employees values r_emp;
+end;
+```
+-----------------------------------------
+```sql
+declare
+    r_emp employees%rowtype;
+begin
+    select * into r_emp from employees where employee_id = 104;
+    r_emp.salary := 10;
+    r_emp.commission_pct := 0;
+    --insert into retired_employees values r_emp;
+    update retired_employees set row = r_emp where employee_id = 104;
+end;
+/
+delete from retired_employees;
+```
+-----------------------------------------
