@@ -867,6 +867,16 @@ end;
 -----------------------------------------EASY DML WITH RECORDS------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------
 ```sql
+DECLARE
+    R_REMP HR.EMPLOYEES%ROWTYPE;
+BEGIN 
+    SELECT * INTO R_REMP FROM HR.EMPLOYEES WHERE EMPLOYEE_ID=120;
+    DBMS_OUTPUT.PUT_LINE(R_REMP.FIRST_NAME);
+    FOR 
+END;
+```
+-----------------------------------------
+```sql
 create table retired_employees as select * from employees where 1=2;
 select * from retired_employees;
 /
