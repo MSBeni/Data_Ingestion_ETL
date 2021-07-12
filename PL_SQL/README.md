@@ -614,7 +614,7 @@ begin
 end;
 ```
 ---------------------------------------------------------------------------------
-```
+```sql
 declare
  v_name varchar2(50);
  v_sysdate employees.hire_date%type;
