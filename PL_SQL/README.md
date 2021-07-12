@@ -694,6 +694,7 @@ begin
 end;
 ```
 ------------------------------
+```sql
 declare
  v_name varchar2(50);
  v_sysdate employees.hire_date%type;
@@ -702,7 +703,9 @@ begin
   select first_name ||' '|| last_name, sysdate into v_name, v_sysdate from employees where employee_id = employee_id;
   dbms_output.put_line('The salary of '|| v_name || ' is : '|| v_sysdate );
 end;
+```
 ------------------------------
+```sql
 declare
  v_name varchar2(50);
  v_salary employees.salary%type;
@@ -711,7 +714,9 @@ begin
   select first_name ||' '|| last_name, salary into v_name, v_salary from employees where employee_id = v_employee_id;
   dbms_output.put_line('The salary of '|| v_name || ' is : '|| v_salary );
 end;
+```
 ------------------------------ DML OPERATIONS WITH PL/SQL----------------------------------------
+```sql
 create table employees_copy as select * from employees;
 DECLARE
   v_employee_id pls_integer := 0;
@@ -728,12 +733,16 @@ begin
      delete from employees_copy
      where employee_id = i;
   end loop;
-end; 
+end;
+```
 ----------------------------- USING SEQUENCES IN PL/SQL ----------------------------------------
+```sql
 create sequence employee_id_seq 
 start with 207
 increment by 1;
+```
 -----------------------------
+```sql
 begin
   for i in 1..10 loop
     insert into employees_copy 
@@ -742,32 +751,43 @@ begin
       (employee_id_seq.nextval, 'employee#'||employee_id_seq.nextval,'temp_emp','abc@xmail.com',sysdate,'IT_PROG',1000);
   end loop;
 end; 
+```
 ----------------------------
+```sql
 declare
   v_seq_num number;
 begin
   select employee_id_seq.nextval into v_seq_num from dual;
   dbms_output.put_line(v_seq_num);
 end;
+```
 ----------------------------
+```
 declare
   v_seq_num number;
 begin
   select employee_id_seq.nextval into v_seq_num from employees_copy where rownum = 1;
   dbms_output.put_line(v_seq_num);
 end;
+```
 ----------------------------
+```sql
 declare
   v_seq_num number;
 begin
   v_seq_num := employee_id_seq.nextval; 
   dbms_output.put_line(v_seq_num);
 end;
+```
 ----------------------------
+```sql
 begin
   dbms_output.put_line(employee_id_seq.nextval);
 end;
+```
 ----------------------------
+```sql
 begin
   dbms_output.put_line(employee_id_seq.currval);
 end;
+```
