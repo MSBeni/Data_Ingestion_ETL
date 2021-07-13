@@ -125,3 +125,49 @@ select count(*) from `bigquery-demo-285417.dataset1.part_ing_2` where _PARTITION
 ```shell
 pip install google-cloud-bigquery
 ```
+
+# PL/SQL Queries:
+
+```sql
+DECLARE SUBS ARRAY<STRING>;
+DECLARE i INT64 DEFAULT 0;
+DECLARE SUBS_ADDED STRING;
+ 
+SET SUBS = ['a','b','c','d','e', 'f','g','h','i','j','k','l'];
+
+LOOP
+  SET i = i + 1;
+  IF i > ARRAY_LENGTH(SUBS)-1 THEN 
+    LEAVE; 
+  END IF;
+    SELECT sum(subscribers_gained) -  sum(subscribers_lost) from `wmdatawarehouse-220214.yt_content_owner.p_content_owner_basic_a3_wm` 
+            WHERE channel_id=SUBS[offset(i)] AND date between "20210601" and "20210630";
+
+END LOOP; 
+```
+
+
+```sql
+DECLARE SUBS ARRAY<STRING>;
+DECLARE SUBS_F ARRAY<INT64>;
+DECLARE SUBS_Final ARRAY<INT64>;
+DECLARE i INT64 DEFAULT 0;
+DECLARE SUBS_ADDED INT64;
+ 
+
+SET SUBS = ['1','2','3'];
+LOOP
+  SET i = i + 1;
+  IF i > ARRAY_LENGTH(SUBS)-1 THEN 
+    LEAVE; 
+  END IF;
+
+  SET SUBS_ADDED = (SELECT sum(subscribers_gained) -  sum(subscribers_lost) as channel_Subs from `wmdatawarehouse-220214.yt_content_owner.p_content_owner_basic_a3_wm`
+    WHERE channel_id=SUBS[offset(i)] AND date between "20210601" and "20210630" limit 1);
+#   SELECT AS VALUE STRUCT(SUBS_ADDED AS i) xyz; 
+#   SET SUBS_F = ;
+  SET SUBS_Final = (SELECT ARRAY_CONCAT(SUBS_Final,ARRAY[SUBS_ADDED]) AS DATA);
+#   SELECT SUBS_Final;
+END LOOP; 
+
+```
